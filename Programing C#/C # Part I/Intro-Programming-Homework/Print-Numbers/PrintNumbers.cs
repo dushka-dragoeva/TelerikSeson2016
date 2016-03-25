@@ -1,6 +1,5 @@
-﻿namespace Print_Numbers
-{
-    using System;
+﻿/// Write a program that prints the numbers 1, 101 and 1001, each on a separate line
+using System;
 
     public class PrintNumbers
     {
@@ -11,4 +10,3 @@
             Console.WriteLine("1001");
         }
     }
-}

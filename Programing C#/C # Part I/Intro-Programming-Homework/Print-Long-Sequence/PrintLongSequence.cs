@@ -1,14 +1,14 @@
-﻿// Write a program that prints the first 10 members of the sequence: 2, -3, 4, -5, 6, -7, ...
+﻿/// Write a program that prints the first 1000 members of the sequence: 2, -3, 4, -5, 6, -7, …
 using System;
 
-public class PrintSequence
+public class PrintLongSequence
 {
     public static void Main()
     {
         /// for-loop,we will iterate all numbers from 2 to 1001 including
         /// i -  variable Integer type, which manage the loop
         ///each iteration i is increasing with 1 (i++)
-        for (int i = 2; i <= 11; i++)
+        for (int i = 2; i <= 1001; i++)
         {
             /// variable result we will use to print current number
             int result = i;

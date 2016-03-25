@@ -1,5 +1,5 @@
-﻿namespace Print_First_And_Last_Name
-{
+﻿/// Create console application that prints your first and last name, 
+/// each at a separate line.
     using System;
 
     public class PrintFirstAndLastName
@@ -10,4 +10,3 @@
             Console.WriteLine("Jobs");
         }
     }
-}

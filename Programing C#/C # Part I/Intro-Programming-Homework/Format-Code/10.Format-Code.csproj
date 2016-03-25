@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EB0F243A-1D5D-44F6-B0AD-7D20F4B2133B}</ProjectGuid>
+    <ProjectGuid>{200694CE-C916-49CB-98F2-F68D0D8C2A52}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Print_First_And_Last_Name</RootNamespace>
-    <AssemblyName>Print-First-And-Last-Name</AssemblyName>
+    <RootNamespace>Format_Code</RootNamespace>
+    <AssemblyName>Format-Code</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PrintFirstAndLastName.cs" />
+    <Compile Include="FormatCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

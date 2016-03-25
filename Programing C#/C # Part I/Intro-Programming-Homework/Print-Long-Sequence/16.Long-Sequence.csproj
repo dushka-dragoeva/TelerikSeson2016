@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D6AC38FA-51B0-493A-94F7-25B92EE3B0BF}</ProjectGuid>
+    <ProjectGuid>{8318340B-7F88-4ECC-91CF-261B6D4D4755}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Print_Your_Name</RootNamespace>
-    <AssemblyName>Print-Your-Name</AssemblyName>
+    <RootNamespace>Print_Long_Sequence</RootNamespace>
+    <AssemblyName>Print-Long-Sequence</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PrintYourName.cs" />
+    <Compile Include="PrintLongSequence.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
