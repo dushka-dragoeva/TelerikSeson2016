@@ -1,1 +1,2 @@
-[link](./DeclareVariables.cs)
+[link](../DeclareVariables.cs)
+
