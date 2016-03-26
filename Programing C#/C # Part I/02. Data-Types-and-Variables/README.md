@@ -1,1 +1,1 @@
-[link](../01. Declare-Variables)
+[link](./DeclareVariables.cs)
