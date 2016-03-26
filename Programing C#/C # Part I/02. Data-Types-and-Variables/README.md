@@ -1,6 +1,6 @@
 ### Content
 
-1. [Declare Variables](../02. Data-Types-and-Variables/01. Declare-Variables)
+1. [Declare Variables](../02.Data-Types-and-Variables/01.Declare-Variables)
 1. [Float or Double](./02. Float or Double)
 1. [Variable in Hexadecimal Format](./03. Variable in Hexadecimal Format)
 1. [Unicode Character](./04. Unicode Character)
