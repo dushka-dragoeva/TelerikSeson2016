@@ -1,13 +1,11 @@
-﻿namespace Current_Date_And_Time
-{
-    using System;
+﻿using System;
 
-    public class CurrentDateAndTime
+public class CurrentDateAndTime
+{
+    public static void Main()
     {
-        public static void Main()
-        {
-            var date = DateTime.Now;
-            Console.WriteLine(date);
-        }
+        // use class DateTime
+        var date = DateTime.Now;
+        Console.WriteLine(date);
     }
 }

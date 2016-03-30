@@ -2,11 +2,12 @@
 /// number 12345 and prints it on the console.
 using System;
 
-    public class SquareRoot
+public class SquareRoot
+{
+    public static void Main()
     {
-        public static void Main()
-        {
-            double result = Math.Sqrt(12345);
-            Console.WriteLine(result);
-        }
+        // use class Math for finding square root
+        double result = Math.Sqrt(12345);
+        Console.WriteLine(result);
     }
+}
