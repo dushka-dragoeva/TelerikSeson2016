@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3A8D397B-6D5F-47AF-87C7-D7379E4E26EA}</ProjectGuid>
+    <ProjectGuid>{3F57E773-029A-467D-B3D9-AA32113091A4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_12.Falling_Rocks</RootNamespace>
-    <AssemblyName>_12.Falling_Rocks</AssemblyName>
+    <RootNamespace>_08.Digit_As_Word</RootNamespace>
+    <AssemblyName>_08.Digit_As_Word</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FallingRocks.cs" />
+    <Compile Include="DigitAsWord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
