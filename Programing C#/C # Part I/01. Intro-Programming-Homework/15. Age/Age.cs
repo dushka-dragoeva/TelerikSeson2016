@@ -2,13 +2,20 @@
 /// the console and prints on the console how old you are you now and how old 
 /// will you be after 10 years.
 using System;
+using System.Globalization;
+using System.Threading;
 
 public class Age
 {
     public static void Main()
     {
         /// Parse console input to DateTime
-        DateTime birthDate = DateTime.Parse(Console.ReadLine());
+        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+        string input = (Console.ReadLine());
+        string dateFormat = "MM'.'dd'.'yyyy";
+        CultureInfo provider = CultureInfo.InvariantCulture;
+
+        DateTime birthDate = DateTime.ParseExact(input, dateFormat, provider);
 
         /// Check whether the birthday is passed in current year - return true or false
         bool isBirthdayPassed = DateTime.Now.Month > birthDate.Month ||
