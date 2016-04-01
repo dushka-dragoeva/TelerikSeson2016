@@ -15,6 +15,6 @@ public class Program
         /// Compare the absolute value of the difference between tow numbers 
         /// with the value for precision
         bool areEqual = Math.Abs(firstNumber - secondNumber) < eps;
-        Console.WriteLine(areEqual);
+        Console.WriteLine(areEqual.ToString().ToLower());
     }
 }
