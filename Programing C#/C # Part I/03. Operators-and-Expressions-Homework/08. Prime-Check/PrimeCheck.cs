@@ -16,7 +16,7 @@ public class PrimeCheck
         }
         else
         {
-            for (int i = 2; i < Math.Sqrt(number); i++)
+            for (int i = 2; i <= Math.Sqrt(number); i++)
             {
                 if (number % i == 0)
                 {
@@ -25,6 +25,7 @@ public class PrimeCheck
             }
         }
 
-        Console.WriteLine(isPrime);
+        Console.WriteLine(isPrime.ToString().ToLower());
     }
 }
+
