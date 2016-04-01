@@ -16,6 +16,6 @@ public class Rectangles
         double area = witht * height;
 
         string outputFormat = "{0:0.00} {1:0.00}";
-        Console.WriteLine(outputFormat, perimeter, area);
+        Console.WriteLine(outputFormat, area, perimeter);
     }
 }

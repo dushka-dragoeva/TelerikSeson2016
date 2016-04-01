@@ -15,6 +15,6 @@ public class DivideBySevenAndFive
         bool isDevidable = number % 5 == 0 && number % 7 == 0;
         string outputFormat = "{0} {1}";
 
-        Console.WriteLine(outputFormat, isDevidable, number);
+        Console.WriteLine(outputFormat, isDevidable.ToString().ToLower(), number);
     }
 }
