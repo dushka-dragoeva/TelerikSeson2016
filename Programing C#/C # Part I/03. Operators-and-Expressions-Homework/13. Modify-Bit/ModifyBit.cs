@@ -8,21 +8,19 @@ public class ModifyBit
 {
     public static void Main()
     {
-        long numberN = long.Parse(Console.ReadLine());
+        uint numberN = uint.Parse(Console.ReadLine());
         int positionP = int.Parse(Console.ReadLine());
         byte bitValueV = byte.Parse(Console.ReadLine());
-        long mask;
-        long numberAndMask;
+        uint mask = 1;
+        uint numberAndMask;
 
         if (bitValueV == 0)
         {
-            mask = ~(1 << positionP);
-            numberAndMask = numberN & mask;
+            numberAndMask = ~(mask << positionP) & numberN;
         }
         else
         {
-            mask = 1 << positionP;
-            numberAndMask = numberN | mask;
+            numberAndMask = numberN | mask << positionP; 
         }
 
         Console.WriteLine(numberAndMask);
