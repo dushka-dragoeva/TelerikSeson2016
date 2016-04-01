@@ -24,11 +24,24 @@ public class PointCircleRectangle
         double rightX = LeftX + Width;
         double bottomY = TopY - Height;
 
-        double distance = Math.Sqrt(Math.Pow(pointX - CenterX, 2) + Math.Pow(pointY - CenterY, 2));
-        bool isWithinCircle = distance <= Radius;
+        bool isWithinCircle = Math.Pow(pointX - CenterX, 2) + Math.Pow(pointY - CenterY, 2) <= Radius * Radius;
         bool isOutOfRectangle = pointX < LeftX || rightX < pointX || pointY < bottomY || pointY > TopY;
 
-        var output = isWithinCircle && isOutOfRectangle ? "yes" : "no";
+        string output = "outside circle outside rectangle";
+
+        if (isWithinCircle && isOutOfRectangle)
+        {
+            output = "inside circle outside rectangle";
+        }
+        else if ((isWithinCircle && !isOutOfRectangle))
+        {
+            output = "inside circle inside rectangle";
+        }
+
+        else if (!isWithinCircle && !isOutOfRectangle)
+        {
+            output = "outside circle inside rectangle";
+        }
         Console.WriteLine(output);
     }
 }
