@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Min-Max-Sum-Average-Of-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Print -A-Deck", "04. Print -A-Deck\04. Print -A-Deck.csproj", "{1ECD7DCB-6F64-4AB0-AF68-C1CEE080EBC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Calculate!", "05. Calculate!\05. Calculate!.csproj", "{86D41D49-9CC3-494A-9947-2B1517F033BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1ECD7DCB-6F64-4AB0-AF68-C1CEE080EBC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1ECD7DCB-6F64-4AB0-AF68-C1CEE080EBC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1ECD7DCB-6F64-4AB0-AF68-C1CEE080EBC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86D41D49-9CC3-494A-9947-2B1517F033BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D41D49-9CC3-494A-9947-2B1517F033BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86D41D49-9CC3-494A-9947-2B1517F033BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86D41D49-9CC3-494A-9947-2B1517F033BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
