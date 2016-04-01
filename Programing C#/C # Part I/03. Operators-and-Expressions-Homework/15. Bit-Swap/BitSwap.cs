@@ -6,14 +6,14 @@ public class BitSwap
 {
     public static void Main()
     {
-        long numberN = long.Parse(Console.ReadLine());
+        uint numberN = uint.Parse(Console.ReadLine());
         int firstStartPositionP = int.Parse(Console.ReadLine());
         int secondStartPositionQ = int.Parse(Console.ReadLine());
         int lengthK = int.Parse(Console.ReadLine());
 
-        long firstBit = 0;
-        long secondBit = 0;
-        long newNumber = 0;
+        uint firstBit = 0;
+        uint secondBit = 0;
+        uint newNumber = 0;
         newNumber = numberN;
         for (int i = 0; i < lengthK; i++)
         {
@@ -26,28 +26,26 @@ public class BitSwap
         Console.WriteLine(newNumber);
     }
 
-    public static long GetBit(long number, int position)
+    public static uint GetBit(uint number, int position)
     {
-        long mask = 1 << position;
-        long numberAndMask = number & mask;
-        long bit = numberAndMask >> position;
+        uint mask = 1;
+        uint numberAndMask = number & mask << position;
+        uint bit = numberAndMask >> position;
         return bit;
     }
 
-    public static long ModifyBit(long number, int position, long bit)
+    public static uint ModifyBit(uint number, int position, uint bit)
     {
-        long mask;
-        long newNumber;
+        uint mask =1;
+        uint newNumber;
 
         if (bit == 0)
         {
-            mask = ~(1 << position);
-            newNumber = number & mask;
+            newNumber = number & ~(mask << position);
         }
         else
         {
-            mask = 1 << position;
-            newNumber = number | mask;
+            newNumber = number | mask << position;
         }
 
         return newNumber;

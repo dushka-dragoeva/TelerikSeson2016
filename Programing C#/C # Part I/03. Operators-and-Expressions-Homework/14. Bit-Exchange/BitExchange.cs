@@ -10,11 +10,11 @@ public class BitExchange
 
     public static void Main()
     {
-        long number = long.Parse(Console.ReadLine());
+        uint number = uint.Parse(Console.ReadLine());
 
-        long firstBit = 0;
-        long secondBit = 0;
-        long newNumber = 0;
+        uint firstBit = 0;
+        uint secondBit = 0;
+        uint newNumber = 0;
         newNumber = number;
         for (int i = 0; i < Length; i++)
         {
@@ -27,28 +27,28 @@ public class BitExchange
         Console.WriteLine(newNumber);
     }
 
-    public static long GetBit(long number, int position)
+    public static uint GetBit(uint number, int position)
     {
-        long mask = 1 << position;
-        long numberAndMask = number & mask;
-        long bit = numberAndMask >> position;
+        uint mask = 1;
+        uint numberAndMask = mask << position & number;
+        uint bit = numberAndMask >> position;
         return bit;
     }
 
-    public static long ModifyBit(long number, int position, long bit)
+    public static uint ModifyBit(uint number, int position, uint bit)
     {
-        long mask;
-        long newNumber;
+        uint mask = 1;
+        uint newNumber;
 
         if (bit == 0)
         {
-            mask = ~(1 << position);
-            newNumber = number & mask;
+            mask = 1;
+            newNumber = number & ~(mask << position);
         }
         else
         {
-            mask = 1 << position;
-            newNumber = number | mask;
+            mask = 1;
+            newNumber = number | mask << position;
         }
 
         return newNumber;
