@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{86D41D49-9CC3-494A-9947-2B1517F033BC}</ProjectGuid>
+    <ProjectGuid>{D4738138-DF44-452C-8A86-F3C165A244E1}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_05.Calculate_</RootNamespace>
-    <AssemblyName>_05.Calculate_</AssemblyName>
+    <RootNamespace>_11.Binary_To_Decimal</RootNamespace>
+    <AssemblyName>_11.Binary_To_Decimal</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculateFactorial.cs" />
+    <Compile Include="BinaryToDecimal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

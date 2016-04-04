@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{86D41D49-9CC3-494A-9947-2B1517F033BC}</ProjectGuid>
+    <ProjectGuid>{C726AD68-0B3E-410E-8F3F-B24A9EB3392C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_05.Calculate_</RootNamespace>
-    <AssemblyName>_05.Calculate_</AssemblyName>
+    <RootNamespace>_14.Hex_To_Decimal</RootNamespace>
+    <AssemblyName>_14.Hex_To_Decimal</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculateFactorial.cs" />
+    <Compile Include="HexToDecimal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
