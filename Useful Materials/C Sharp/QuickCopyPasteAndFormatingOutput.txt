@@ -1,0 +1,25 @@
+Console.OutputEncoding = Encoding.UTF8;
+
+using System.Globalization;
+using System.Threading;
+…
+Thread.CurrentThread.CurrentCulture =
+  CultureInfo.InvariantCulture;
+  
+int a = int.Parse(Console.ReadLine());
+double b = double.Parse(Console.ReadLine());
+
+
+Formating Output
+{index[,alignment][:formatString]}
+-number => left alignment
++number => right alignment
+
+
+    [курс] Домашно TOPIC - N задача
+
+             Например:
+
+         [C#] Домашно Conditional Statements - 1 задача
+		 
+		 

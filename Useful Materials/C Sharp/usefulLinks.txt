@@ -1,0 +1,7 @@
+Bitwise Hacks
+
+http://www.catonmat.net/blog/low-level-bit-hacks-you-absolutely-must-know/
+
+Formating Output
+http://blog.stevex.net/string-formatting-in-csharp/
+
