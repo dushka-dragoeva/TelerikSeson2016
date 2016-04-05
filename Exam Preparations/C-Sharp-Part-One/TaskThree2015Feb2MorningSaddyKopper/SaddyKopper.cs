@@ -1,62 +1,55 @@
 ﻿using System;
-using System.Linq;
 using System.Numerics;
 
 public class SaddyKopper
 {
-
-    public BigInteger Transformation(BigInteger number, SaddyKopper curr)
+    public BigInteger Transformation(string number, SaddyKopper curr)
     {
         BigInteger product = 1;
         int sum = 0;
-        BigInteger num = number / 10;
-
+       string num = number.Substring(0, number.Length -1); ;
+        
 
         for (int i = 0; i < number.ToString().Length - 1; i++)
         {
             sum = curr.SumOfDigitsAtEvenPosition(num);
             product *= sum;
-            num = num / 10;
-        //  sum = 0;
+            num = number.Substring(0, num.Length - 1);
         }
 
         return product;
     }
 
-    public int SumOfDigitsAtEvenPosition(BigInteger number)
+    public int SumOfDigitsAtEvenPosition(string number)
     {
         int sum = 0;
-        int[] numberAsArray = Array.ConvertAll(number.ToString().ToArray(), x => (int)x - 48);
 
-        for (int i = 0; i < numberAsArray.Length; i=i+2)
+        for (int i = 0; i < number.Length; i = i + 2)
         {
-
-            sum += numberAsArray[i];
-            //  if (i % 2 == 0)
-            //  {
-            //      sum += numberAsArray[i];
-            // }
+            sum += ((int)number[i] - 48);
         }
 
         return sum;
     }
     public static void Main()
     {
-        BigInteger numberM = BigInteger.Parse(Console.ReadLine());
-
+        string numberM = Console.ReadLine();
         SaddyKopper current = new SaddyKopper();
         BigInteger product = 1;
 
-        int transformers = 0;
+        int transformers = 1;
 
-
-        while (numberM.ToString().Length > 1 && transformers < 10)
+        for (int i = 0; i < 10; i++)
         {
-            product = current.Transformation(numberM, current);
-            numberM = product;
-            transformers++;
-        }
+            if (numberM.Length == 1)
+            {
+                break;
+            }
 
+            product = current.Transformation(numberM, current);
+            numberM = product.ToString();
+            transformers = i+1;
+        }
 
         if (transformers < 10)
         {
@@ -70,6 +63,3 @@ public class SaddyKopper
         }
     }
 }
-
-
-
