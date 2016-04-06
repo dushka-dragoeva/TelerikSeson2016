@@ -1,13 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskOne2015Feb2MorningPrinting", "TaskOne2015Feb2Morning\TaskOne2015Feb2MorningPrinting.csproj", "{21518F30-D8CB-4482-872C-A943ACA46129}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. 2015Feb02Morning-Printing", "01. 2015Feb02Morning-Printing\01. 2015Feb02Morning-Printing.csproj", "{21518F30-D8CB-4482-872C-A943ACA46129}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskThree2015Feb2MorningSaddyKopper", "TaskThree2015Feb2MorningSaddyKopper\TaskThree2015Feb2MorningSaddyKopper.csproj", "{4D9ADA49-C255-400F-9F66-E273FE50C3C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. 2015Feb02Morning-TextToNumber", "02. 2015Feb02Morning-TextToNumber\02. 2015Feb02Morning-TextToNumber.csproj", "{3D4427DF-3E14-4098-849F-B3FC899E2F29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTow2015Feb2MorningTextToNumber", "TaskTow2015Feb2MorningTextToNumber\TaskTow2015Feb2MorningTextToNumber.csproj", "{3D4427DF-3E14-4098-849F-B3FC899E2F29}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. 2015Feb02Morning-SaddyKopper", "03. 2015Feb02Morning-SaddyKopper\03. 2015Feb02Morning-SaddyKopper.csproj", "{4D9ADA49-C255-400F-9F66-E273FE50C3C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. 2015Feb02Morning-Cube", "04. 2015Feb02Morning-Cube\04. 2015Feb02Morning-Cube.csproj", "{E69A0AD7-BAF8-4567-AB85-341D9B6A897E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. 2015Feb02Morning-BitsToBits", "05. 2015Feb02Morning-BitsToBits\05. 2015Feb02Morning-BitsToBits.csproj", "{E64980C8-71DD-44DC-AEDC-D69B33F6F43D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +23,22 @@ Global
 		{21518F30-D8CB-4482-872C-A943ACA46129}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21518F30-D8CB-4482-872C-A943ACA46129}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21518F30-D8CB-4482-872C-A943ACA46129}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D9ADA49-C255-400F-9F66-E273FE50C3C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D9ADA49-C255-400F-9F66-E273FE50C3C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D9ADA49-C255-400F-9F66-E273FE50C3C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D9ADA49-C255-400F-9F66-E273FE50C3C7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3D4427DF-3E14-4098-849F-B3FC899E2F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3D4427DF-3E14-4098-849F-B3FC899E2F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D4427DF-3E14-4098-849F-B3FC899E2F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D4427DF-3E14-4098-849F-B3FC899E2F29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D9ADA49-C255-400F-9F66-E273FE50C3C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D9ADA49-C255-400F-9F66-E273FE50C3C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D9ADA49-C255-400F-9F66-E273FE50C3C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D9ADA49-C255-400F-9F66-E273FE50C3C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E69A0AD7-BAF8-4567-AB85-341D9B6A897E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69A0AD7-BAF8-4567-AB85-341D9B6A897E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69A0AD7-BAF8-4567-AB85-341D9B6A897E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69A0AD7-BAF8-4567-AB85-341D9B6A897E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E64980C8-71DD-44DC-AEDC-D69B33F6F43D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E64980C8-71DD-44DC-AEDC-D69B33F6F43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E64980C8-71DD-44DC-AEDC-D69B33F6F43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E64980C8-71DD-44DC-AEDC-D69B33F6F43D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
