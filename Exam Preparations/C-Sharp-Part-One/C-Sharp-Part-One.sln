@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. 2015Feb02Morning-Printing", "01. 2015Feb02Morning-Printing\01. 2015Feb02Morning-Printing.csproj", "{21518F30-D8CB-4482-872C-A943ACA46129}"
 EndProject
@@ -17,13 +17,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. 2015Feb02Evening-Money"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. 2015Feb02Evening-EncodingSum", "02. 2015Feb02Evening-EncodingSum\02. 2015Feb02Evening-EncodingSum.csproj", "{9544605B-24C7-45A4-BB65-7DBB907E9223}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. 2015Feb02Evening- Maslan", "03. 2015Feb02Evening-01. 2015Feb02Evening- Maslan\03. 2015Feb02Evening- Maslan.csproj", "{1EBB2DA6-6F78-4037-8504-BB4496A0B09D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. 2015Feb02Evening-SequenceOfBits", "05. 2015Feb02Evening-SequenceOfBits\05. 2015Feb02Evening-SequenceOfBits.csproj", "{BB74C529-AC7C-41E5-9CDC-67D1E506AE02}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. 2015Feb02Evening-CubeThreeD", "04. 2015Feb02Evening-CubeThreeD\04. 2015Feb02Evening-CubeThreeD.csproj", "{578C19BC-BAF4-4A7E-9870-2E32C7B1D1C1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. 2015Feb03Morning-PersianRugs", "04. 2015Feb03Morning-PersianRugs\04. 2015Feb03Morning-PersianRugs.csproj", "{4706CB68-32C8-48C9-8106-4EDB5E6DD9F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. 2015Feb02Evening- Maslan", "03. 2015Feb02Evening- Maslan\03. 2015Feb02Evening- Maslan.csproj", "{1EBB2DA6-6F78-4037-8504-BB4496A0B09D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,10 +59,6 @@ Global
 		{9544605B-24C7-45A4-BB65-7DBB907E9223}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9544605B-24C7-45A4-BB65-7DBB907E9223}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9544605B-24C7-45A4-BB65-7DBB907E9223}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1EBB2DA6-6F78-4037-8504-BB4496A0B09D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1EBB2DA6-6F78-4037-8504-BB4496A0B09D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1EBB2DA6-6F78-4037-8504-BB4496A0B09D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1EBB2DA6-6F78-4037-8504-BB4496A0B09D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BB74C529-AC7C-41E5-9CDC-67D1E506AE02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BB74C529-AC7C-41E5-9CDC-67D1E506AE02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB74C529-AC7C-41E5-9CDC-67D1E506AE02}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -75,6 +71,10 @@ Global
 		{4706CB68-32C8-48C9-8106-4EDB5E6DD9F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4706CB68-32C8-48C9-8106-4EDB5E6DD9F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4706CB68-32C8-48C9-8106-4EDB5E6DD9F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EBB2DA6-6F78-4037-8504-BB4496A0B09D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EBB2DA6-6F78-4037-8504-BB4496A0B09D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EBB2DA6-6F78-4037-8504-BB4496A0B09D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EBB2DA6-6F78-4037-8504-BB4496A0B09D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
