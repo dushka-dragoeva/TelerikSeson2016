@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using System.Threading;
 
-public class Program
+public class FallingRocks
 {
     public const string RockType = "!@#$%^&*()+.;";
+    public const int Hight = 25;
+    public const int Width = 39;
+    public const int SkyHight = 7;
+
     public struct Rock
     {
         public int x;
@@ -16,7 +20,7 @@ public class Program
     public struct Dwarf
     {
         public int x;
-        public int y; // TODO = bottom of the field 38
+        public int y;
         public string face;
         public ConsoleColor color;
     }
@@ -28,20 +32,20 @@ public class Program
         Console.Write(symbol);
     }
 
-    public static void PrintStringOnPosition(int x, int y, string symbol, ConsoleColor color = ConsoleColor.Red)
+    public static void PrintStringOnPosition(int x, int y, string text, ConsoleColor color = ConsoleColor.Red)
     {
         Console.SetCursorPosition(x, y);
         Console.ForegroundColor = color;
-        Console.Write(symbol);
+        Console.Write(text);
     }
 
     public static void Main()
     {
-        int playfieldHignt = 40;
-        int playgrowndWidth = 49;
-        Console.BufferHeight = Console.WindowHeight = 40;
-        Console.BufferWidth = Console.WindowWidth = 49;
-        Console.BackgroundColor = ConsoleColor.Yellow;
+        int playfieldHignt = Hight;
+        int playgrowndWidth = Width;
+        Console.BufferHeight = Console.WindowHeight = Hight;
+        Console.BufferWidth = Console.WindowWidth = Width;
+        Console.BackgroundColor = ConsoleColor.Gray;
 
         Dwarf gogo = new Dwarf();
         gogo.x = Console.WindowWidth / 2 - 2;
@@ -53,31 +57,60 @@ public class Program
 
         List<Rock> rocks = new List<Rock>();
 
+        int level = 1;
+        int health = 100;
+        int points = 0;
+        int bonusHealth = 10;
+        int nextLevelPoints = 1000;
+        int bonusHealthPoints = 200;
 
-        // ^, @, *, &, +, %, $, #, !, ., ;,
+        int rockDensity = Width / 2;
+        int rockDensityLevelUp = (int)(1.1 * rockDensity);
 
-        // ! @ # $ % ^ & * ( )  + . ;
 
+        int middlewidth = Width / 2;
 
         while (true)
         {
+            if (health == 0)
+            {
+                Console.WriteLine("Game Over");
+                Console.ReadKey();
+                break;
+            }
             {
                 Rock newRock = new Rock();
-                newRock.color = ConsoleColor.Black;
-                newRock.y = 0;
+                ConsoleColor currentRockColor = (ConsoleColor)randomGerator.Next(Enum.GetNames(typeof(ConsoleColor)).Length);
+
+                while (true)
+                {
+                    if (currentRockColor != Console.BackgroundColor)
+                    {
+                        newRock.color = currentRockColor;
+                        break;
+                    }
+                    else
+                    {
+                        currentRockColor = (ConsoleColor)randomGerator.Next(Enum.GetNames(typeof(ConsoleColor)).Length);
+                    }
+                }
+                newRock.y = SkyHight;
                 newRock.x = randomGerator.Next(0, playgrowndWidth);
                 newRock.symbol = RockType[randomGerator.Next(RockType.Length)];
                 rocks.Add(newRock);
             }
-            // Move our car / dwarf(key pressed)
+
+            // Move dwarf(key pressed)
             if (Console.KeyAvailable)
             {
                 ConsoleKeyInfo pressedKey = Console.ReadKey(true);
+
                 // Clear buffer if key is pressed more than one before redrawing
                 while (Console.KeyAvailable)
                 {
                     Console.ReadKey(true);
                 }
+
                 if (pressedKey.Key == ConsoleKey.LeftArrow)
                 {
                     if (gogo.x - 1 > 0)
@@ -94,13 +127,11 @@ public class Program
                 }
             }
 
-            // Move Cars/ FallingRocks   
-
-
+            // Move FallingRocks   
             for (int i = 0; i < rocks.Count; i++)
             {
                 Rock oldRock = rocks[i];
-                if (rocks[i].y < playfieldHignt-1)
+                if (rocks[i].y < playfieldHignt - 1)
                 {
                     Rock newRock = new Rock();
                     newRock.x = oldRock.x;
@@ -116,18 +147,54 @@ public class Program
                 }
             }
 
-            //Check for colision with car / dwarf
+            //Check for colision with rock
+
+            foreach (var rock in rocks)
+            {
+                if (rock.y == playfieldHignt - 1)
+                {
+                    for (int i = 0; i < gogo.face.Length; i++)
+                 
+                    {
+                        if (gogo.x+i == rock.x)
+                        {
+                            health -= 5;
+                        }
+
+                        else
+                        {
+                            points += 5;
+                        }
+                }
+                }
+            }
+
+
 
             // Clear Console
             Console.Clear();
 
             // ReDraw playfield
             PrintStringOnPosition(gogo.x, gogo.y, gogo.face, gogo.color);
+
             foreach (var rock in rocks)
             {
                 PrintOnPosition(rock.x, rock.y, rock.symbol, rock.color);
             }
+
             // Drow info - Result
+            var size = Console.CursorSize = 25;
+
+            string title = "FOLLING ROCKS";
+            string currentLevel = string.Format("LEVEL {0}", level);
+            string currentHealth = string.Format("HEALTH {0}%", health);
+            string currentPoints = string.Format("POINTS {0}", points);
+
+            PrintStringOnPosition((Width - title.Length) / 2, 1, title, ConsoleColor.DarkMagenta);
+            PrintStringOnPosition((Width - currentLevel.Length) / 2, 3, currentLevel, ConsoleColor.DarkMagenta);
+            PrintStringOnPosition(5, 5, currentHealth);
+            PrintStringOnPosition(Width - currentPoints.Length - 6, 5, currentPoints);
+            PrintStringOnPosition(0, SkyHight, new string('`', Width), ConsoleColor.Blue);
 
             //  Slow down  program
             Thread.Sleep(150);
