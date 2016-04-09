@@ -8,10 +8,10 @@ public class FibonacciNumbers
     {
         int length = int.Parse(Console.ReadLine());
 
-        int current;
-        int previous = 1;
-        int beforePrevious = 0;
-       
+        long current;
+        long previous = 1;
+        long beforePrevious = 0;
+
         for (int i = 0; i < length; i++)
         {
             if (i == 0)
@@ -29,7 +29,15 @@ public class FibonacciNumbers
                 previous = current;
             }
 
-            Console.WriteLine(current);
+            if (i < length - 1)
+            {
+                Console.Write("{0}, ", current);
+            }
+            else
+            {
+                Console.Write(current);
+            }
+
         }
     }
 }
