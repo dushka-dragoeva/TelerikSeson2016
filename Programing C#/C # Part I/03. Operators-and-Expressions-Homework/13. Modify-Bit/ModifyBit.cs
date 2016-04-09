@@ -8,11 +8,11 @@ public class ModifyBit
 {
     public static void Main()
     {
-        uint numberN = uint.Parse(Console.ReadLine());
+        ulong numberN = ulong.Parse(Console.ReadLine());
         int positionP = int.Parse(Console.ReadLine());
         byte bitValueV = byte.Parse(Console.ReadLine());
-        uint mask = 1;
-        uint numberAndMask;
+        ulong mask = 1;
+        ulong numberAndMask;
 
         if (bitValueV == 0)
         {
