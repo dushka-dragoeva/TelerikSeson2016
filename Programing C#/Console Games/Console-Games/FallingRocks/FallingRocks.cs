@@ -153,10 +153,13 @@ public class FallingRocks
                         {
                             if (rock.Symbol == '@' && health <= MaxHealth - bonusHealth)
                             {
+                                Console.Beep(1000,150);
+                               
                                 health += bonusHealth;
                             }
                             else
                             {
+                                Console.Beep(2200,100);
                                 health -= 5;
                             }
                         }
