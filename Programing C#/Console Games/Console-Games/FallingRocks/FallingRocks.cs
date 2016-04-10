@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Media;
 using System.Threading;
 
 public class FallingRocks
@@ -47,6 +48,11 @@ public class FallingRocks
 
     public static void Main()
     {
+        using (SoundPlayer TextMusic = new SoundPlayer(@"../../Music/Tension-music-loop-114-bpm.wav"))
+        {
+            TextMusic.PlayLooping();
+        }
+
         int playfieldHignt = Hight;
         int playgrowndWidth = Width;
         Console.BufferHeight = Console.WindowHeight = Hight;
@@ -153,13 +159,13 @@ public class FallingRocks
                         {
                             if (rock.Symbol == '@' && health <= MaxHealth - bonusHealth)
                             {
-                                Console.Beep(1000,150);
-                               
+                                Console.Beep(1000, 150);
+
                                 health += bonusHealth;
                             }
                             else
                             {
-                                Console.Beep(2200,100);
+                                Console.Beep(2200, 100);
                                 health -= 5;
                             }
                         }
