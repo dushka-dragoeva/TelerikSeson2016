@@ -5,26 +5,15 @@ using System.Threading;
 public class FallingRocks
 {
     public const string RockType = "!@#$%^&*()+.;";
-    public const int Hight = 25;
+    public const int Hight = 35;
     public const int Width = 39;
     public const int SkyHight = 7;
+    private const int MaxPoints = 6000;
+    private const int MaxHealth = 200;
+    private const int Acceleration = 10;
+    private const int LevelUpPoints = 1000;
 
-    public struct Rock
-    {
-        public int x;
-        public int y;
-        public char symbol;
-        public ConsoleColor color;
-    }
-
-    public struct Dwarf
-    {
-        public int x;
-        public int y;
-        public string face;
-        public ConsoleColor color;
-    }
-
+    /// method, that print rock on specific position
     public static void PrintOnPosition(int x, int y, char symbol, ConsoleColor color = ConsoleColor.Red)
     {
         Console.SetCursorPosition(x, y);
@@ -32,11 +21,28 @@ public class FallingRocks
         Console.Write(symbol);
     }
 
+    /// method, that any string rock on specific position
     public static void PrintStringOnPosition(int x, int y, string text, ConsoleColor color = ConsoleColor.Red)
     {
         Console.SetCursorPosition(x, y);
         Console.ForegroundColor = color;
         Console.Write(text);
+    }
+
+    public struct Rock
+    {
+        public int X;
+        public int Y;
+        public char Symbol;
+        public ConsoleColor Color;
+    }
+
+    public struct Dwarf
+    {
+        public int X;
+        public int Y;
+        public string Face;
+        public ConsoleColor Color;
     }
 
     public static void Main()
@@ -45,13 +51,13 @@ public class FallingRocks
         int playgrowndWidth = Width;
         Console.BufferHeight = Console.WindowHeight = Hight;
         Console.BufferWidth = Console.WindowWidth = Width;
-        Console.BackgroundColor = ConsoleColor.Gray;
+        Console.BackgroundColor = ConsoleColor.Yellow;
 
         Dwarf gogo = new Dwarf();
-        gogo.x = Console.WindowWidth / 2 - 2;
-        gogo.y = Console.WindowHeight - 1;
-        gogo.color = ConsoleColor.DarkMagenta;
-        gogo.face = "(0)";
+        gogo.X = (Console.WindowWidth / 2) - 2;
+        gogo.Y = Console.WindowHeight - 1;
+        gogo.Color = ConsoleColor.DarkMagenta;
+        gogo.Face = "(0)";
 
         Random randomGerator = new Random();
 
@@ -61,32 +67,20 @@ public class FallingRocks
         int health = 100;
         int points = 0;
         int bonusHealth = 10;
-        int nextLevelPoints = 1000;
-        int bonusHealthPoints = 200;
-
-        int rockDensity = Width / 2;
-        int rockDensityLevelUp = (int)(1.1 * rockDensity);
-
-
-        int middlewidth = Width / 2;
+        int speedUp = 0;
 
         while (true)
         {
-            if (health == 0)
-            {
-                Console.WriteLine("Game Over");
-                Console.ReadKey();
-                break;
-            }
             {
                 Rock newRock = new Rock();
-                ConsoleColor currentRockColor = (ConsoleColor)randomGerator.Next(Enum.GetNames(typeof(ConsoleColor)).Length);
+                ConsoleColor currentRockColor =
+                    (ConsoleColor)randomGerator.Next(Enum.GetNames(typeof(ConsoleColor)).Length);
 
                 while (true)
                 {
                     if (currentRockColor != Console.BackgroundColor)
                     {
-                        newRock.color = currentRockColor;
+                        newRock.Color = currentRockColor;
                         break;
                     }
                     else
@@ -94,18 +88,19 @@ public class FallingRocks
                         currentRockColor = (ConsoleColor)randomGerator.Next(Enum.GetNames(typeof(ConsoleColor)).Length);
                     }
                 }
-                newRock.y = SkyHight;
-                newRock.x = randomGerator.Next(0, playgrowndWidth);
-                newRock.symbol = RockType[randomGerator.Next(RockType.Length)];
+
+                newRock.Y = SkyHight;
+                newRock.X = randomGerator.Next(0, playgrowndWidth);
+                newRock.Symbol = RockType[randomGerator.Next(RockType.Length)];
                 rocks.Add(newRock);
             }
 
-            // Move dwarf(key pressed)
+            /// Move dwarf(key pressed)
             if (Console.KeyAvailable)
             {
                 ConsoleKeyInfo pressedKey = Console.ReadKey(true);
 
-                // Clear buffer if key is pressed more than one before redrawing
+                /// Clear buffer if key is pressed more than one before redrawing
                 while (Console.KeyAvailable)
                 {
                     Console.ReadKey(true);
@@ -113,31 +108,31 @@ public class FallingRocks
 
                 if (pressedKey.Key == ConsoleKey.LeftArrow)
                 {
-                    if (gogo.x - 1 > 0)
+                    if (gogo.X - 1 > 0)
                     {
-                        gogo.x = gogo.x - 1;
+                        gogo.X = gogo.X - 1;
                     }
                 }
                 else if (pressedKey.Key == ConsoleKey.RightArrow)
                 {
-                    if (gogo.x + 1 < playgrowndWidth - gogo.face.Length)
+                    if (gogo.X + 1 < playgrowndWidth - gogo.Face.Length)
                     {
-                        gogo.x = gogo.x + 1;
+                        gogo.X = gogo.X + 1;
                     }
                 }
             }
 
-            // Move FallingRocks   
+            /// Move FallingRocks   
             for (int i = 0; i < rocks.Count; i++)
             {
                 Rock oldRock = rocks[i];
-                if (rocks[i].y < playfieldHignt - 1)
+                if (rocks[i].Y < playfieldHignt - 1)
                 {
                     Rock newRock = new Rock();
-                    newRock.x = oldRock.x;
-                    newRock.y = oldRock.y + 1;
-                    newRock.symbol = oldRock.symbol;
-                    newRock.color = oldRock.color;
+                    newRock.X = oldRock.X;
+                    newRock.Y = oldRock.Y + 1;
+                    newRock.Symbol = oldRock.Symbol;
+                    newRock.Color = oldRock.Color;
                     rocks.Remove(oldRock);
                     rocks.Add(newRock);
                 }
@@ -147,59 +142,120 @@ public class FallingRocks
                 }
             }
 
-            //Check for colision with rock
-
+            /// Check for colision with rock
             foreach (var rock in rocks)
             {
-                if (rock.y == playfieldHignt - 1)
+                if (rock.Y == playfieldHignt - 1)
                 {
-                    for (int i = 0; i < gogo.face.Length; i++)
-                 
+                    for (int i = 0; i < gogo.Face.Length; i++)
                     {
-                        if (gogo.x+i == rock.x)
+                        if (gogo.X + i == rock.X)
                         {
-                            health -= 5;
+                            if (rock.Symbol == '@' && health <= MaxHealth - bonusHealth)
+                            {
+                                health += bonusHealth;
+                            }
+                            else
+                            {
+                                health -= 5;
+                            }
                         }
-
                         else
                         {
-                            points += 5;
+                            points += 2;
                         }
-                }
+
+                        if (points == LevelUpPoints * level)
+                        {
+                            level++;
+                            speedUp += Acceleration;
+
+                            if (health <= MaxHealth - 100)
+                            {
+                                health += 100;
+                            }
+                            else
+                            {
+                                health = MaxHealth;
+                            }
+                        }
+                    }
                 }
             }
 
-
-
-            // Clear Console
+            /// Clear Console
             Console.Clear();
 
-            // ReDraw playfield
-            PrintStringOnPosition(gogo.x, gogo.y, gogo.face, gogo.color);
-
-            foreach (var rock in rocks)
+            /// check if game is end
+            if (health > 0 && points < MaxPoints)
             {
-                PrintOnPosition(rock.x, rock.y, rock.symbol, rock.color);
+                /// REDrow info - Result
+                string title = "FOLLING ROCKS";
+                string currentLevel = string.Format("LEVEL {0}", level);
+                string currentHealth = string.Format("HEALTH {0}%", health);
+                string currentPoints = string.Format("POINTS {0}", points);
+
+                PrintStringOnPosition((Width - title.Length) / 2, 1, title, ConsoleColor.DarkMagenta);
+                PrintStringOnPosition((Width - currentLevel.Length) / 2, 3, currentLevel, ConsoleColor.DarkMagenta);
+                PrintStringOnPosition(5, 5, currentHealth);
+                PrintStringOnPosition(Width - currentPoints.Length - 6, 5, currentPoints);
+                PrintStringOnPosition(0, SkyHight, new string('`', Width), ConsoleColor.Blue);
+
+                /// ReDraw dwarf and rocks
+                PrintStringOnPosition(gogo.X, gogo.Y, gogo.Face, gogo.Color);
+
+                foreach (var rock in rocks)
+                {
+                    PrintOnPosition(rock.X, rock.Y, rock.Symbol, rock.Color);
+                }
+
+                /// Slow down  program
+                Thread.Sleep(150 + speedUp);
             }
+            else
+            {
+                /// Game is over
+                Console.BackgroundColor = ConsoleColor.Green;
+                Console.Clear();
+                ConsoleColor color = ConsoleColor.DarkGreen;
+                string gameOver = "END GAME";
+                string youLosе = "You Lose";
+                string youWon = "You Won";
+                string newGame = "Pres ENTER for New Game";
+                string endGame = "Press DEL for Exit";
 
-            // Drow info - Result
-            var size = Console.CursorSize = 25;
+                PrintStringOnPosition((Width - gameOver.Length) / 2, SkyHight - 5, gameOver, color);
 
-            string title = "FOLLING ROCKS";
-            string currentLevel = string.Format("LEVEL {0}", level);
-            string currentHealth = string.Format("HEALTH {0}%", health);
-            string currentPoints = string.Format("POINTS {0}", points);
+                if (health == 0)
+                {
+                    PrintStringOnPosition((Width - youLosе.Length) / 2, SkyHight - 4, youLosе, color);
+                }
+                else
+                {
+                    PrintStringOnPosition((Width - youWon.Length) / 2, SkyHight - 4, youWon, color);
+                }
 
-            PrintStringOnPosition((Width - title.Length) / 2, 1, title, ConsoleColor.DarkMagenta);
-            PrintStringOnPosition((Width - currentLevel.Length) / 2, 3, currentLevel, ConsoleColor.DarkMagenta);
-            PrintStringOnPosition(5, 5, currentHealth);
-            PrintStringOnPosition(Width - currentPoints.Length - 6, 5, currentPoints);
-            PrintStringOnPosition(0, SkyHight, new string('`', Width), ConsoleColor.Blue);
+                PrintStringOnPosition((Width - newGame.Length) / 2, SkyHight - 2, newGame, color);
+                PrintStringOnPosition((Width - endGame.Length) / 2, SkyHight - 1, endGame, color);
 
-            //  Slow down  program
-            Thread.Sleep(150);
+                string key = Console.ReadKey().Key.ToString();
 
+                if (key.ToUpper() == "ENTER")
+                {
+                    Console.Clear();
+                    Console.BackgroundColor = ConsoleColor.Yellow;
+                    health = 100;
+                    points = 0;
+                    speedUp = 0;
+                    level = 1;
+                    continue;
+                }
+                else if (key.ToUpper() == "DELETE")
+                {
+                    Environment.Exit(0);
+                    Environment.Exit(0);
+                }
+            }
         }
     }
 }
-
