@@ -6,13 +6,6 @@ using System;
 
 public class SelectionSort
 {
-    public static void Swap(int a, int b)
-    {
-        int temp = a;
-        a = b;
-        b = temp;
-    }
-
     public static void Main()
     {
         int length = int.Parse(Console.ReadLine());
