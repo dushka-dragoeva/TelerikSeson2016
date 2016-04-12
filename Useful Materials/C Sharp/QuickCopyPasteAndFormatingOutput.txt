@@ -23,3 +23,7 @@ Formating Output
          [C#] Домашно Conditional Statements - 1 задача
 		 
 		 
+int[] arr = input.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToArray();
+		 
