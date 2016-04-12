@@ -14,26 +14,42 @@ public class Maximalsum
             arr[i] = int.Parse(Console.ReadLine());
         }
 
-        int currentSum = arr[0];
-        int bestSum = 0;
+        int maxSum = int.MinValue;
+        int currentSum = 0;
+        int tmpStart = 0;
+        int end = length;
+        int start = 0;
 
-        for (int i = 1; i < length - 1; i++)
+        for (int j = 0; j != length; ++j)
         {
-            if (arr[i ] + arr[i+1] >= currentSum)
+            currentSum += arr[j];
+            end = j;
+
+            // if the sum is equal, choose the one with more elements
+            if (currentSum > maxSum || (currentSum == maxSum && (end - start) < (j - tmpStart)))
             {
-                currentSum += arr[i+1];
+                maxSum = currentSum;
+                start = tmpStart;
+                end = j;
             }
-            else
+
+            if (currentSum < 0)
             {
-                currentSum = arr[i+1];
-            }
-            
-            if (currentSum > bestSum)
-            {
-                bestSum = currentSum;
+                currentSum = 0;
+                tmpStart = j + 1;
             }
         }
 
-        Console.WriteLine(bestSum);
+        ////for (int i = 0; i < length - 1; i++)
+        ////{
+        ////    for (int j = i; j < length; j++)
+        ////    {
+        ////        currentSum += arr[j];
+        ////        maxSum = Math.Max(maxSum, currentSum);
+        ////    }
+        ////    currentSum = 0;
+        ////}
+        ////  Console.WriteLine(maxSum);
+        Console.WriteLine(maxSum);
     }
 }
