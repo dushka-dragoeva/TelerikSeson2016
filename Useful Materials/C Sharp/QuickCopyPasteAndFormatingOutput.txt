@@ -27,3 +27,40 @@ int[] arr = input.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyE
                 .Select(int.Parse)
                 .ToArray();
 		 
+int length = int.Parse(Console.ReadLine());
+        int[] arr = new int[length];
+
+        for (int i = 0; i < length; i++)
+        {
+            arr[i] = int.Parse(Console.ReadLine());
+        }
+
+		int number= Console.ReadLine();
+        string binary = new string('1', number);
+		Console.WriteLine(b);
+        Console.WriteLine(Convert.ToInt32(binary,2));
+		
+	
+
+		### Swap n bits
+		====================================
+using System;
+		
+class Program
+{
+    static void Main(string[] args)
+    {
+        uint number = uint.Parse(Console.ReadLine());
+        uint mask1 = (uint)7 << 3;
+        uint mask2 = (uint)7 << 24;
+        uint nunmberAndMask1 = (number & mask1) >> 3;
+        uint numberAndMask2 = (number & mask2) >> 24;
+        number = number & ~nunmberAndMask1;
+        number = number & ~numberAndMask2;
+
+        number = number | (nunmberAndMask1 << 24);
+        number = number | (numberAndMask2 << 3);
+
+        Console.WriteLine(number);
+    }
+}
