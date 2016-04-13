@@ -19,7 +19,7 @@ public class DigitAsWord
                 break;
             case "1": digitAsWord = "one";
                 break;
-            case "2": digitAsWord = "tow";
+            case "2": digitAsWord = "two";
                 break;
             case "3": digitAsWord = "three";
                 break;

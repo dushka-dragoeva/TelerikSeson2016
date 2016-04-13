@@ -20,7 +20,7 @@ public class Program
                 output = string.Format("{0}", int.Parse(inputValue) + 1);
                 break;
             case "real":
-                output = string.Format("{0}", double.Parse(inputValue) + 1);
+                output = string.Format("{0:F2}", double.Parse(inputValue) + 1);
                 break;
 
             case "text":

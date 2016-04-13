@@ -15,14 +15,20 @@ public class SortThreeNumbers
 
         double temp = 0;
 
-        if (firstNumber < secondNumber)
+        if (firstNumber < secondNumber && secondNumber > thirdNumber)
         {
             temp = firstNumber;
             firstNumber = secondNumber;
             secondNumber = temp;
-        }
 
-        if (firstNumber < thirdNumber)
+            if (secondNumber < thirdNumber)
+            {
+                temp = secondNumber;
+                secondNumber = thirdNumber;
+                thirdNumber = temp;
+            }
+        }
+        else if (firstNumber < thirdNumber)
         {
             temp = firstNumber;
             firstNumber = thirdNumber;
@@ -33,6 +39,12 @@ public class SortThreeNumbers
                 secondNumber = thirdNumber;
                 thirdNumber = temp;
             }
+        }
+        else if (secondNumber < thirdNumber)
+        {
+            temp = secondNumber;
+            secondNumber = thirdNumber;
+            thirdNumber = temp;
         }
 
         string outputFormat = "{0} {1} {2}";
