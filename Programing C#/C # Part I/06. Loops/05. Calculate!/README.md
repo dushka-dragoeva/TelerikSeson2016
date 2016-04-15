@@ -1,7 +1,7 @@
 # Calculate!
 
 ## Description
-Write a program that, for a given two integer numbers **N** and **x**, calculates the sum `S = 1 + 1!/x + 2!/x<sup>2</sup> + … + n!/x<sup>N</sup>`.
+Write a program that, for a given two integer numbers **N** and **x**, calculates the sum **S** = 1 + 1!/x + 2!/x<sup>2</sup> + … + N!/x<sup>N</sup>.
   - Use only one loop. Print the result with **5** digits after the decimal point.
 
 ## Input
@@ -13,7 +13,7 @@ Write a program that, for a given two integer numbers **N** and **x**, calculate
 
 ## Constraints
 - **N** will always be a valid integer between **2** and **20**, inclusive.
-- **X** will always be a valid floating-point number between **0** and **100**
+- **X** will always be a valid floating-point number between **-100** and **100**
 - **X** &#42; **N** will always be less than **50**
 - Time limit: **0.1s**
 - Memory limit: **16MB**
