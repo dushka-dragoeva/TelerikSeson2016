@@ -24,32 +24,6 @@ public class DecimalToHex
                 hexValue = reminder.ToString();
             }
 
-            ////switch (reminder)
-            ////{
-            ////    case 10:
-            ////        hexValue = "A";
-            ////        break;
-            ////    case 11:
-            ////        hexValue = "B";
-            ////        break;
-            ////    case 12:
-            ////        hexValue = "C";
-            ////        break;
-            ////    case 13:
-            ////        hexValue = "D";
-            ////        break;
-            ////    case 14:
-            ////        hexValue = "E";
-            ////        break;
-            ////    case 15:
-            ////        hexValue = "F";
-            ////        break;
-
-            ////    default:
-            ////        hexValue = reminder.ToString();
-            ////        break;
-            ////}
-
             hexNumber = hexNumber.Insert(0, hexValue);
             decimalNumber = decimalNumber / 16;
         }
