@@ -14,10 +14,10 @@ public class OddAndEvenProduct
             .Select(int.Parse)
             .ToArray();
 
-        int oddProduct = 1;
-        int evenProduct = 1;
+        long oddProduct = 1;
+        long evenProduct = 1;
 
-        for (int i = 0; i < numbers.Length; i = i + 2)
+        for (int i = 1; i <= numbers.Length; i = i + 2)
         {
             oddProduct *= numbers[i];
             if (i < numbers.Length - 1)

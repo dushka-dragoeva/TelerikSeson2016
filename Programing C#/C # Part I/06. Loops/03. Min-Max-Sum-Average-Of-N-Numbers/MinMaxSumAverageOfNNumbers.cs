@@ -10,18 +10,18 @@ public class MinMaxSumAverageOfNNumbers
 {
     public static void Main()
     {
-        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+       Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
         int length = int.Parse(Console.ReadLine());
 
-        int minNumber = int.MaxValue;
-        int maxNumber = int.MinValue;
-        int number = 0;
-        int sum = 0;
+        double minNumber = int.MaxValue;
+        double maxNumber = int.MinValue;
+        double number = 0;
+        double sum = 0;
 
         for (int i = 0; i < length; i++)
         {
-            number = int.Parse(Console.ReadLine());
+            number = double.Parse(Console.ReadLine());
 
             if (number < minNumber)
             {
@@ -36,11 +36,11 @@ public class MinMaxSumAverageOfNNumbers
             sum += number;
         }
 
-        Console.WriteLine("min={0}", minNumber);
-        Console.WriteLine("max={0}", maxNumber);
-        Console.WriteLine("sum={0}", sum);
+        Console.WriteLine("min={0:F2}", minNumber);
+        Console.WriteLine("max={0:F2}", maxNumber);
+        Console.WriteLine("sum={0:F2}", sum);
 
-        double avarage = (double)sum / length;
-        Console.WriteLine("avg={0:F}", avarage);
+        double avarage = sum / length;
+        Console.WriteLine("avg={0:F2}", avarage);
     }
 }

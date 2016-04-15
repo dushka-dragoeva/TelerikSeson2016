@@ -22,15 +22,20 @@ public class MatrixОfNumbers
         int number = int.Parse(Console.ReadLine());
         int rows = number;
         int cols = number;
-        string output = "{0,2}";
 
         for (int i = 0; i < number; i++)
         {
             for (int j = 1; j <= number; j++)
             {
-                Console.Write(output, i + j);
+                if (i + j < 10)
+                {
+                    Console.Write("{0,-2}", i + j);
+                }
+                else
+                {
+                    Console.Write("{0,-3}", i + j);
+                }
             }
-
             Console.WriteLine();
         }
     }

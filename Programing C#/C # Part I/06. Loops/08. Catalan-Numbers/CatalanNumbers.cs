@@ -17,7 +17,7 @@ public class CatalanNumbers
         for (BigInteger i = numberN + 1; i <= 2 * numberN; i++)
         {
             firstFactorial *= i;
-            secondFactorial *= (i - numberN + 1);
+            secondFactorial *= i - numberN + 1;
         }
 
         BigInteger numberOfCombinations = firstFactorial / secondFactorial;

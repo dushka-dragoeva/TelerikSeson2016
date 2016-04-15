@@ -16,14 +16,14 @@ public class TralingZeroInNFactorial
             factorial *= i;
         }
 
-        var result = factorial.ToString().ToCharArray();
-        Array.Reverse(result);
+        var result = factorial.ToString();
+        // string.Reverse(result);
 
         int counter = 0;
 
-        foreach (var item in result)
+        for (int i = result.Length-1; i >= 0; i--)
         {
-            if (item == '0')
+            if (result[i] == '0')
             {
                 counter++;
             }

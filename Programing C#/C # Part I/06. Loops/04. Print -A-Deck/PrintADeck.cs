@@ -9,7 +9,7 @@ public class PrintADeck
 {
     public static void Main()
     {
-        string cardFace = Console.ReadLine();
+        string cardFace = Console.ReadLine().ToUpper();
         int length = 0;
 
         switch (cardFace)
