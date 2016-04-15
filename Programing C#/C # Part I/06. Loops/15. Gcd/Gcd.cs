@@ -15,8 +15,8 @@ public class Gcd
         // Always sort array ascending
         Array.Sort(numbers);
 
-        int a = numbers[1]; // this is the greater number
-        int b = numbers[0];
+        int a = Math.Abs(numbers[1]); // this is the greater number
+        int b = Math.Abs( numbers[0]);
 
         // Euclidean algorithm https://en.wikipedia.org/wiki/Euclidean_algorithm#Implementations
         while (b != 0)
@@ -28,4 +28,18 @@ public class Gcd
 
         Console.WriteLine(a);
     }
+
+    public static int gcd(int a,int b)
+    {
+        if (b == 0)
+        {
+            return a;
+        }
+        else
+        {
+            return gcd(b, a % b);
+        }
+
+    }
+
 }
