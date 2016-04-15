@@ -17,7 +17,7 @@ public class PrintADeck
             case "J":
                 length = 11;
                 break;
-            case "D":
+            case "Q":
                 length = 12;
                 break;
             case "K":
