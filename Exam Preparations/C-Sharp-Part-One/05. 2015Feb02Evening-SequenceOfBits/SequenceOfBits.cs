@@ -1,7 +1,6 @@
 ﻿using System;
 
 public class SequenceOfBits
-
 {
     public static void Main()
     {

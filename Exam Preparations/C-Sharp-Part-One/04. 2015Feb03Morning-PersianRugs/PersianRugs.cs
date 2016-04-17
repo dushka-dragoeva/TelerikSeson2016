@@ -26,16 +26,12 @@ public class PersianRugs
                 }
                 else if ((col == rugSize - row - 1)
                      || (row < size - distance - 1 && col == rugSize - row - distance - 2)
-                     || (row > size + distance + 1 && col == rugSize - row + distance)
-                    )
+                     || (row > size + distance + 1 && col == rugSize - row + distance))
                 {
                     rug[row, col] = '/';
                 }
-
                 else if ((row < size - distance - 1 && col > row + distance + 1 && col < rugSize - row - distance - 2)
-                    || (row > size + distance + 1 && col < row - distance - 1 && col > rugSize - row + distance)
-                    )
-
+                    || (row > size + distance + 1 && col < row - distance - 1 && col > rugSize - row + distance))
                 {
                     rug[row, col] = '.';
                 }
@@ -60,7 +56,5 @@ public class PersianRugs
 
             Console.WriteLine();
         }
-
     }
 }
-

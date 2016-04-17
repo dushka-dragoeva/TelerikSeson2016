@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. 2015Feb02Morning-Printing", "01. 2015Feb02Morning-Printing\01. 2015Feb02Morning-Printing.csproj", "{21518F30-D8CB-4482-872C-A943ACA46129}"
 EndProject
@@ -24,6 +24,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. 2015Feb03Morning-PersianRugs", "04. 2015Feb03Morning-PersianRugs\04. 2015Feb03Morning-PersianRugs.csproj", "{4706CB68-32C8-48C9-8106-4EDB5E6DD9F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. 2015Feb02Evening- Maslan", "03. 2015Feb02Evening- Maslan\03. 2015Feb02Evening- Maslan.csproj", "{1EBB2DA6-6F78-4037-8504-BB4496A0B09D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. 2015Feb03Morning-ConsoleApplication", "03. 2015Feb03Morning-ConsoleApplication\03. 2015Feb03Morning-ConsoleApplication.csproj", "{BD713952-25C9-4593-8CD8-073C3012955D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1-SecondSolution", "ConsoleApplication1-SecondSolution\ConsoleApplication1-SecondSolution.csproj", "{F600C095-C040-4EAC-90A4-6D280BB6B59B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. 2015Feb03Morning-ThreeNumbers", "01. 2015Feb03Morning-ThreeNumbers\01. 2015Feb03Morning-ThreeNumbers.csproj", "{467B040C-57E8-4408-A335-7FEB3789D9D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. 2015Feb03Morning-Decoding", "02. 2015Feb03Morning-Decoding\02. 2015Feb03Morning-Decoding.csproj", "{1015502E-0D63-40A1-BBE6-5ABD2BAAF396}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +83,22 @@ Global
 		{1EBB2DA6-6F78-4037-8504-BB4496A0B09D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EBB2DA6-6F78-4037-8504-BB4496A0B09D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EBB2DA6-6F78-4037-8504-BB4496A0B09D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD713952-25C9-4593-8CD8-073C3012955D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD713952-25C9-4593-8CD8-073C3012955D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD713952-25C9-4593-8CD8-073C3012955D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD713952-25C9-4593-8CD8-073C3012955D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F600C095-C040-4EAC-90A4-6D280BB6B59B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F600C095-C040-4EAC-90A4-6D280BB6B59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F600C095-C040-4EAC-90A4-6D280BB6B59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F600C095-C040-4EAC-90A4-6D280BB6B59B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{467B040C-57E8-4408-A335-7FEB3789D9D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{467B040C-57E8-4408-A335-7FEB3789D9D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{467B040C-57E8-4408-A335-7FEB3789D9D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{467B040C-57E8-4408-A335-7FEB3789D9D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1015502E-0D63-40A1-BBE6-5ABD2BAAF396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1015502E-0D63-40A1-BBE6-5ABD2BAAF396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1015502E-0D63-40A1-BBE6-5ABD2BAAF396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1015502E-0D63-40A1-BBE6-5ABD2BAAF396}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
