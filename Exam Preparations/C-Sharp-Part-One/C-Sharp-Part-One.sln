@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. 2015Feb03Morning-ThreeN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. 2015Feb03Morning-Decoding", "02. 2015Feb03Morning-Decoding\02. 2015Feb03Morning-Decoding.csproj", "{1015502E-0D63-40A1-BBE6-5ABD2BAAF396}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. 2015Feb03Morning-SearchinBits", "05. 2015Feb03Morning-SearchinBits\05. 2015Feb03Morning-SearchinBits.csproj", "{6C290228-EFC9-4230-9F98-CF45C5B863F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{1015502E-0D63-40A1-BBE6-5ABD2BAAF396}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1015502E-0D63-40A1-BBE6-5ABD2BAAF396}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1015502E-0D63-40A1-BBE6-5ABD2BAAF396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C290228-EFC9-4230-9F98-CF45C5B863F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C290228-EFC9-4230-9F98-CF45C5B863F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C290228-EFC9-4230-9F98-CF45C5B863F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C290228-EFC9-4230-9F98-CF45C5B863F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
