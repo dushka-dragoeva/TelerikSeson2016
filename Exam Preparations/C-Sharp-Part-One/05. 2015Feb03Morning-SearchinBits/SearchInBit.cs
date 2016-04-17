@@ -1,8 +1,8 @@
 ﻿using System;
 
-class SearchInbit
+public class SearchInbit
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
         int numberS = int.Parse(Console.ReadLine());
         int length = int.Parse(Console.ReadLine());
@@ -15,11 +15,11 @@ class SearchInbit
         {
             int currentNumber = int.Parse(Console.ReadLine());
 
-            for (int j = 0; j < ((30-4)+1); j++)
+            for (int j = 0; j < ((30 - 4) + 1); j++)
             {
                 currentNumberAndMask = currentNumber & (mask << j);
-                
-                if (currentNumberAndMask == numberSandMask<<j)
+
+                if (currentNumberAndMask == numberSandMask << j)
                 {
                     counter++;
                 }
