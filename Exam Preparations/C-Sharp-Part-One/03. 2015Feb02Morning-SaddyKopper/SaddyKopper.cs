@@ -9,7 +9,7 @@ public class SaddyKopper
         SaddyKopper current = new SaddyKopper();
         BigInteger product = 1;
 
-        int transformers = 1;
+        int tr = 1;
 
         for (int i = 0; i < 10; i++)
         {
@@ -18,14 +18,17 @@ public class SaddyKopper
                 break;
             }
 
+            int[] arr = new int[7];
+            int a = arr.Length;
+
             product = current.Transformation(numberM, current);
             numberM = product.ToString();
-            transformers = i + 1;
+            tr = i + 1;
         }
-
-        if (transformers < 10)
+         
+        if (tr < 10)
         {
-            Console.WriteLine(transformers);
+            Console.WriteLine(tr);
             Console.WriteLine(numberM);
         }
         else

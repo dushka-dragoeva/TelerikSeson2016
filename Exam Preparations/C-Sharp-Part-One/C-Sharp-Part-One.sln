@@ -43,6 +43,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.2013Dec06Evening-Enigma"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.2013Dec06Evening-Cookies", "05.2013Dec06Evening-Cookies\05.2013Dec06Evening-Cookies.csproj", "{2CE344B2-15E9-4A5C-A250-AE3B1EA3C8D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. 2015Feb03Evening-ExRugs", "04. 2015Feb03Evening-ExRugs\04. 2015Feb03Evening-ExRugs.csproj", "{18981F4C-9E05-4802-A1F1-4CB06DC37795}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05, 2013June23-NeuronMapping", "05, 2013June23-NeuronMapping\05, 2013June23-NeuronMapping.csproj", "{F04E287B-92AF-47DD-A3F0-88668153CA9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPreparation", "TestPreparation\TestPreparation.csproj", "{EA87DD34-2F10-4D2C-915D-6BF5770AD657}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubeEvloqi", "CubeEvloqi\CubeEvloqi.csproj", "{B14A2F68-6C46-4301-987D-64DCD840938C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaddyKopperEvlogi", "SaddyKopperEvlogi\SaddyKopperEvlogi.csproj", "{E6CC0975-8008-41EA-AD2F-A7A2D69BA5D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitToBitsEvlogi", "BitToBitsEvlogi\BitToBitsEvlogi.csproj", "{97793987-6D94-4F50-9E38-2E137C5E1F37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExamPreparationEvlogi", "ExamPreparationEvlogi", "{1E05F4DA-C077-4BD9-893A-ECF19754809A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,8 +143,37 @@ Global
 		{2CE344B2-15E9-4A5C-A250-AE3B1EA3C8D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CE344B2-15E9-4A5C-A250-AE3B1EA3C8D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CE344B2-15E9-4A5C-A250-AE3B1EA3C8D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18981F4C-9E05-4802-A1F1-4CB06DC37795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18981F4C-9E05-4802-A1F1-4CB06DC37795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18981F4C-9E05-4802-A1F1-4CB06DC37795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18981F4C-9E05-4802-A1F1-4CB06DC37795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F04E287B-92AF-47DD-A3F0-88668153CA9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F04E287B-92AF-47DD-A3F0-88668153CA9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F04E287B-92AF-47DD-A3F0-88668153CA9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F04E287B-92AF-47DD-A3F0-88668153CA9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA87DD34-2F10-4D2C-915D-6BF5770AD657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA87DD34-2F10-4D2C-915D-6BF5770AD657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA87DD34-2F10-4D2C-915D-6BF5770AD657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA87DD34-2F10-4D2C-915D-6BF5770AD657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B14A2F68-6C46-4301-987D-64DCD840938C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B14A2F68-6C46-4301-987D-64DCD840938C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B14A2F68-6C46-4301-987D-64DCD840938C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B14A2F68-6C46-4301-987D-64DCD840938C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6CC0975-8008-41EA-AD2F-A7A2D69BA5D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6CC0975-8008-41EA-AD2F-A7A2D69BA5D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6CC0975-8008-41EA-AD2F-A7A2D69BA5D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6CC0975-8008-41EA-AD2F-A7A2D69BA5D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97793987-6D94-4F50-9E38-2E137C5E1F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97793987-6D94-4F50-9E38-2E137C5E1F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97793987-6D94-4F50-9E38-2E137C5E1F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97793987-6D94-4F50-9E38-2E137C5E1F37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B14A2F68-6C46-4301-987D-64DCD840938C} = {1E05F4DA-C077-4BD9-893A-ECF19754809A}
+		{E6CC0975-8008-41EA-AD2F-A7A2D69BA5D1} = {1E05F4DA-C077-4BD9-893A-ECF19754809A}
+		{97793987-6D94-4F50-9E38-2E137C5E1F37} = {1E05F4DA-C077-4BD9-893A-ECF19754809A}
 	EndGlobalSection
 EndGlobal

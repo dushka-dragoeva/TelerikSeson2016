@@ -17,12 +17,12 @@ public class GameOfPage
     public const string Smile = "smile";
     public const decimal CookiePrice = 1.79m;
 
-    public static bool isItCookie = false;
-    public static bool isItCookieCrumb = false;
-    public static bool isItBrokenCookie = false;
-    public static bool isItEmpty = false;
+    private static bool isItCookie = false;
+    private static bool isItCookieCrumb = false;
+    private static bool isItBrokenCookie = false;
+    private static bool isItEmpty = false;
 
-    public static int counter = 0;
+    private static int counter = 0;
 
     public static void Main()
     {
@@ -33,10 +33,6 @@ public class GameOfPage
             cookies[i] = Convert.ToInt32(Console.ReadLine(), 2);
         }
 
-        for (int i = 0; i < 16; i++)
-        {
-            Console.WriteLine(cookies[i]);
-        }
         string input = Console.ReadLine();
 
         while (true)
@@ -45,8 +41,17 @@ public class GameOfPage
             {
                 int row = int.Parse(Console.ReadLine());
                 int col = int.Parse(Console.ReadLine());
-                CheckForCookie(row, col, cookies);
-                AnswerWhatQuestion();
+                int cookieCenter = GetBits(cookies[row], TraySize - 1 - col, 1);
+                Console.WriteLine("cookie" + cookieCenter);
+                if (cookieCenter == 0)
+                {
+                    Console.WriteLine(Smile);
+                }
+                else 
+                {
+                    CheckForCookie(row, col, cookies);
+                    AnswerWhatQuestion();
+                }
             }
             else if (input == BuyQuestion)
             {
@@ -68,19 +73,15 @@ public class GameOfPage
 
             input = Console.ReadLine();
         }
-        for (int i = 0; i < 16; i++)
-        {
-            Console.WriteLine(cookies[i]);
-        }
-
     }
+
     public static void TakeCookie(int row, int col, int[] arr)
     {
         int position = TraySize - 1 - col;
 
         for (int i = row - 1; i <= +row + 1; i++)
         {
-            arr[i] = ResetBits(arr[row], position - 1, CookieSize);
+            arr[i] = ResetBits(arr[i], position - 1, CookieSize);
         }
     }
 
@@ -131,43 +132,61 @@ public class GameOfPage
 
     public static void CheckForCookie(int row, int col, int[] arr)
     {
-        int position = TraySize - 1 - col;
 
-        int cookieRowValue = GetBits(arr[row], position - 1, CookieSize);
-        int upperRowValue = 0;
-        int bottomRowValue = 0;
+        int position = TraySize - col - 1;
+        int length = 0;
+        int startPosition = 0;
+
+        if (col == TraySize-1)
+        {
+            startPosition = 0;
+            length = CookieSize - 1;
+        }
+
+        startPosition = position - 1;
+        length = CookieSize;
+
+        int[] singleCookie = new int[CookieSize];
+
+        //for (int i = 0; i < 3; i++)
+        //{
+        //    singleCookie[i] = GetBits(arr[row], position - 1, CookieSize);
+        //}
+
+        singleCookie[1] = GetBits(arr[row], startPosition - 1, length);
 
         if (row > 0)
         {
-            upperRowValue = GetBits(arr[row - 1], position - 1, CookieSize);
+            singleCookie[0] = GetBits(arr[row - 1], startPosition - 1, length);
         }
 
         if (row < TraySize - 1)
         {
-            bottomRowValue = GetBits(arr[row + 1], position - 1, CookieSize);
+            singleCookie[2] = GetBits(arr[row + 1], startPosition - 1, length);
         }
 
-        if (cookieRowValue == 0 && upperRowValue == 0 && bottomRowValue == 0)
-        {
-            isItEmpty = true;
-            isItCookie = false;
-            isItBrokenCookie = false;
-            isItCookieCrumb = false;
-        }
-        else if (cookieRowValue == CookieNumber && upperRowValue == CookieNumber && bottomRowValue == CookieNumber)
+        int onesCounter = CountOnes(singleCookie);
+
+        if (onesCounter == CookieSize * CookieSize)
         {
             isItCookie = true;
             isItEmpty = false;
             isItBrokenCookie = false;
             isItCookieCrumb = false;
-
         }
-        else if ((cookieRowValue + upperRowValue + bottomRowValue) == 1)
+        else if (onesCounter == 1)
         {
             isItCookieCrumb = true;
             isItCookie = false;
             isItEmpty = false;
             isItBrokenCookie = false;
+        }
+        else if (onesCounter == 0)
+        {
+            isItEmpty = true;
+            isItCookie = false;
+            isItBrokenCookie = false;
+            isItCookieCrumb = false;
         }
         else
         {
@@ -178,6 +197,28 @@ public class GameOfPage
         }
     }
 
+    private static int CountOnes(int[] singleCookie)
+    {
+        int onesCounter = 0;
+
+        for (int i = 0; i < singleCookie.Length; i++)
+        {
+            for (int j = 0; j < CookieSize; j++)
+            {
+                if (singleCookie[i] > 0)
+                {
+                    int curretBit = GetBits(singleCookie[i], j, 1);
+                    if (curretBit == 1)
+                    {
+                        onesCounter++;
+                    }
+                }
+            }
+        }
+
+        return onesCounter;
+    }
+
     public static int GetBits(int number, int position, int length)
     {
         var binaryNumber = new string('1', length);
@@ -186,4 +227,6 @@ public class GameOfPage
         int bitsNumber = numberAndMask >> position;
         return bitsNumber;
     }
+
+
 }
