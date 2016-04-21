@@ -5,57 +5,51 @@ class ExRug
     static void Main()
     {
         int size = int.Parse(Console.ReadLine());
-        int hashTag = int.Parse(Console.ReadLine());
+        int patternSize = int.Parse(Console.ReadLine());
         int rugSize = (2 * size) + 1;
 
-        var srartIndex = 0;
-        var endIndex = rugSize - 1;
-        var index = hashTag / 2 + 1;
+        int middleRug = size;
+        var middlePattern = patternSize / 2 + 1;
 
-        char[,] rug = new char[rugSize, rugSize];
+        char patternEdge = 'X';
+        char leftDiagonal = '\\';
+        char rightDiagonal = '/';
+        char pattern = '#';
+        char dot = '.';
 
         for (int row = 0; row < rugSize; row++)
         {
             for (int col = 0; col < rugSize; col++)
             {
-                if (size < hashTag)
+                // print X
+                if ((row == middleRug - middlePattern || row == middleRug + middlePattern) && col == middleRug ||
+                   row == middleRug && (col == middleRug - middlePattern || col == middleRug + middlePattern))
                 {
-                    rug[row, col] = '#';
+                    Console.Write(patternEdge);
+                }
+                // ptinl left diagonals
+                else if (col - row ==  middlePattern && (row < middleRug - middlePattern || row > middleRug) ||
+                    row - col ==middlePattern && (row<middleRug||row>middleRug+middlePattern))
+                {
+                    Console.Write(leftDiagonal);
+                }
+              //  print right diagonals
+               else if (col + row == rugSize - 1 - middlePattern && (row < middleRug - middlePattern || row > middleRug)
+
+                    || col + row == rugSize - 1 + middlePattern && (row < middleRug || row > middleRug + middlePattern))
+                {
+                    Console.Write(rightDiagonal);
+                }
+                else if ((row<middleRug-middlePattern && col-row>middlePattern &&col+row<rugSize-1-middlePattern)
+                    || row>middleRug+middlePattern)
+                {
+                    Console.Write(dot);
                 }
                 else
                 {
-                    if ((col < index + row && col > row - index) ||
-                        (col < rugSize - 1 - row + index && col > rugSize - 1 - index - row))
-
-                    {
-                        rug[row, col] = '#';
-                    }
-
-                    else if (((row < index || row > size) && col == index + row)
-                        ||(row >size-index-1 && col==row-index))
-                    {
-                        rug[row, col] = '\\';
-                    }
-                    else if (row > size - index - 1)
-                    {
-                        
-                    }
-                    else
-                    {
-                        rug[row, col] = '.';
-                    }
+                    Console.Write(pattern);
                 }
 
-
-
-            }
-        }
-
-        for (int i = 0; i < rugSize; i++)
-        {
-            for (int j = 0; j < rugSize; j++)
-            {
-                Console.Write(rug[i, j]);
             }
 
             Console.WriteLine();

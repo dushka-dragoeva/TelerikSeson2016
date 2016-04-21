@@ -47,8 +47,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. 2015Feb03Evening-ExRugs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05, 2013June23-NeuronMapping", "05, 2013June23-NeuronMapping\05, 2013June23-NeuronMapping.csproj", "{F04E287B-92AF-47DD-A3F0-88668153CA9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPreparation", "TestPreparation\TestPreparation.csproj", "{EA87DD34-2F10-4D2C-915D-6BF5770AD657}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubeEvloqi", "CubeEvloqi\CubeEvloqi.csproj", "{B14A2F68-6C46-4301-987D-64DCD840938C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaddyKopperEvlogi", "SaddyKopperEvlogi\SaddyKopperEvlogi.csproj", "{E6CC0975-8008-41EA-AD2F-A7A2D69BA5D1}"
@@ -151,10 +149,6 @@ Global
 		{F04E287B-92AF-47DD-A3F0-88668153CA9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F04E287B-92AF-47DD-A3F0-88668153CA9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F04E287B-92AF-47DD-A3F0-88668153CA9C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EA87DD34-2F10-4D2C-915D-6BF5770AD657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA87DD34-2F10-4D2C-915D-6BF5770AD657}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA87DD34-2F10-4D2C-915D-6BF5770AD657}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA87DD34-2F10-4D2C-915D-6BF5770AD657}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B14A2F68-6C46-4301-987D-64DCD840938C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B14A2F68-6C46-4301-987D-64DCD840938C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B14A2F68-6C46-4301-987D-64DCD840938C}.Release|Any CPU.ActiveCfg = Release|Any CPU

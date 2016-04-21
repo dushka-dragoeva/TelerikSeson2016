@@ -3,7 +3,7 @@
 public class GameOfPage
 {
     public const int CookieSize = 3;
-    public const int CookieNumber = 7;
+    public const int CookieValue = 7;
     public const int TraySize = 16;
 
     public const string WhatQuestion = "what is";
