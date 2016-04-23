@@ -17,10 +17,10 @@ public class GameOfPage
     public const string Smile = "smile";
     public const decimal CookiePrice = 1.79m;
 
-    private static bool isItCookie = false;
-    private static bool isItCookieCrumb = false;
-    private static bool isItBrokenCookie = false;
-    private static bool isItEmpty = false;
+    private static bool isCookie = false;
+    private static bool isCookieCrumb = false;
+    private static bool isBrokenCookie = false;
+    // private static bool isItEmpty = false;
 
     private static int counter = 0;
 
@@ -41,27 +41,52 @@ public class GameOfPage
             {
                 int row = int.Parse(Console.ReadLine());
                 int col = int.Parse(Console.ReadLine());
-                int cookieCenter = GetBits(cookies[row], TraySize - 1 - col, 1);
-                Console.WriteLine("cookie" + cookieCenter);
+                int cookieCenter = GetBit(cookies[row], TraySize - 1 - col);
+              
                 if (cookieCenter == 0)
                 {
                     Console.WriteLine(Smile);
                 }
-                else 
+                else
                 {
-                    CheckForCookie(row, col, cookies);
-                    AnswerWhatQuestion();
+                    CheckForCookie(row, TraySize - 1 - col, cookies);
+                    if (isCookie)
+                    {
+                        Console.WriteLine(Cookie);
+                    }
+                    else if (isBrokenCookie)
+                    {
+                        Console.WriteLine(BrokenCookie);
+                    }
+                    else if (isCookieCrumb)
+                    {
+                        Console.WriteLine(CookieCrumb);
+                    }
                 }
             }
             else if (input == BuyQuestion)
             {
                 int row = int.Parse(Console.ReadLine());
                 int col = int.Parse(Console.ReadLine());
-                CheckForCookie(row, col, cookies);
-                AnswerBuyQuestion();
-                if (isItCookie)
+                int cookieCenter = GetBit(cookies[row], TraySize - 1 - col);
+
+                if (cookieCenter == 0)
                 {
-                    TakeCookie(row, col, cookies);
+                    Console.WriteLine(Smile);
+                }
+                else
+                {
+                    CheckForCookie(row, TraySize - 1 - col, cookies);
+
+                    if (isCookie)
+                    {
+                        counter++;
+                        TakeCookie(row, TraySize - 1 - col, cookies);
+                    }
+                    else
+                    {
+                        Console.WriteLine(Page);
+                    }
                 }
             }
             else if (input == PaypalQuestion)
@@ -77,156 +102,47 @@ public class GameOfPage
 
     public static void TakeCookie(int row, int col, int[] arr)
     {
-        int position = TraySize - 1 - col;
+        arr[row - 1] = ResetBit(arr[row - 1], col - 1);
+        arr[row - 1] = ResetBit(arr[row - 1], col);
+        arr[row - 1] = ResetBit(arr[row - 1], col + 1);
 
-        for (int i = row - 1; i <= +row + 1; i++)
-        {
-            arr[i] = ResetBits(arr[i], position - 1, CookieSize);
-        }
+        arr[row] = ResetBit(arr[row], col - 1);
+        arr[row] = ResetBit(arr[row], col);
+        arr[row] = ResetBit(arr[row], col + 1);
+
+        arr[row + 1] = ResetBit(arr[row + 1], col + 1);
+        arr[row + 1] = ResetBit(arr[row + 1], col + 1);
+        arr[row + 1] = ResetBit(arr[row + 1], col + 1);
     }
 
-    public static int ResetBits(int number, int position, int length)
+    public static int ResetBit(int number, int position)
     {
-        var binaryNumber = new string('1', length);
-        int mask = Convert.ToInt32(binaryNumber, 2);
-        int numberAndMask = ~(mask << position) & number;
-        int bitsNumber = numberAndMask;
-        return bitsNumber;
-    }
-
-    public static void AnswerBuyQuestion()
-    {
-        if (isItCookie)
-        {
-            counter++;
-        }
-        else if (isItCookieCrumb || isItBrokenCookie)
-        {
-            Console.WriteLine(Page);
-        }
-        else if (isItEmpty)
-        {
-            Console.WriteLine(Smile);
-        }
-    }
-
-    public static void AnswerWhatQuestion()
-    {
-        if (isItCookie)
-        {
-            Console.WriteLine(Cookie);
-        }
-        else if (isItCookieCrumb)
-        {
-            Console.WriteLine(CookieCrumb);
-        }
-        else if (isItBrokenCookie)
-        {
-            Console.WriteLine(BrokenCookie);
-        }
-        else
-        {
-            Console.WriteLine(Smile);
-        }
+        number = ~(1 << position) & number;
+        return number;
     }
 
     public static void CheckForCookie(int row, int col, int[] arr)
     {
+        int upperRow = row > 0 ? arr[row - 1] : 0;
+        int middleRow = arr[row];
+        int bottomRow = row < arr.Length - 1 ? arr[row + 1] : 0;
 
-        int position = TraySize - col - 1;
-        int length = 0;
-        int startPosition = 0;
+        isCookieCrumb = true;
 
-        if (col == TraySize-1)
-        {
-            startPosition = 0;
-            length = CookieSize - 1;
-        }
+        isBrokenCookie = (GetBit(upperRow, col - 1) != 0 || GetBit(upperRow, col) != 0 || GetBit(upperRow, col + 1) != 0 ||
+            GetBit(middleRow, col - 1) != 0 || GetBit(middleRow, col + 1) != 0 ||
+            GetBit(bottomRow, col - 1) != 0 || GetBit(bottomRow, col) != 0 || GetBit(bottomRow, col + 1) != 0);
 
-        startPosition = position - 1;
-        length = CookieSize;
-
-        int[] singleCookie = new int[CookieSize];
-
-        //for (int i = 0; i < 3; i++)
-        //{
-        //    singleCookie[i] = GetBits(arr[row], position - 1, CookieSize);
-        //}
-
-        singleCookie[1] = GetBits(arr[row], startPosition - 1, length);
-
-        if (row > 0)
-        {
-            singleCookie[0] = GetBits(arr[row - 1], startPosition - 1, length);
-        }
-
-        if (row < TraySize - 1)
-        {
-            singleCookie[2] = GetBits(arr[row + 1], startPosition - 1, length);
-        }
-
-        int onesCounter = CountOnes(singleCookie);
-
-        if (onesCounter == CookieSize * CookieSize)
-        {
-            isItCookie = true;
-            isItEmpty = false;
-            isItBrokenCookie = false;
-            isItCookieCrumb = false;
-        }
-        else if (onesCounter == 1)
-        {
-            isItCookieCrumb = true;
-            isItCookie = false;
-            isItEmpty = false;
-            isItBrokenCookie = false;
-        }
-        else if (onesCounter == 0)
-        {
-            isItEmpty = true;
-            isItCookie = false;
-            isItBrokenCookie = false;
-            isItCookieCrumb = false;
-        }
-        else
-        {
-            isItBrokenCookie = true;
-            isItCookieCrumb = false;
-            isItCookie = false;
-            isItEmpty = false;
-        }
+        isCookie = (GetBit(upperRow, col - 1) != 0 && GetBit(upperRow, col) != 0 && GetBit(upperRow, col + 1) != 0 &&
+                    GetBit(middleRow, col - 1) != 0 && GetBit(middleRow, col) != 0 && GetBit(middleRow, col + 1) != 0 &&
+                    GetBit(bottomRow, col - 1) != 0 && GetBit(bottomRow, col) != 0 && GetBit(bottomRow, col + 1) != 0);
     }
 
-    private static int CountOnes(int[] singleCookie)
+    public static int GetBit(int number, int position)
     {
-        int onesCounter = 0;
-
-        for (int i = 0; i < singleCookie.Length; i++)
-        {
-            for (int j = 0; j < CookieSize; j++)
-            {
-                if (singleCookie[i] > 0)
-                {
-                    int curretBit = GetBits(singleCookie[i], j, 1);
-                    if (curretBit == 1)
-                    {
-                        onesCounter++;
-                    }
-                }
-            }
-        }
-
-        return onesCounter;
-    }
-
-    public static int GetBits(int number, int position, int length)
-    {
-        var binaryNumber = new string('1', length);
-        int mask = Convert.ToInt32(binaryNumber, 2);
+        int mask = 1;
         int numberAndMask = (mask << position) & number;
-        int bitsNumber = numberAndMask >> position;
-        return bitsNumber;
+        int bit = numberAndMask >> position;
+        return bit;
     }
-
-
 }

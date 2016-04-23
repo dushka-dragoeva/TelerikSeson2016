@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2012-04-SampleExam-BinaryDi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2012-05-SampleTest-SubsetSums", "2012-05-SampleTest-SubsetSums\2012-05-SampleTest-SubsetSums.csproj", "{06AEE36B-E913-4EAC-922A-5D74330E50E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. 2013Dec06Morning-Warhead", "05. 2013Dec06Morning-Warhead\05. 2013Dec06Morning-Warhead.csproj", "{6C9ED799-EED2-46CD-B739-3CE25B0981F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -181,6 +183,10 @@ Global
 		{06AEE36B-E913-4EAC-922A-5D74330E50E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06AEE36B-E913-4EAC-922A-5D74330E50E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06AEE36B-E913-4EAC-922A-5D74330E50E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C9ED799-EED2-46CD-B739-3CE25B0981F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C9ED799-EED2-46CD-B739-3CE25B0981F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C9ED799-EED2-46CD-B739-3CE25B0981F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C9ED799-EED2-46CD-B739-3CE25B0981F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
