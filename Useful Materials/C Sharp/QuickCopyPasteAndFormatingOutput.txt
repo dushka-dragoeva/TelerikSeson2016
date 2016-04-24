@@ -9,7 +9,10 @@ Thread.CurrentThread.CurrentCulture =
 int a = int.Parse(Console.ReadLine());
 double b = double.Parse(Console.ReadLine());
 
-
+---------------------------------------
+ StreamReader reader = new StreamReader("..\\..\\Test.txt");
+            Console.SetIn(reader);
+-------------------------------------------------------------------------
 Formating Output
 {index[,alignment][:formatString]}
 -number => left alignment
@@ -34,14 +37,48 @@ int length = int.Parse(Console.ReadLine());
         {
             arr[i] = int.Parse(Console.ReadLine());
         }
-
+---------------------------------------------------
 		int number= Console.ReadLine();
         string binary = new string('1', number);
 		Console.WriteLine(b);
         Console.WriteLine(Convert.ToInt32(binary,2));
+------------------------------------------------------------------		
 		
-	
+		public static int GetBit(int number, int position)
+    {
+        int mask = 1;
+        int numberAndMask = (mask << position) & number;
+        int bit = numberAndMask >> position;
+        return bit;
+    }
+}
+		
+---------------------------------------	
+	public static int ResetBit(int number, int position)
+    {
+        number = ~(1 << position) & number;
+        return number;
+    }
 
+------------------------------
+public static int GetBits(int number, int position, int length)
+    {
+        var binaryNumber = new string('1', length);
+        int mask = Convert.ToInt32(binaryNumber, 2);
+        int numberAndMask = (mask << position) & number;
+        int bitsNumber = numberAndMask >> position;
+        return bitsNumber;
+    }
+===========================================================
+public static int ResetBits(int number, int position, int length)
+    {
+        var binaryNumber = new string('1', length);
+        int mask = Convert.ToInt32(binaryNumber, 2);
+        int numberAndMask = ~(mask << position) & number;
+        int bitsNumber = numberAndMask;
+        return bitsNumber;
+    }
+================================================================
 		### Swap n bits
 		====================================
 using System;
@@ -64,41 +101,31 @@ class Program
         Console.WriteLine(number);
     }
 }
+=============================================================
+using System;
 
+public class ModifyBit
+{
+    public static void Main()
+    {
+        ulong numberN = ulong.Parse(Console.ReadLine());
+        int positionP = int.Parse(Console.ReadLine());
+        byte bitValueV = byte.Parse(Console.ReadLine());
+        ulong mask = 1;
+        ulong numberAndMask;
 
-0000000000000111
-0100000000000111
-0000000000000111
-0000000000000000
-0000000000000000
-0000000000000000
-0000000000000000
-0000000000000000
-0000000000000000
-0000000000000000
-0000000000000000
-0000000000000000
-0000000000000000
-0000000000000000
-0000000000000000
-0000000000000000
-what is
-1
-1
-what is
-0
-14
-what is
-1
-14
-buy
-1
-1
-buy
-1
-14
-what is
-0
-14
-paypal
+        if (bitValueV == 0)
+        {
+            numberAndMask = ~(mask << positionP) & numberN;
+        }
+        else  // bitValueV ==1
+        {
+            numberAndMask = numberN | mask << positionP; 
+        }
 
+        Console.WriteLine(numberAndMask);
+    }
+}
+
+			
+	------------------------		

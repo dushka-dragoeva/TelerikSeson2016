@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Numbers-From-One-To- N", "01. Numbers-From-One-To- N\01. Numbers-From-One-To- N.csproj", "{C2BECBD0-8B9D-4910-9478-A5E92FD8D29F}"
 EndProject
@@ -36,6 +36,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. Trailing-0-In-N!", "16. Trailing-0-In-N!\16. Trailing-0-In-N!.csproj", "{AAADD9C6-EB2F-4449-8EB9-34570CBB69CE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17. Spiral-Matrix", "17. Spiral-Matrix\17. Spiral-Matrix.csproj", "{F0360447-EA3F-4429-A5CB-CECA2D4A9279}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{78E08195-0C27-421E-B430-8DAE213BEABB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{F0360447-EA3F-4429-A5CB-CECA2D4A9279}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0360447-EA3F-4429-A5CB-CECA2D4A9279}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0360447-EA3F-4429-A5CB-CECA2D4A9279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78E08195-0C27-421E-B430-8DAE213BEABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78E08195-0C27-421E-B430-8DAE213BEABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78E08195-0C27-421E-B430-8DAE213BEABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78E08195-0C27-421E-B430-8DAE213BEABB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

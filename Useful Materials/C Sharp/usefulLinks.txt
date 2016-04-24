@@ -16,3 +16,5 @@ https://visualstudiogallery.msdn.microsoft.com/c84be782-b1f1-4f6b-85bb-945ebc852
 
 https://github.com/dechoD/Telerik-Homeworks/blob/master/Actual%20Exams/C%23%20Part%20I%20Exam/CSharpPartIExam/Console/Console.cs
 
+OnLineTests
+http://www.pskills.org/csharp.jsp
