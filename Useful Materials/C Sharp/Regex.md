@@ -2,7 +2,7 @@
 
 ## Literal
 
-\/<regex>/<options>
+/\<regex\>/\<options\>
 
 ### Symbols
 [0-9]+ maches non-empty sequence of digits
@@ -31,9 +31,10 @@
 
 ### Special symbols
 
-+ - for sequence else maches a single symbol
+\+ - for sequence else maches a single symbol
 
 *
+
 | - or
 
 ? - can present or no after the symbol
