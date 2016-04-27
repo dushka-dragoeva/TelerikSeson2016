@@ -32,18 +32,32 @@
 ### Special symbols
 
 \+ - for sequence else maches a single symbol
+maches the preceding expression 1 or more times
 
-*
+* - maches the preceding expression 0 or more times
+
+. The desimal point matches any single character exept the newline character
+
+For example, /.n/ matches 'an' and 'on' in "nay, an apple is on the tree", but not 'nay'.
+
+.* matches any whole string
 
 | - or
 
-? - can present or no after the symbol
+? - can present or no after the symbol. Matches the preceding expression 0 or 1 time - equivalent to {0,1}
+
+/\d+/ to "123abc" matches "123". But applying /\d+?/ to that same string matches only the "1".
 
 ^ - maches start of text or line
 
 $ - maches end of text or line
 
 ^.....$ the regex must match exactly from start to end . If there is a partitial coincidence it doesn't match
+
+[] char set
+[^ae] - matches anything but not ae. A negated or complemented character set
+
+() - for grouping
 
 ### Flags
 
@@ -62,6 +76,11 @@ m -multiline
 
 ### Examples:
 
-Tel. Number
+Tel. Number in input field
 
-\+\d{1,3}
+^\+\d{1,3}([ -]*[0-9]){6,}$ 
+
+E-mail
+RFC 822
+
+/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,20}$/i
