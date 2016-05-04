@@ -43,6 +43,5 @@ public class BinarySearch
         }
 
         Console.WriteLine(result);
-        Console.WriteLine(counter);
     }
 }

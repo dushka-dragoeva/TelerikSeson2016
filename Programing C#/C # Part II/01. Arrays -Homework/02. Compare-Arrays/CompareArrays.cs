@@ -1,14 +1,14 @@
 ﻿/// Write a program that reads two integer arrays of size N from the console and compares them element by element.
 using System;
-
+using  System.Numerics;
 public class CompareArrays
 {
     public static void Main(string[] args)
     {
         int length = int.Parse(Console.ReadLine());
 
-        int[] arrA = new int[length];
-        int[] arrB = new int[length];
+        BigInteger[] arrA = new BigInteger[length];
+        BigInteger[] arrB = new BigInteger[length];
 
         bool isEqual = false;
 
@@ -16,11 +16,11 @@ public class CompareArrays
         {
             if (i < length)
             {
-                arrA[i] = int.Parse(Console.ReadLine());
+                arrA[i] = BigInteger.Parse(Console.ReadLine());
             }
             else
             {
-                arrB[i - length] = int.Parse(Console.ReadLine());
+                arrB[i - length] = BigInteger.Parse(Console.ReadLine());
                 if (arrB[i - length] == arrA[i - length])
                 {
                     isEqual = true;
@@ -28,6 +28,7 @@ public class CompareArrays
                 else
                 {
                     isEqual = false;
+                    break;
                 }
             }
         }

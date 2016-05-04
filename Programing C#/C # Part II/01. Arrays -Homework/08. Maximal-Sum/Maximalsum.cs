@@ -40,16 +40,6 @@ public class Maximalsum
             }
         }
 
-        ////for (int i = 0; i < length - 1; i++)
-        ////{
-        ////    for (int j = i; j < length; j++)
-        ////    {
-        ////        currentSum += arr[j];
-        ////        maxSum = Math.Max(maxSum, currentSum);
-        ////    }
-        ////    currentSum = 0;
-        ////}
-        ////  Console.WriteLine(maxSum);
-        Console.WriteLine(maxSum);
+       Console.WriteLine(maxSum);
     }
 }
