@@ -16,7 +16,6 @@ public class FrequentNumber
             mostFrequentNumber = int.Parse(Console.ReadLine());
         }
 
-
         for (int i = 0; i < length; i++)
         {
             arr[i] = int.Parse(Console.ReadLine());
@@ -51,8 +50,8 @@ public class FrequentNumber
             mostFrequentNumber = arr[arr.Length - 1];
         }
 
-        //  4(5 times)
-        // string outputFormat = "{0} ({1} times)";
+        /// 4(5 times)
+        /// string outputFormat = "{0} ({1} times)";
         Console.WriteLine("{0} ({1} times)", mostFrequentNumber, maxCounter);
     }
 }

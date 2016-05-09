@@ -9,9 +9,9 @@ public class PrimeNumbers
         var isPrime = new byte[length + 1];
         var result = 0;
 
-    for (int i = 2; i <= length; i++)
+        for (int i = 2; i <= length; i++)
         {
-            if (isPrime[i]==0)
+            if (isPrime[i] == 0)
             {
                 result = i;
 

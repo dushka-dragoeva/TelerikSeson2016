@@ -22,7 +22,6 @@ public class QuickSort
 
     public static void QuicSortAlgorithm(int[] arr, int left, int right)
     {
-
         int pivotIndex = (left + right) / 2;
         int leftIndex = left;
         int rightindex = right;
@@ -54,8 +53,8 @@ public class QuickSort
                 QuicSortAlgorithm(arr, left, rightindex);
             }
 
-            if(leftIndex<right)
-             {
+            if (leftIndex < right)
+            {
                 QuicSortAlgorithm(arr, leftIndex, right);
             }
         }

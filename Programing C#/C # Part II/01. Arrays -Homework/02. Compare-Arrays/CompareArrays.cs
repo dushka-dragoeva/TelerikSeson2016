@@ -1,6 +1,7 @@
 ﻿/// Write a program that reads two integer arrays of size N from the console and compares them element by element.
 using System;
-using  System.Numerics;
+using System.Numerics;
+
 public class CompareArrays
 {
     public static void Main(string[] args)

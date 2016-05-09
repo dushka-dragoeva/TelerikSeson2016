@@ -1,0 +1,7 @@
+<link rel="stylesheet" type="text/css"
+href="styles.css">
+
+<style type="text/css">
+@import url("styles.css");  /* same as */
+@import "styles.css";
+</style>
