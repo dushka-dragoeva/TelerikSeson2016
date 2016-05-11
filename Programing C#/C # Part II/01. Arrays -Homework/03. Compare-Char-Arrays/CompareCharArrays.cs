@@ -14,20 +14,24 @@ public class CompareCharArrays
         bool areEqual = true;
         string result = string.Empty;
 
-        if (arrA.Length != arrB.Length)
+        var length = Math.Min(arrA.Length, arrB.Length);
+
         {
-            areEqual = false;
-            result = (arrA.Length < arrB.Length) ? "<" : ">";
-        }
-        else
-        {
-            for (int i = 0; i < arrA.Length; i++)
+            for (int i = 0; i < length; i++)
             {
                 if (arrA[i] != arrB[i])
                 {
                     areEqual = false;
                     result = (arrA[i] < arrB[i]) ? "<" : ">";
                     break;
+                }
+                else
+                {
+                    if (arrA.Length != arrB.Length)
+                    {
+                        areEqual = false;
+                        result = (arrA.Length < arrB.Length) ? "<" : ">";
+                    }
                 }
             }
         }
