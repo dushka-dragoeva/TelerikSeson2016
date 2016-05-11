@@ -1,48 +1,54 @@
 ﻿using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class RemoveElementsFromArray
+class RemoveElementsFromArray
 {
-    public static void Main()
+    static void Main(string[] args)
     {
-        int length = int.Parse(Console.ReadLine());
-        int[] numbers = new int[length];
-        int[] indexes = new int[length + 1];
+        int n = int.Parse(Console.ReadLine());
+        List<int> numbers = new List<int>();
 
-        for (int i = 0; i < length; i++)
+        AddNumbersToList(n, numbers);
+        int[] size = new int[numbers.Count];
+
+        // Define each number as subsequence.
+        for (int i = 0; i < numbers.Count; i++)
         {
-            numbers[i] = (int.Parse(Console.ReadLine()));
-            indexes[i] = 1;
+            size[i] = 1;
         }
 
-        indexes[length] = 1;
-
-        var maxSequence = 0;
-        var currentSequence = 1;
-
-        for (int i = 0; i < length-2; i++)
+        int max = 1;
+        // Compare current number with the numbers before.
+        for (int i = 1; i < numbers.Count; i++)
         {
-            for (int j = i + 1; j < length-1; j++)
+            for (int j = 0; j < i; j++)
             {
-                
-                if (numbers[i] <= numbers[j]&&numbers[j]<=numbers[j+1])
+                if (numbers[i] >= numbers[j] && size[i] <= size[j] + 1)
                 {
-                    currentSequence++;
-                }
-
-                if (j == length - 1)
-                {
-                    currentSequence++;
+                    size[i] = size[j] + 1;
+                    // Update max increasing subsequence.
+                    if (max < size[i])
+                    {
+                        max = size[i];
+                    }
                 }
             }
-            indexes[i] = currentSequence;
-                        currentSequence = 1;
         }
 
+        // Print numbers to remove as a result.
+        int numbersToRemove = n - max;
+        Console.WriteLine(numbersToRemove);
+    }
 
-
-        maxSequence = indexes.OrderByDescending(x => x).ToArray()[0];
-        Console.WriteLine(length - maxSequence);
+    private static void AddNumbersToList(int n, List<int> numbers)
+    {
+        for (int i = 0; i < n; i++)
+        {
+            int currentNumber = int.Parse(Console.ReadLine());
+            numbers.Add(currentNumber);
+        }
     }
 }
