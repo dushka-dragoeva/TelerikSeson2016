@@ -1,45 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-class RemoveElementsFromArray
+public class RemoveElementsFromArray
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
         int n = int.Parse(Console.ReadLine());
         List<int> numbers = new List<int>();
 
         AddNumbersToList(n, numbers);
-        int[] size = new int[numbers.Count];
+        int[] subsetLength = new int[numbers.Count];
 
-        // Define each number as subsequence.
+        //// Define each number as subsequence.
         for (int i = 0; i < numbers.Count; i++)
         {
-            size[i] = 1;
+            subsetLength[i] = 1;
         }
 
-        int max = 1;
-        // Compare current number with the numbers before.
+        int maxSubset = 1;
+
+        //// Compare current number with the numbers before.
         for (int i = 1; i < numbers.Count; i++)
         {
             for (int j = 0; j < i; j++)
             {
-                if (numbers[i] >= numbers[j] && size[i] <= size[j] + 1)
+                if (numbers[i] >= numbers[j] && subsetLength[i] <= subsetLength[j] + 1)
                 {
-                    size[i] = size[j] + 1;
-                    // Update max increasing subsequence.
-                    if (max < size[i])
-                    {
-                        max = size[i];
-                    }
+                    subsetLength[i] = subsetLength[j] + 1;
+                    //// Update max increasing subsequence.
+                    maxSubset=Math.Max(maxSubset,subsetLength[i]);
                 }
             }
         }
 
-        // Print numbers to remove as a result.
-        int numbersToRemove = n - max;
+        //// Print numbers to remove as a result.
+        int numbersToRemove = n - maxSubset;
         Console.WriteLine(numbersToRemove);
     }
 
