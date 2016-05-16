@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3C6A4B73-65ED-4CB9-914C-08253A293B37}</ProjectGuid>
+    <ProjectGuid>{09E5CEFD-0D88-471F-B205-D5E95848BF06}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_01.Fill_The_Matrix</RootNamespace>
-    <AssemblyName>_01.Fill_The_Matrix</AssemblyName>
+    <RootNamespace>_03.Sequence_In_Matrix</RootNamespace>
+    <AssemblyName>_03.Sequence_In_Matrix</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FillTheMatrix.cs" />
+    <Compile Include="SequenceInMatrix.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
