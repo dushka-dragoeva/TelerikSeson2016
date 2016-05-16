@@ -1,0 +1,28 @@
+﻿table {
+    width:500px;
+    border:none;
+    background-color:#808080;
+}
+table thead th{
+    color: 	#B0C4DE;
+    font-size:1.4em;
+}
+table th{
+    color: 	#E0FFFF;
+    text-align:left;
+}
+table tbody tr td p{
+    color:	#B0C4DE;
+}
+table tbody tr td div{
+    color:#F0E68C;
+}
+table tbody tr td div p{
+    color:#F0E68C;
+}
+table tfoot tr td {
+    color:orange;
+}
+span{
+    color:red;
+}

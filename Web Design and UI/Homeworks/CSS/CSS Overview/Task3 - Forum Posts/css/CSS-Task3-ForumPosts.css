@@ -1,0 +1,31 @@
+﻿body {
+    background-color:#A9A9A9;
+}
+header h1{
+    color: 	#FAFAD2;
+    text-align:center;
+}
+section article header h1{
+    color: 	#FAFAD2;
+    text-align:left;
+}
+section article footer a{
+    text-decoration:none;
+    color:black;
+}
+header nav ul a{
+    text-decoration:none;
+    color:#ffffff;
+}
+.current{
+    background-color:#D3D3D3
+}
+header nav ul li:last-child{
+    text-decoration:underline;
+}
+header nav ul li{
+        list-style:none;
+   text-align:center;
+   font-size:1.4em;
+}
+
