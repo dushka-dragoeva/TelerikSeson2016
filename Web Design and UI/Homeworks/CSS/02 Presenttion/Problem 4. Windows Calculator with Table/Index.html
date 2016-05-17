@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <p>
+            <span id="title">Calculator</span>
+
+            <table id="header">
+                <tr>
+                    <td>_</td>
+                    <td>&#9633</td>
+                    <td >x</td>
+                </tr>
+            </table>
+        </p>
+
+        <div id="win"></div>
+        <div id="calc">
+            <ul>
+                <li>List</li>
+                <li>Edit</li>
+                <li>Help</li>
+            </ul>
+            <div id="main">
+                <table class="main-table">
+                    <tr>
+                        <td colspan="10" id="display">788888 </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="10">
+                            <table id="small">
+                                <tr>
+                                    <td>0000</td>
+                                    <td>0000</td>
+                                    <td>0000</td>
+                                    <td>0000</td>
+                                    <td>0000</td>
+                                    <td>0000</td>
+                                    <td>0000</td>
+                                    <td>0000</td>
+                                </tr>
+                                <tr>
+                                    <td class="left">63</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="left">47</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="right">32</td>
+                                </tr>
+                                <tr>
+                                    <td>1100</td>
+                                    <td>0101</td>
+                                    <td>0000</td>
+                                    <td>0000</td>
+                                    <td>1100</td>
+                                    <td>0101</td>
+                                    <td>0000</td>
+                                    <td>0000</td>
+                                </tr>
+                                <tr>
+                                    <td class="left">31</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="left">15</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="right">0</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="radio" colspan="2" rowspan="3">
+                            <form>
+                                <input type="radio" name="num-sys" value="hex" /><span class="input">Hex</span><br/>
+                                <input type="radio" name="num-sys" value="dec" checked /><span class="input">Dec</span><br />
+                                <input type="radio" name="num-sys" value="oct" /><span class="input">Oct</span><br />
+                                <input type="radio" name="num-sys" value="bin" /><span class="input">Bin</span> <br />
+                            </form>
+                        </td>
+                        <td class="inactive"></td>
+                        <td class="button smaller">Mod</td>
+                        <td class="inactive larger">A</td>
+                        <td class="smaller ms">MC</td>
+                        <td class="smaller ms">MR</td>
+                        <td class="smaller ms">MS</td>
+                        <td class="smaller ms">M+</td>
+                        <td class="smaller ms">M-</td>
+                    </tr>
+                    <tr>
+                        <td class="button smaller">(</td>
+                        <td class="button smaller">)</td>
+                        <td class="inactive larger">B</td>
+                        <td class="biggest backspace button">&#8592;</td>
+                        <td class="button smaller">CE</td>
+                        <td class="button smaller">C</td>
+                        <td class="button">&#177;</td>
+                        <td class="inactive smaller">&radic;</td>
+                    </tr>
+                    <tr>
+                        <td class="button smaller">RoL</td>
+                        <td class="button smaller">RoR</td>
+                        <td class="inactive larger">C</td>
+                        <td class="larger numbers">7</td>
+                        <td class="larger numbers">8</td>
+                        <td class="larger numbers">9</td>
+                        <td class="button">/</td>
+                        <td class="inactive smaller">%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="3" class="radio inactive">
+                            <form>
+                                <input type="radio" name="word" checked /><span class="input">Qword</span><br />
+                                <input type="radio" name="word" /><span class="input">Dword</span><br />
+                                <input type="radio" name="word" /><span class="input">Word</span><br />
+                                <input type="radio" name="word" /><span class="input">Byte</span>
+                            </form>
+                        </td>
+                        <td class="button smaller">Or</td>
+                        <td class="button smaller">Xor</td>
+                        <td class="inactive larger">D</td>
+                        <td class="larger numbers">4</td>
+                        <td class="larger numbers">5</td>
+                        <td class="larger numbers">6</td>
+                        <td class="larger button asterisk">*</td>
+                        <td class="inactive">1/x</td>
+                    </tr>
+                    <tr>
+                        <td class="button smaller">Lsh</td>
+                        <td class="button smaller">Rsh</td>
+                        <td class="inactive larger">E</td>
+                        <td class="larger numbers">1</td>
+                        <td class="larger numbers">2</td>
+                        <td class="larger numbers">3</td>
+                        <td class="larger button">-</td>
+                        <td rowspan="2" class="biggest button">=</td>
+                    </tr>
+                    <tr>
+                        <td class="button smaller">Not</td>
+                        <td class="button smaller">And</td>
+                        <td class="inactive larger">F</td>
+                        <td colspan="2" class="larger numbers">0</td>
+                        <td class="inactive">,</td>
+                        <td class="larger button">+</td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
