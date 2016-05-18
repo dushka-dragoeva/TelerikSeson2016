@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Decimal-To-Binary", "01. Decimal-To-Binary\01. Decimal-To-Binary.csproj", "{6D3802EC-CC47-414F-99C1-6578EED5EE4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Binary-To-Decimal", "02. Binary-To-Decimal\02. Binary-To-Decimal.csproj", "{FFED0015-D420-46D0-92C6-681BCBA16142}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Decimal-To-Hexadecimal", "03. Decimal-To-Hexadecimal\03. Decimal-To-Hexadecimal.csproj", "{F15B1D2A-619F-4B6E-A2B5-DB5C62AB1ECD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6D3802EC-CC47-414F-99C1-6578EED5EE4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D3802EC-CC47-414F-99C1-6578EED5EE4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D3802EC-CC47-414F-99C1-6578EED5EE4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFED0015-D420-46D0-92C6-681BCBA16142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFED0015-D420-46D0-92C6-681BCBA16142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFED0015-D420-46D0-92C6-681BCBA16142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFED0015-D420-46D0-92C6-681BCBA16142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F15B1D2A-619F-4B6E-A2B5-DB5C62AB1ECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F15B1D2A-619F-4B6E-A2B5-DB5C62AB1ECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F15B1D2A-619F-4B6E-A2B5-DB5C62AB1ECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F15B1D2A-619F-4B6E-A2B5-DB5C62AB1ECD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
