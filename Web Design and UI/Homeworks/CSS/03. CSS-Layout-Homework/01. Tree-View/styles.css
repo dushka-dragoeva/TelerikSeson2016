@@ -1,0 +1,36 @@
+body, div, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Serif;
+    font-size: 16px;
+}
+
+#main-list{
+    margin: 20px;
+}
+
+#main-list, .sublist {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li .sublist li >a {
+    color: gray;
+}
+
+.sublist {
+    padding-left: 15px;
+    display: none;
+}
+
+#main-list li:hover >a:hover {
+    text-decoration: underline;
+}
+
+#main-list li:hover >.sublist{
+    display: block;
+}
