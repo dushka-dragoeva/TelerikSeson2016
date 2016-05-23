@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-public class Program
+public class SeriesOfLetters
 {
     public static void Main()
     {
@@ -13,7 +13,7 @@ public class Program
     {
         var compressed = new StringBuilder();
 
-        for (int i = 0; i < text.Length; i++)
+        for (int i = 1; i < text.Length; i++)
         {
             if (text[i - 1] == text[i])
             {
@@ -49,6 +49,7 @@ public class Program
                 compressed.Append(letter);
             }
         }
+
         return compressed.ToString();
     }
 }

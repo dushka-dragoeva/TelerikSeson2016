@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9F6C5FF9-785A-48A3-9C30-0B1C128E87B2}</ProjectGuid>
+    <ProjectGuid>{CF91CCC9-6691-465C-84DA-369721261B9E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_23.Series_Of_Letters</RootNamespace>
-    <AssemblyName>_23.Series_Of_Letters</AssemblyName>
+    <RootNamespace>_13.Reverse_Sentence</RootNamespace>
+    <AssemblyName>_13.Reverse_Sentence</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SeriesOfLetters.cs" />
+    <Compile Include="ReverseSentence.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
