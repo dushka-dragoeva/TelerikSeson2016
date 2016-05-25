@@ -66,9 +66,11 @@ public class Replace
     /// </summary>
     /// <param name="html">text html for parsing </param>
     /// <returns>List of indexes - 
-    /// 1. start index of open tag
-    /// 2. end index of open tag
-    /// 3. start index of close tag
+    /// 1. Start index of open a tag
+    /// 2.Index of open " of url
+    /// 3.Index of close " of url
+    /// 4. End index of open a tag 
+    /// 5. start index of close tag
     /// </returns>
     private static List<int> FindAnchorTagsIndexes(string html)
     {

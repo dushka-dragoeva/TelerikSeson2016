@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Reverse-string", "02. Reverse-string\02. Reverse-string.csproj", "{11A9DC08-03B3-494D-81EB-8A4FF0F96709}"
 EndProject
@@ -50,6 +50,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24.Order-Words", "24.OrderWords\24.Order-Words.csproj", "{AD42B7E3-AD31-459E-963E-38ED4A4B3936}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "25.Extract-Text-From-HTML", "25.ExtractTextFromHTML\25.Extract-Text-From-HTML.csproj", "{492EA14D-9B75-4EAC-9F5F-96628E65EB5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Replace2", "Replace2\Replace2.csproj", "{D9DA9AEE-98E9-4CD4-81C0-AD33B2040629}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{492EA14D-9B75-4EAC-9F5F-96628E65EB5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{492EA14D-9B75-4EAC-9F5F-96628E65EB5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{492EA14D-9B75-4EAC-9F5F-96628E65EB5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9DA9AEE-98E9-4CD4-81C0-AD33B2040629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9DA9AEE-98E9-4CD4-81C0-AD33B2040629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9DA9AEE-98E9-4CD4-81C0-AD33B2040629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9DA9AEE-98E9-4CD4-81C0-AD33B2040629}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
