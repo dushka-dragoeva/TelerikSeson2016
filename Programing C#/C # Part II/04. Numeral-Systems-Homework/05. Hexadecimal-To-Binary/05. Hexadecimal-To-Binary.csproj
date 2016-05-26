@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FFED0015-D420-46D0-92C6-681BCBA16142}</ProjectGuid>
+    <ProjectGuid>{76058461-BBC6-4F44-A5A7-CA49907E56AB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_02.Binary_To_Decimal</RootNamespace>
-    <AssemblyName>_02.Binary_To_Decimal</AssemblyName>
+    <RootNamespace>_05.Hexadecimal_To_Binary</RootNamespace>
+    <AssemblyName>_05.Hexadecimal_To_Binary</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinarytoDecimal.cs" />
+    <Compile Include="HexadecimalToBinary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
