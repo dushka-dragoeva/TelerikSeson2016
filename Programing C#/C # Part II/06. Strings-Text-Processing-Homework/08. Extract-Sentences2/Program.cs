@@ -44,11 +44,15 @@ public class ExtractSentences
 
         while (nextIndexOfWord > -1)
         {
-            if (nextIndexOfWord != 0 && char.IsLetter(sentance[nextIndexOfWord - 1]))
+            if (nextIndexOfWord != 0 &&
+              ((char.IsLetter(sentance[nextIndexOfWord - 1])) ||
+               (sentance[nextIndexOfWord - 1] == '-')))
             {
                 nextIndexOfWord = sentance.IndexOf(word, nextIndexOfWord + 1);
             }
-            else if (nextIndexOfWord < lastIndex && char.IsLetter(sentance[nextIndexOfWord + word.Length]))
+            else if (nextIndexOfWord < lastIndex &&
+                ((char.IsLetter(sentance[nextIndexOfWord + word.Length]) ||
+                (sentance[nextIndexOfWord + word.Length] == '-'))))
             {
                 nextIndexOfWord = sentance.IndexOf(word, nextIndexOfWord + 1);
             }
