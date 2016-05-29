@@ -7,6 +7,26 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.   [March 2015 - Evening
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. [ March 2015 - Evening] Even Differences", "02. [ March 2015 - Evening] Even Differences\02. [ March 2015 - Evening] Even Differences.csproj", "{DB0CEC4F-6032-44F5-B0F0-8EC613972E28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.  [ March 2015 - Evening] Lover of Three", "03.  [ March 2015 - Evening] Lover of Three\03.  [ March 2015 - Evening] Lover of Three.csproj", "{BF835ACA-94A9-445E-BB10-74F2C1FBECA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.  [ March 2015 - Evening] Konspiration", "04.  [ March 2015 - Evening] Konspiration\04.  [ March 2015 - Evening] Konspiration.csproj", "{D232C6E1-922C-4327-81E4-2F694DA724E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.  [March6 2015 - Evening] De-cat-coding", "01.  [March6 2015 - Evening] De-cat-coding\01.  [March6 2015 - Evening] De-cat-coding.csproj", "{EA2C5EF0-3836-45C5-9227-3364ED5F3E83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. [ March06 2015 - Evening] IncreasingAbsDifference", "02. [ March06 2015 - Evening] IncreasingAbsDifference\02. [ March06 2015 - Evening] IncreasingAbsDifference.csproj", "{01C65307-BAD6-40CF-8D36-96B3401006C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. [ March06 2015 - Evening] BitShiftMatrix", "03. [ March06 2015 - Evening] BitShiftMatrix\03. [ March06 2015 - Evening] BitShiftMatrix.csproj", "{FC8D1A22-0615-41F3-ABE7-87AEB7AE825A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exam 2016", "Exam 2016", "{D10FFF87-557B-491D-A015-3647B3DD3448}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.  [ March06 2015 - Evening] CATastrophe", "04.  [ March06 2015 - Evening] CATastrophe\04.  [ March06 2015 - Evening] CATastrophe.csproj", "{D3BFDD6F-A79E-4DBE-B735-A7049103D914}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. [ March 2015 - Evening]SingingCats", "05. [ March 2015 - Evening]SingingCats\05. [ March 2015 - Evening]SingingCats.csproj", "{2E724A88-3758-47E5-A758-D7337CAEB98C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. [ Variant 2 (2015-09-14)] Trail3D", "03. [ Variant 2 (2015-09-14)]\03. [ Variant 2 (2015-09-14)] Trail3D.csproj", "{B5B75D52-71E4-4D09-8D04-9AFAB3F704A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication2", "ConsoleApplication2\ConsoleApplication2.csproj", "{3FCAD30E-CD58-4B86-913C-178485A2DC9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +41,42 @@ Global
 		{DB0CEC4F-6032-44F5-B0F0-8EC613972E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB0CEC4F-6032-44F5-B0F0-8EC613972E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB0CEC4F-6032-44F5-B0F0-8EC613972E28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF835ACA-94A9-445E-BB10-74F2C1FBECA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF835ACA-94A9-445E-BB10-74F2C1FBECA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF835ACA-94A9-445E-BB10-74F2C1FBECA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF835ACA-94A9-445E-BB10-74F2C1FBECA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D232C6E1-922C-4327-81E4-2F694DA724E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D232C6E1-922C-4327-81E4-2F694DA724E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D232C6E1-922C-4327-81E4-2F694DA724E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D232C6E1-922C-4327-81E4-2F694DA724E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA2C5EF0-3836-45C5-9227-3364ED5F3E83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA2C5EF0-3836-45C5-9227-3364ED5F3E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA2C5EF0-3836-45C5-9227-3364ED5F3E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA2C5EF0-3836-45C5-9227-3364ED5F3E83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01C65307-BAD6-40CF-8D36-96B3401006C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01C65307-BAD6-40CF-8D36-96B3401006C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01C65307-BAD6-40CF-8D36-96B3401006C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01C65307-BAD6-40CF-8D36-96B3401006C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC8D1A22-0615-41F3-ABE7-87AEB7AE825A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC8D1A22-0615-41F3-ABE7-87AEB7AE825A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC8D1A22-0615-41F3-ABE7-87AEB7AE825A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC8D1A22-0615-41F3-ABE7-87AEB7AE825A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3BFDD6F-A79E-4DBE-B735-A7049103D914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3BFDD6F-A79E-4DBE-B735-A7049103D914}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3BFDD6F-A79E-4DBE-B735-A7049103D914}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3BFDD6F-A79E-4DBE-B735-A7049103D914}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E724A88-3758-47E5-A758-D7337CAEB98C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E724A88-3758-47E5-A758-D7337CAEB98C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E724A88-3758-47E5-A758-D7337CAEB98C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E724A88-3758-47E5-A758-D7337CAEB98C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5B75D52-71E4-4D09-8D04-9AFAB3F704A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5B75D52-71E4-4D09-8D04-9AFAB3F704A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5B75D52-71E4-4D09-8D04-9AFAB3F704A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5B75D52-71E4-4D09-8D04-9AFAB3F704A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FCAD30E-CD58-4B86-913C-178485A2DC9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FCAD30E-CD58-4B86-913C-178485A2DC9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FCAD30E-CD58-4B86-913C-178485A2DC9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FCAD30E-CD58-4B86-913C-178485A2DC9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
