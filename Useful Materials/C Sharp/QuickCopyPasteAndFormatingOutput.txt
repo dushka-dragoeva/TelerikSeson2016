@@ -24,6 +24,17 @@ Formating Output
              Например:
 
          [C#] Домашно Conditional Statements - 1 задача
+
+var matrix = new byte[n, n];
+            for (int row = 0; row < n; row++)
+            {
+                var currentrow = Console.ReadLine().Split(' ');
+
+                for (int col = 0; col < n; col++)
+                {
+                    matrix[row, col] = byte.Parse( currentrow[col]);
+                }
+            }
 		 
 		 
 int[] arr = input.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries)
@@ -37,6 +48,43 @@ int length = int.Parse(Console.ReadLine());
         {
             arr[i] = int.Parse(Console.ReadLine());
         }
+#PRINT MATRIX	
+		 private static void PrintMatrix(int[,] matrix)
+    {
+        for (int i = 0; i < matrix.GetLength(0); i++)
+        {
+            for (int j = 0; j < matrix.GetLength(1); j++)
+            {
+                Console.Write("{0} ", matrix[i, j]);
+            }
+            Console.WriteLine();
+        }
+    }
+# Fill Matrix
+// same numbers lelt-to-right diagonal
+    private static int[,] FillTheField(int rows, int cols)
+    {
+        var field = new int[rows, cols];
+        var temp = 3;
+        var size = rows - 2;
+
+        for (int k = 0; k < cols + rows; k++)
+        {
+            for (int row = 0; row < rows; row++)
+            {
+                for (int col = 0; col < cols; col++)
+                {
+                    if ((row - col) == (size - k))
+                    {
+                        field[row, col] = temp;
+                    }
+                }
+            }
+            temp += 3;
+        }
+
+        return field;
+    }
 ---------------------------------------------------
 		int number= Console.ReadLine();
         string binary = new string('1', number);
