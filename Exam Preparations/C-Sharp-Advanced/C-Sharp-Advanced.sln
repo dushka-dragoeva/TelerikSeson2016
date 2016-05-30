@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. [ Variant 2 (2015-09-14
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication2", "ConsoleApplication2\ConsoleApplication2.csproj", "{3FCAD30E-CD58-4B86-913C-178485A2DC9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0 4. [Vatiant 1 2014] Variable Length Coding", "0 4. [Vatiant 1 2014] Variable Length Coding\0 4. [Vatiant 1 2014] Variable Length Coding.csproj", "{1AAB5DD0-8DBC-4A6F-B272-DF1A9BC9B1CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{3FCAD30E-CD58-4B86-913C-178485A2DC9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FCAD30E-CD58-4B86-913C-178485A2DC9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FCAD30E-CD58-4B86-913C-178485A2DC9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AAB5DD0-8DBC-4A6F-B272-DF1A9BC9B1CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AAB5DD0-8DBC-4A6F-B272-DF1A9BC9B1CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AAB5DD0-8DBC-4A6F-B272-DF1A9BC9B1CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AAB5DD0-8DBC-4A6F-B272-DF1A9BC9B1CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

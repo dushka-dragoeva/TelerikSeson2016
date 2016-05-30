@@ -64,6 +64,7 @@ public class Trail3D
             while (redCommand != 'M')
             {
                 redDirection = ChangeDir(redDirection, redCommand);
+
                 /// update red index
                 ++redIndex;
                 redCommand = redCommands[redIndex];
@@ -153,7 +154,7 @@ public class Trail3D
         }
         else if (!hasRedCrashed &&
             !hasBlueCrashed &&
-            redIndex == redCommands.Length-1 &&
+            redIndex == redCommands.Length - 1 &&
             blueIndex == blueCommands.Length - 1)
         {
             Console.WriteLine("DRAW");
