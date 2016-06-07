@@ -14,6 +14,7 @@
         }
 
         public Display(double size, int numberOfColors)
+            :this()
         {
             this.size = size;
             this.numberOfColors = numberOfColors;
@@ -48,8 +49,26 @@
         public override string ToString()
         {
             var output = new StringBuilder();
+            output.Append("Size - ");
 
-            output.Append(string.Format( "Size - {0}\"; Colors - {1}",this.Size, this.NumberOfColors));
+            if (this.Size == null)
+            {
+                output.Append(GlobalConstants.NoInformation);
+            }
+            else
+            {
+                output.Append($"{this.Size}\"");
+            }
+
+            output.Append("Colors -");
+            if (this.numberOfColors == null)
+            {
+                output.Append(GlobalConstants.NoInformation);
+            }
+            else
+            {
+                output.Append($"{this.NumberOfColors}");
+            }
 
             return output.ToString();
         }

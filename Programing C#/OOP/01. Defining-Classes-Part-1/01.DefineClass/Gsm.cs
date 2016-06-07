@@ -1,18 +1,10 @@
-﻿/*Define a class that holds information about a mobile phone device: model, manufacturer, price,
-owner, battery characteristics (model, hours idle and hours talk) and display characteristics 
-(size and number of colors).
-Define 3 separate classes (class GSM holding instances of the classes Battery and Display).*/
-
-namespace MobileDevice
+﻿namespace MobileDevice
 {
     using System;
     using System.Text;
 
     internal class Gsm
     {
-        private const string NoInformation = "No information avalable.";
-        private const string NullValue = " cannot be null";
-
         private string model;
         private string manufacture;
         private decimal price;
@@ -30,11 +22,17 @@ namespace MobileDevice
             this.display = null;
         }
 
-        public Gsm(string model, string manufacture, decimal price, string owner, Battery baterry, Display display)
+        public Gsm(string model, string manufacture, decimal price, string owner)
             : this(model, manufacture)
         {
             this.price = price;
             this.owner = owner;
+        }
+
+
+        public Gsm(string model, string manufacture, decimal price, string owner, Battery baterry, Display display)
+            : this(model, manufacture, price, owner)
+        {
             this.battery = baterry;
             this.display = display;
         }
@@ -54,7 +52,7 @@ namespace MobileDevice
                 }
                 else
                 {
-                    throw new ArgumentNullException(nameof(value) + NullValue);
+                    throw new ArgumentNullException(nameof(value) + GlobalConstants.NullValue);
                 }
             }
         }
@@ -73,10 +71,11 @@ namespace MobileDevice
                 }
                 else
                 {
-                    throw new ArgumentNullException(nameof(value) + NullValue);
+                    throw new ArgumentNullException(nameof(value) + GlobalConstants.NullValue);
                 }
             }
         }
+
         public override string ToString()
         {
             var output = new StringBuilder();
@@ -93,7 +92,7 @@ namespace MobileDevice
             }
             else
             {
-                value = NoInformation;
+                value = GlobalConstants.NoInformation;
             }
 
             output.Append(string.Format("Price: {0}", value))
@@ -105,7 +104,7 @@ namespace MobileDevice
             }
             else
             {
-                value = NoInformation;
+                value = GlobalConstants.NoInformation;
             }
 
             output.Append(string.Format("Owner: {0}", value))
@@ -117,7 +116,7 @@ namespace MobileDevice
             }
             else
             {
-                value = NoInformation;
+                value = GlobalConstants.NoInformation;
             }
 
             output.Append(string.Format("Battery: {0}", value))

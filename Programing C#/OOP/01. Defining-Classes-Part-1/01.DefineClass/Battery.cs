@@ -16,8 +16,8 @@
         }
 
         public Battery(BatteryType model, int hoursIdle, int hoursTalk)
+            : this(model)
         {
-            this.model = model;
             this.hoursIdle = hoursIdle;
             this.hoursTalk = hoursTalk;
         }
@@ -64,8 +64,16 @@
         public override string ToString()
         {
             var output = new StringBuilder();
+            if (this.HourseTalk == null)
+            {
+              output.Append(string.Format("Type - {0}; Hours Talk - {1}; Hours Idle - {1} ", this.Model, GlobalConstants.NoInformation ));
+            }
+            else
+            {
 
-            output.Append(string.Format("Type - {0}; Hours Talk - {1}; Hours Idle - {2} ", this.Model, this.hoursTalk, this.hoursIdle));
+            output.Append($"Type - {this.model}; Hours Talk - {this.hoursTalk}; Hours Idle - {this.HoursIdle}");
+            }
+           
 
             return output.ToString();
         }

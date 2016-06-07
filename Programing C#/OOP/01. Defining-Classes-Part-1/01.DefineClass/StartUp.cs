@@ -11,6 +11,12 @@ namespace MobileDevice
     {
         static void Main()
         {
+            var battery = new Battery(BatteryType.LiIon);
+            Console.WriteLine(battery.ToString());
+            var display = new Display();
+            display.Size = 7.3;
+            Console.WriteLine(display.ToString());
+
         }
     }
 }
