@@ -178,7 +178,7 @@
             return price;
         }
 
-        public string CallHystoryInfo()
+        public string CallHistoryInfo()
         {
             var callHistoryInfo = new StringBuilder();
 

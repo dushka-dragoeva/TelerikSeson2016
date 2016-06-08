@@ -16,7 +16,7 @@
             myGsm.AddCall(new Call(new DateTime(2015, 03, 14, 22, 03, 25), "0887 48 45 66", 432));
             myGsm.AddCall(new Call(new DateTime(2015, 03, 16, 22, 03, 05), "0887 48 45 66", 270));
 
-            Console.WriteLine(myGsm.CallHystoryInfo());
+            Console.WriteLine(myGsm.CallHistoryInfo());
             Console.WriteLine("Total price: {0:f2} BGN", myGsm.CalculateTotalCallPrice(PricePerMinute));
 
             Call longestCall = myGsm.CallHistory.OrderByDescending(x => x.DurationInSeconds).First();
@@ -29,7 +29,7 @@
 
             myGsm.ClearHistory();
 
-            Console.WriteLine(myGsm.CallHystoryInfo());
+            Console.WriteLine(myGsm.CallHistoryInfo());
         }
     }
 }
