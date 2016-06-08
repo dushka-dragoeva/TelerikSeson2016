@@ -1,5 +1,6 @@
 ﻿namespace MobileDevice
 {
+    using System;
     using System.Text;
 
     internal class Battery
@@ -44,7 +45,14 @@
 
             set
             {
-                this.hoursIdle = value;
+                if (this.hoursIdle <= 0)
+                {
+                    throw new ArgumentException("Houre idle {0}", GlobalConstants.NegativeNumber);
+                }
+                else
+                {
+                    this.hoursIdle = value;
+                }
             }
         }
 
@@ -57,23 +65,40 @@
 
             set
             {
-                this.hoursTalk = value;
+                if (this.hoursTalk <= 0)
+                {
+                    throw new ArgumentException("Houre talk {0}", GlobalConstants.NegativeNumber);
+                }
+                else
+                {
+                    this.hoursIdle = value;
+                }
             }
         }
 
         public override string ToString()
         {
             var output = new StringBuilder();
+
+            output.Append($"Type - {this.model}; ");
+
             if (this.HourseTalk == null)
             {
-              output.Append(string.Format("Type - {0}; Hours Talk - {1}; Hours Idle - {1} ", this.Model, GlobalConstants.NoInformation ));
+                output.Append(string.Format("Hours Talk - {0}; ", GlobalConstants.NoInformation));
             }
             else
             {
-
-            output.Append($"Type - {this.model}; Hours Talk - {this.hoursTalk}; Hours Idle - {this.HoursIdle}");
+                output.Append($" Hours Talk - {this.hoursTalk};");
             }
-           
+
+            if (this.HoursIdle == null)
+            {
+                output.Append(string.Format("Hours Idle - {0}", GlobalConstants.NoInformation));
+            }
+            else
+            {
+                output.Append($" Hours Idle - {this.hoursIdle}");
+            }
 
             return output.ToString();
         }

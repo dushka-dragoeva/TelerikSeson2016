@@ -1,22 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MobileDevice
-
+﻿namespace MobileDevice
 {
-    class StartUp
-    {
-        static void Main()
-        {
-            var battery = new Battery(BatteryType.LiIon);
-            Console.WriteLine(battery.ToString());
-            var display = new Display();
-            display.Size = 7.3;
-            Console.WriteLine(display.ToString());
+    using System;
 
+    public class StartUp
+    {
+        public static void Main()
+        {
+            var tests = new GsmTests();
+            tests.DisplayGsmInformation();
+
+            var call = new Call(new DateTime(2015, 09, 15, 12, 54, 6), "0456-345-33", 390);
+            Console.WriteLine(call.ToString());
+
+            var callTest = new GsmCallHistoryTest();
+            callTest.Functionality();
         }
     }
 }

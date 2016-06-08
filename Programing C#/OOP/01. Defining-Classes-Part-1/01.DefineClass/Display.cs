@@ -1,5 +1,6 @@
 ﻿namespace MobileDevice
 {
+    using System;
     using System.Text;
 
     public class Display
@@ -9,15 +10,20 @@
 
         public Display()
         {
-            this.size = null;
-            this.numberOfColors = null;
+            this.Size = null;
+            this.NumberOfColors = null;
         }
 
-        public Display(double size, int numberOfColors)
-            :this()
+        public Display(double? size)
+            : this()
         {
-            this.size = size;
-            this.numberOfColors = numberOfColors;
+            this.Size = size;
+        }
+
+        public Display(double? size, int? numberOfColors)
+           : this(size)
+        {
+            this.NumberOfColors = numberOfColors;
         }
 
         public double? Size
@@ -29,7 +35,14 @@
 
             set
             {
-                this.size = value;
+                if (this.size <= 0)
+                {
+                    throw new ArgumentException(string.Format("Size {0}", GlobalConstants.NegativeNumber));
+                }
+                else
+                {
+                    this.size = value;
+                }
             }
         }
 
@@ -42,10 +55,17 @@
 
             set
             {
-                this.numberOfColors = value;
+                if (this.numberOfColors <= 0)
+                {
+                    throw new ArgumentException(string.Format("Number of colors {0}", GlobalConstants.NegativeNumber));
+                }
+                else
+                {
+                    this.numberOfColors = value;
+                }
             }
         }
-    
+
         public override string ToString()
         {
             var output = new StringBuilder();
@@ -57,11 +77,11 @@
             }
             else
             {
-                output.Append($"{this.Size}\"");
+                output.Append($"{this.Size}; ");
             }
 
-            output.Append("Colors -");
-            if (this.numberOfColors == null)
+            output.Append("Colors - ");
+            if (this.NumberOfColors == null)
             {
                 output.Append(GlobalConstants.NoInformation);
             }
