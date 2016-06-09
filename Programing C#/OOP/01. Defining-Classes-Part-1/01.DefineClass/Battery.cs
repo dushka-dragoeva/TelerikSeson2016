@@ -11,9 +11,9 @@
 
         public Battery(BatteryType model)
         {
-            this.model = model;
-            this.hoursIdle = null;
-            this.hoursTalk = null;
+            this.Model = model;
+            this.HoursIdle = null;
+            this.HoursTalk = null;
         }
 
         public Battery(BatteryType model, int hoursIdle, int hoursTalk)
@@ -56,7 +56,7 @@
             }
         }
 
-        public int? HourseTalk
+        public int? HoursTalk
         {
             get
             {
@@ -67,7 +67,7 @@
             {
                 if (this.hoursTalk <= 0)
                 {
-                    throw new ArgumentException("Houre talk {0}", GlobalConstants.NegativeNumber);
+                    throw new ArgumentException("Hours talk {0}", GlobalConstants.NegativeNumber);
                 }
                 else
                 {
@@ -82,13 +82,13 @@
 
             output.Append($"Type - {this.model}; ");
 
-            if (this.HourseTalk == null)
+            if (this.HoursTalk == null)
             {
                 output.Append(string.Format("Hours Talk - {0}; ", GlobalConstants.NoInformation));
             }
             else
             {
-                output.Append($" Hours Talk - {this.hoursTalk};");
+                output.Append($" Hours Talk - {this.HoursTalk};");
             }
 
             if (this.HoursIdle == null)
