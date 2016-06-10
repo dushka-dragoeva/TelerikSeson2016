@@ -27,7 +27,7 @@
 
         public override string ToString()
         {
-            return $"X = {this.X}, Y = {this.Y}, Z = {this.Z}";
+            return $"[{this.X}, {this.Y}, {this.Z}]";
         }
     }
 }
