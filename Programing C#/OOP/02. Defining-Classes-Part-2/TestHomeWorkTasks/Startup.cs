@@ -2,10 +2,14 @@
 {
     using System;
     using System.Globalization;
+    using System.Reflection;
     using System.Threading;
     using _01_04.Structure;
     using _05_07_GenericList;
+    using _08_10.Matrix;
+    using _11.Version_Attribute;
 
+    [Version(VersionAttribute.Type.Class, "TestHomeworkTasks", "1.03")]
     public class Startup
     {
         public static void Main()
@@ -57,6 +61,40 @@
 
             myList.Clear();
             Console.WriteLine($"I am empty list.{myList}");
+            Console.WriteLine();
+
+            Console.WriteLine("Test Matrix");
+
+            var firstMatrix = new Matrix<int>(2, 4);
+            firstMatrix.FillMatrix();
+            Console.WriteLine(firstMatrix);
+
+            var secondMatrix = new Matrix<int>(2, 4);
+            secondMatrix.FillMatrix();
+            secondMatrix[1, 1] = 0;
+            Console.WriteLine(secondMatrix);
+
+            var thirdMatrix = new Matrix<int>(6, 2);
+            thirdMatrix.FillMatrix();
+            Console.WriteLine(thirdMatrix);
+
+            Console.WriteLine($"Addition:\n{firstMatrix + secondMatrix}");
+            Console.WriteLine($"Subtraction :\n{firstMatrix - secondMatrix}");
+            Console.WriteLine($"Multiplication:\n{firstMatrix * thirdMatrix}");
+
+            var isTrue = firstMatrix ? "True" : "False";
+            Console.WriteLine(isTrue);
+
+            isTrue = secondMatrix ? "True" : "False";
+            Console.WriteLine(isTrue);
+            Console.WriteLine();
+
+            var classAttr = typeof(Startup).GetCustomAttributes<VersionAttribute>();
+
+            foreach (var attribute in classAttr)
+            {
+                Console.WriteLine("{0}: {1}     Version: {2}", attribute.Component, attribute.Name, attribute.Version);
+            }
         }
     }
 }

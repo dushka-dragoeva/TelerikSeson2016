@@ -29,13 +29,13 @@
 
             set
             {
-                if (value > 0)
+                if (value > 0 || value <= int.MaxValue)
                 {
                     this.capacity = value;
                 }
                 else
                 {
-                    throw new ArgumentOutOfRangeException("Capacity", "Capacity should be a positive number!");
+                    throw new ArgumentOutOfRangeException("Capacity", "Rows must be between 1 and  2,147,483,647!");
                 }
             }
         }
