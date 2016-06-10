@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    internal class Path
+    public class Path
     {
         private List<Point3D> points;
 

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E673D790-AFE4-43AC-82B8-67467F554F44}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{0E98B468-6864-4C12-BA8A-D4DF6FC0BBFB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_01_04.Structure</RootNamespace>
-    <AssemblyName>_01_04.Structure</AssemblyName>
+    <RootNamespace>TestHomeWorkTasks</RootNamespace>
+    <AssemblyName>TestHomeWorkTasks</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,9 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,16 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculate.cs" />
-    <Compile Include="Path.cs" />
-    <Compile Include="PathStorage.cs" />
-    <Compile Include="Point3D.cs" />
+    <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\01-04. Structure\01-04. Structure.csproj">
+      <Project>{e673d790-afe4-43ac-82b8-67467f554f44}</Project>
+      <Name>01-04. Structure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\05-07 GenericList\05-07 GenericList.csproj">
+      <Project>{04c5ff05-8e8f-4031-9f79-3cc30ffb000e}</Project>
+      <Name>05-07 GenericList</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Paths\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

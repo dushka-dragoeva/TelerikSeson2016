@@ -1,6 +1,6 @@
 ﻿namespace _01_04.Structure
 {
-    internal struct Point3D
+    public struct Point3D
     {
         private static readonly Point3D StartO = new Point3D(0, (double)0, (double)0);
 

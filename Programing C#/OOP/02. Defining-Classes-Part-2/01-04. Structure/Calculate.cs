@@ -2,7 +2,7 @@
 {
     using System;
 
-    internal static class Calculate
+    public static class Calculate
     {
         public static double DistansBetweenTowPoints(Point3D a, Point3D b)
         {

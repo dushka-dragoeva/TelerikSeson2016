@@ -4,7 +4,7 @@
     using System.Linq;
     using IO = System.IO;
 
-    internal static class PathStorage
+    public static class PathStorage
     {
         public static void Save(Path path, string fileName)
         {
