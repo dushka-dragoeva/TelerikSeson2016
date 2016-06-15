@@ -10,7 +10,7 @@ int a = int.Parse(Console.ReadLine());
 double b = double.Parse(Console.ReadLine());
 
 ---------------------------------------
- StreamReader reader = new StreamReader("..\\..\\Test.txt");
+ StreamReader reader = new StreamReader("..\\..\\Test.txt"); 2 directories up. .EXE is always in bin debug
             Console.SetIn(reader);
 -------------------------------------------------------------------------
 Formating Output
@@ -18,12 +18,20 @@ Formating Output
 -number => left alignment
 +number => right alignment
 
+ var temp = Environment.CurrentDirectory;
+            for (int i = 0; i < 2; i++)
+            {
+                var length = temp.LastIndexOf("\\");
+                temp = temp.Substring(0, length);
+            }
 
+
+
+Forum
     [курс] Домашно TOPIC - N задача
 
-             Например:
-
-         [C#] Домашно Conditional Statements - 1 задача
+    Например: [C#] Домашно Conditional Statements - 1 задача
+			 
 
 var matrix = new byte[n, n];
             for (int row = 0; row < n; row++)
