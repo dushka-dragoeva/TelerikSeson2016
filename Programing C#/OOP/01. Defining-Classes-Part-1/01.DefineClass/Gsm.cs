@@ -80,7 +80,7 @@
         {
             get
             {
-                return this.model;
+                return this.manufacture;
             }
 
             set

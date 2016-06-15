@@ -50,6 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Paths\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\01-04. Structure\01-04. Structure.csproj">
       <Project>{e673d790-afe4-43ac-82b8-67467f554f44}</Project>
       <Name>01-04. Structure</Name>
@@ -59,16 +62,13 @@
       <Name>05-07 GenericList</Name>
     </ProjectReference>
     <ProjectReference Include="..\08-10. Matrix\08-10. Matrix.csproj">
-      <Project>{0A4155DC-2AED-445D-ACA5-F22F5C73AE08}</Project>
+      <Project>{0a4155dc-2aed-445d-aca5-f22f5c73ae08}</Project>
       <Name>08-10. Matrix</Name>
     </ProjectReference>
     <ProjectReference Include="..\11. Version-Attribute\11. Version-Attribute.csproj">
       <Project>{9a9f5a70-387e-4839-8fac-c0889c0b07d6}</Project>
       <Name>11. Version-Attribute</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Paths\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

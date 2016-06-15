@@ -27,7 +27,7 @@
                 return this.capacity;
             }
 
-            set
+            private set
             {
                 if (value > 0 || value <= int.MaxValue)
                 {
@@ -57,7 +57,7 @@
         {
             get
             {
-                if (index < 0 || index > this.Count)
+                if (index < 0 || index >= this.Count)
                 {
                     throw new ArgumentOutOfRangeException($"Index should be between 0 and {this.Count - 1}.");
                 }
@@ -69,7 +69,7 @@
 
             set
             {
-                if (index < 0 || index > this.Count)
+                if (index < 0 || index >= this.Count)
                 {
                     throw new ArgumentOutOfRangeException($"Index should be between 0 and {this.Count - 1}.");
                 }
@@ -96,7 +96,7 @@
 
         public void Remove(int index)
         {
-            if (index < 0 || index > this.Count)
+            if (index < 0 || index >= this.Count)
             {
                 throw new ArgumentOutOfRangeException($"Index should be between 0 and {this.Count - 1}.");
             }
@@ -121,7 +121,7 @@
 
         public void Insirt(int index, T item)
         {
-            if (index < 0 || index > this.Count)
+            if (index < 0 || index >= this.Count)
             {
                 throw new ArgumentOutOfRangeException($"Index should be between 0 and {this.Count - 1}.");
             }
