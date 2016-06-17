@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3CB8405-6A06-4E10-AD42-CA026F5B1DF6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StartTest</RootNamespace>
+    <AssemblyName>StartTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Startup.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\1. StringBuilderExtentions\01. StringBuilder.csproj">
+      <Project>{95a18c12-09dc-4315-93a1-a8b2fc2f926e}</Project>
+      <Name>01. StringBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\17. LongestString\17. LongestString.csproj">
+      <Project>{482ac87d-b8b0-4b9f-8a08-92ce0037cf6f}</Project>
+      <Name>17. LongestString</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\2. IEnumerableExtensions\02. IEnumerable.csproj">
+      <Project>{3b2a9395-2f90-473f-8deb-ad1f1147a864}</Project>
+      <Name>02. IEnumerable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\3-5. Strudents\Students.csproj">
+      <Project>{4af0dd89-2025-4cf8-bb01-e894c1387084}</Project>
+      <Name>Students</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\6. DivisibleBySevenAndThree\06. DivisibleBySevenAndThree.csproj">
+      <Project>{b049a52a-107a-442c-a153-2da5df9f2d06}</Project>
+      <Name>06. DivisibleBySevenAndThree</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\8. TimerWithEvent\08. TimerWithEvent.csproj">
+      <Project>{30a24fe3-7dcb-44f8-b883-1767cf5b8d6e}</Project>
+      <Name>08. TimerWithEvent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Timer\07. TimerWithDelegate.csproj">
+      <Project>{45d19464-cfbd-4dc4-9f0f-77baca2e7f61}</Project>
+      <Name>07. TimerWithDelegate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{92811ee3-060a-4f89-a6c8-4d189bb1de20}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
