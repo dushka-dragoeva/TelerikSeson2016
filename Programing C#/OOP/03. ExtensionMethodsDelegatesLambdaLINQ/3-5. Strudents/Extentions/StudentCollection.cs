@@ -141,7 +141,7 @@
                          orderby grupa.Key
                          select grupa;
 
-            return groups;
+            return groups.ToList();
         }
 
         internal static IEnumerable<IGrouping<int?, T>> GroupedByGroupNumberLambda<T>(
@@ -150,7 +150,8 @@
         {
             return allStudents
                 .OrderBy(st => st.GroupNumber)
-                .GroupBy(st => st.GroupNumber);
+                .GroupBy(st => st.GroupNumber)
+                .ToList();
         }
 
         internal static void PrintGrouping<T>(this IEnumerable<IGrouping<int?, T>> colection)
@@ -167,8 +168,8 @@
                .ForEach(y => Console.WriteLine($"{y.FullName}"));
             }
         }
-       
-        internal static void Print<T>(IEnumerable<T> students) where T : Student
+
+        internal static void Print<T>(this IEnumerable<T> students) where T : Student
         {
             Console.ForegroundColor = ConsoleColor.White;
             foreach (var student in students)
@@ -177,7 +178,7 @@
             }
         }
 
-        internal static void PrintSelected(object[] selectedStudents)
+        internal static void PrintSelected(this object[] selectedStudents)
         {
             Console.ForegroundColor = ConsoleColor.White;
             foreach (var item in selectedStudents)

@@ -18,23 +18,21 @@
                 new Student("Gosho", "Popov", 29)
             };
 
-            Console.BackgroundColor = ConsoleColor.Black;
-
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("03. First name is before last name");
-            StudentCollection.Print(StudentCollection.FindFirstBeforeLastName(students));
+            students.FindFirstBeforeLastName().Print();
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("04. Students in age range 18 - 24");
-            StudentCollection.Print(StudentCollection.FindStudentsInAgeRange(students));
+            students.FindStudentsInAgeRange().Print();
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("05. Sorted decending with Lambda");
-            StudentCollection.Print(StudentCollection.SortStudentsUsingLambda(students));
+            students.SortStudentsUsingLambda().Print();
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("05. Sorted decending with LINQ");
-            StudentCollection.Print(StudentCollection.SortStudentsUsingLinq(students));
+            students.SortStudentsUsingLinq().Print();
         }
     }
 }

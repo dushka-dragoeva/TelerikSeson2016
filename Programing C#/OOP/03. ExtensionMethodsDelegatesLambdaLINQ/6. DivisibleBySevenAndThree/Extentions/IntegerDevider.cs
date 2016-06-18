@@ -3,10 +3,10 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    internal class IntegerDevider
+    internal static class IntegerDevider
     {
         internal static IEnumerable<T> FindDivisibleUsingLambda<T>(
-            IEnumerable<T> numbers,
+           this IEnumerable<T> numbers,
             T num1,
             T num2)
             where T : struct
@@ -16,7 +16,7 @@
         }
 
         internal static IEnumerable<T> FindDivisibleUsingLinq<T>(
-            IEnumerable<T> numbers,
+          this IEnumerable<T> numbers,
             int num1,
             int num2)
             where T : struct
