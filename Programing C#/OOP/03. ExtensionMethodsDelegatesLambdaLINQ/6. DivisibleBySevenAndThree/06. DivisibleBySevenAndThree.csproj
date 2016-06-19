@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DivisableByTowNumbersTest.cs" />
-    <Compile Include="Extentions\IntegerDevider.cs" />
+    <Compile Include="Extentions\IEnumerableExtention.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,21 +1,21 @@
-﻿namespace Timer
+﻿namespace TimerWithDelegate
 {
     using System;
     using System.Threading;
 
-    public delegate void TimerEvent();
+    public delegate void TimerMethod();
 
     public class Timer
     {
         private int miliSeconds;
         private byte ticks;
-        private TimerEvent currentEvent;
+        private TimerMethod currentMethod;
 
-        public Timer(byte ticks, int seconds, TimerEvent currentEvent)
+        public Timer(byte ticks, int seconds, TimerMethod currentMethod)
         {
             this.Ticks = ticks;
             this.Interval = seconds;
-            this.Event = currentEvent;
+            this.Method = currentMethod;
         }
 
         public byte Ticks
@@ -54,16 +54,16 @@
             }
         }
 
-        public TimerEvent Event
+        public TimerMethod Method
         {
             get
             {
-                return this.currentEvent;
+                return this.currentMethod;
             }
 
             set
             {
-                this.currentEvent = value;
+                this.currentMethod = value;
             }
         }
 
@@ -72,9 +72,8 @@
             while (this.ticks > 0)
             {
                 Thread.Sleep((int)this.miliSeconds);
-                Console.Write(this.Ticks);
                 --this.ticks;
-                this.currentEvent();
+                this.currentMethod();
             }
         }
     }

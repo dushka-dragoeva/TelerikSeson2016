@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extentions\Substring.cs" />
+    <Compile Include="Extentions\StringBuilderExtention.cs" />
     <Compile Include="Tests\StringbulderExtentionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

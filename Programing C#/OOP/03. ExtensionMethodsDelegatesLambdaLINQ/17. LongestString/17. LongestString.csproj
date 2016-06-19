@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="LongestStringTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StringExtentions\StringFinder.cs" />
+    <Compile Include="Extentions\StringExtention.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

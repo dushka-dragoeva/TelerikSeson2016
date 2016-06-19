@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Tests\IEnumerableCalculationTest.cs" />
-    <Compile Include="Extentions\Calculation.cs" />
+    <Compile Include="Extentions\IEnumerableExtentions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

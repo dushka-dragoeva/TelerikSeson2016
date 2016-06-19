@@ -6,7 +6,8 @@
     using LongestString;
     using StringBuilder.Test;
     using Students.Tests;
-    
+    using TimerWithDelegate;
+
     public class Startup
     {
         public static void Main()
@@ -17,6 +18,7 @@
             IEnumerableCalculationTest.Run();
             StudentArrayTest.Run();
             DivisableByTowNumbersTest.Run();
+            TimerDelegateTest.Run();
             StudentListTest.Run();
             LongestStringTest.Run();
         }

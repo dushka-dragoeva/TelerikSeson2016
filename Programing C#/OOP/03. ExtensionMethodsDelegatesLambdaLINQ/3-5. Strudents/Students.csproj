@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extentions\StudentCollection.cs" />
+    <Compile Include="Extentions\IEnumerableExtention.cs" />
     <Compile Include="Models\Group.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Student.cs" />
