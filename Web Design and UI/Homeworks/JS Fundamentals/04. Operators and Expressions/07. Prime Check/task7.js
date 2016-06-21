@@ -5,7 +5,7 @@ function solve(args) {
     var isPrime = true;
     var length = Math.sqrt(num)
 
-    if (num <21) {
+    if (num <2) {
         isPrime = false;
 
     } else {
