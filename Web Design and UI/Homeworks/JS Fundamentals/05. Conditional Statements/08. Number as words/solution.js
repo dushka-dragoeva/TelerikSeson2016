@@ -43,7 +43,7 @@ function solve(args) {
         ones = +args[0][2];
         tens = +args[0][1];
         hundreds = +args[0][0];
-        number = +(args[0].substring(1))
+        number = +(args[0].substring(1));
 
         numberAsWord = NumberToWordFromOneToNintyNine();
         if (number !== 0) {
