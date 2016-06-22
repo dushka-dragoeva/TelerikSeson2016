@@ -62,6 +62,10 @@
       <Project>{3b2a9395-2f90-473f-8deb-ad1f1147a864}</Project>
       <Name>02. IEnumerable</Name>
     </ProjectReference>
+    <ProjectReference Include="..\20. InfiniteConvergetSeries\20. InfiniteConvergetSeries.csproj">
+      <Project>{5aee8b15-d641-49d2-bcce-4f12773200ec}</Project>
+      <Name>20. InfiniteConvergetSeries</Name>
+    </ProjectReference>
     <ProjectReference Include="..\3-5. Strudents\Students.csproj">
       <Project>{4af0dd89-2025-4cf8-bb01-e894c1387084}</Project>
       <Name>Students</Name>

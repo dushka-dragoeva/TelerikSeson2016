@@ -1,8 +1,10 @@
 ﻿namespace StartTest
 {
     using System;
+
     using DivisibleBySevenAndThree;
     using IEnumerable.Tests;
+    using InfiniteConvergetSeries;
     using LongestString;
     using StringBuilder.Test;
     using Students.Tests;
@@ -21,6 +23,7 @@
             TimerDelegateTest.Run();
             StudentListTest.Run();
             LongestStringTest.Run();
+            InfiniteConvergetSeriesTest.Run();
         }
     }
 }
