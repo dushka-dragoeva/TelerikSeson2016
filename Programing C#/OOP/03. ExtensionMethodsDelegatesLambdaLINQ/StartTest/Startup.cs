@@ -9,6 +9,7 @@
     using StringBuilder.Test;
     using Students.Tests;
     using TimerWithDelegate;
+    using TimerWithEvent;
 
     public class Startup
     {
@@ -21,6 +22,7 @@
             StudentArrayTest.Run();
             DivisableByTowNumbersTest.Run();
             TimerDelegateTest.Run();
+            TimerWithEventTest.Run();
             StudentListTest.Run();
             LongestStringTest.Run();
             InfiniteConvergetSeriesTest.Run();
