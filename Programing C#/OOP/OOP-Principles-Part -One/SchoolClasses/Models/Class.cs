@@ -1,14 +1,15 @@
 ﻿namespace SchoolClasses.Models
 {
-    using System;
     using System.Collections.Generic;
-    using Common;
+
+    using Contracts;
     using Utilities.Validators;
 
-    public class Class
+    public class Class : IComment
     {
         private string textIndentifier;
         private List<Teacher> teachers = new List<Teacher>();
+        private List<string> comments = new List<string>();
 
         public Class(string textIndentifier, params Teacher[] teachers)
         {
@@ -25,14 +26,7 @@
 
             private set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentException(Constants.InvalidName);
-                }
-                else
-                {
-                    this.textIndentifier = value.ValidateName(2,30,"Class");
-                }
+                this.textIndentifier = value.ValidateName(2, 30, "Class");
             }
         }
 
@@ -40,35 +34,41 @@
         {
             get
             {
-                return this.teachers;
+                return this.teachers.ValidateIsNotNullOrEmpty("Teachers");
             }
 
             private set
             {
-                {
-                    if (value == null || value.Count < 1)
-                    {
+                this.teachers.AddRange(value.ValidateIsNotNullOrEmpty("Teachers"));
+            }
+        }
 
-                        throw new ArgumentNullException(
-                            nameof(this.teachers),
-                            $"{this.Teachers}" + Constants.EmptyColection);
-                    }
-                    else
-                    {
-                        this.teachers.AddRange(value);
-                    }
-                }
+        public IList<string> Comments
+        {
+            get
+            {
+                return this.comments.ValidateIsNotNullOrEmpty("Comments");
             }
         }
 
         public void AddTeacher(Teacher teacher)
         {
-            this.teachers.Add(teacher);
+            this.Teachers.Add(teacher);
         }
 
         public void RemoveTeacher(Teacher teacher)
         {
-            this.teachers.Remove(teacher);
+            this.Teachers.Remove(teacher);
+        }
+
+        public override string ToString()
+        {
+            return this.TextIndentifier;
+        }
+
+        public void AddComment(string comment)
+        {
+            this.Comments.Add(comment.ValidateName(20, 500, "Comment"));
         }
     }
 }

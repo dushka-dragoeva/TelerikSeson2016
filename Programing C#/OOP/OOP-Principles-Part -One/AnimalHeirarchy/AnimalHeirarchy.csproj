@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9D8A0451-15EA-49FD-8CEE-40BE6EDA1F93}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{3EA362F3-738C-444B-A920-05C0759FD8B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HomeworkTests</RootNamespace>
-    <AssemblyName>HomeworkTests</AssemblyName>
+    <RootNamespace>AnimalHeirarchy</RootNamespace>
+    <AssemblyName>AnimalHeirarchy</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,25 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Startup.cs" />
+    <Compile Include="Contracts\ISound.cs" />
+    <Compile Include="Models\Animal.cs" />
+    <Compile Include="Models\Cat.cs" />
+    <Compile Include="Models\Dog.cs" />
+    <Compile Include="Models\Frog.cs" />
+    <Compile Include="Models\Kitten.cs" />
+    <Compile Include="Models\SexType.cs" />
+    <Compile Include="AnimalHeirarchyTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\Tomcat.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AnimalHeirarchy\AnimalHeirarchy.csproj">
-      <Project>{3ea362f3-738c-444b-a920-05c0759fd8b8}</Project>
-      <Name>AnimalHeirarchy</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SchoolClasses\SchoolClasses.csproj">
-      <Project>{692c7a6d-f0f2-4f34-b87b-c2670e8a2d13}</Project>
-      <Name>SchoolClasses</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\StudentsAndWorkers\StudentsAndWorkers.csproj">
-      <Project>{a63dfe5e-5b3e-4adb-95ea-f7e6c196095b}</Project>
-      <Name>StudentsAndWorkers</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Utilities\Utilities.csproj">
       <Project>{fbd29716-41b7-4ce8-a2e8-5f0639689128}</Project>
       <Name>Utilities</Name>

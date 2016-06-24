@@ -24,7 +24,7 @@
 
             private set
             {
-                this.workHoursPerDay = value.ValidateIntegerRange(4, 12);
+                this.workHoursPerDay = value.ValidateNumber(4, 12);
             }
         }
 
@@ -37,7 +37,7 @@
 
             private set
             {
-                this.weeklySalary += value.ValidateIntegerRange(200m, decimal.MaxValue);
+                this.weeklySalary += value.ValidateNumber(200m, decimal.MaxValue);
             }
         }
 

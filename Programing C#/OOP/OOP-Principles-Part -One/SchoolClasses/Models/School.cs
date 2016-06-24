@@ -1,12 +1,7 @@
 ﻿namespace SchoolClasses.Models
 {
-    using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using Common;
-    using Utilities;
+    using Utilities.Validators;
 
     public class School
     {
@@ -25,16 +20,10 @@
             {
                 return this.name;
             }
+
             private set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentException(Constants.InvalidName);
-                }
-                else
-                {
-                    this.name = value;
-                }
+                this.name = value.ValidateName(2, 30, "School");
             }
         }
 
@@ -42,42 +31,28 @@
         {
             get
             {
-                if (classes == null || classes.Count < 0)
-                {
-                    throw new ArgumentNullException(
-                        nameof(this.classes),
-                        $"{this.classes}" + Constants.EmptyColection);
-                }
-
-                return this.classes;
+                return this.classes.ValidateIsNotNullOrEmpty("Classes");
             }
 
             private set
             {
-                if (classes == null || classes.Count < 0)
-                {
-                    throw new ArgumentNullException(
-                        nameof(this.classes),
-                        $"{this.classes}" + Constants.EmptyColection);
-                }
-
-                this.classes.AddRange(value);
+                this.classes.AddRange(value.ValidateIsNotNullOrEmpty("Classes"));
             }
         }
 
         public void AddClass(Class newClass)
         {
-            this.classes.Add(newClass);
+            this.Classes.Add(newClass);
         }
 
-        public void RemoveDiscipline(Class lastClass)
+        public void RemoveClass(Class lastClass)
         {
-            this.classes.Remove(lastClass);
+            this.Classes.Remove(lastClass);
         }
 
         public override string ToString()
         {
-            return $"{this.name}{this.classes}";
+            return $"{this.Name} {this.Classes}";
         }
     }
 }

@@ -8,13 +8,13 @@
             this string name,
             int minLength,
             int maxLenght,
-            string messageName = null)
+            string messageName = "Name")
         {
             if (string.IsNullOrEmpty(name.Trim()))
             {
                 throw new ArgumentNullException(
                     messageName,
-                    $"{messageName} is null or empty string.");
+                    $"{messageName} can not be null or empty string.");
             }
             else if (name.Length < minLength || name.Length > maxLenght)
             {
@@ -25,6 +25,5 @@
 
             return name;
         }
-
     }
 }

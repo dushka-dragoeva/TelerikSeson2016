@@ -1,9 +1,10 @@
 ﻿namespace SchoolClasses.Models
 {
-    using System;
     using System.Collections.Generic;
-    using Common;
+
     using Contracts;
+    using Utilities;
+    using Utilities.Validators;
 
     public abstract class Person : IComment
     {
@@ -26,14 +27,7 @@
 
             private set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentException(Constants.InvalidName);
-                }
-                else
-                {
-                    this.firstName = value;
-                }
+                this.firstName = value.ValidateName(2, 30, Constants.FirstName);
             }
         }
 
@@ -43,16 +37,10 @@
             {
                 return this.lastName;
             }
+
             private set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentException(Constants.InvalidName);
-                }
-                else
-                {
-                    this.lastName = value;
-                }
+                this.lastName = value.ValidateName(2, 30, Constants.LastName);
             }
         }
 
@@ -64,27 +52,22 @@
             }
         }
 
-        public IList<String> Comments
+        public IList<string> Comments
         {
             get
             {
-                if (this.comments.Count < 0)
-                {
-                    Console.WriteLine(Constants.NoComents);
-                }
-                return this.comments;
+                return this.comments.ValidateIsNotNullOrEmpty("Comments");
             }
         }
 
         public void AddComment(string comment)
         {
-            this.comments.Add(comment);
+            this.Comments.Add(comment.ValidateName(20, 500, "Comment"));
         }
 
         public override string ToString()
         {
-            return $"{this.firstName} {this.lastName}";
+            return $"{this.FirstName} {this.LastName}";
         }
     }
 }
-

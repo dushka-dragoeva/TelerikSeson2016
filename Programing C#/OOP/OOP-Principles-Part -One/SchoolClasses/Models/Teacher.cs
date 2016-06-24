@@ -1,9 +1,8 @@
 ﻿namespace SchoolClasses.Models
 {
-    using System;
     using System.Collections.Generic;
     using Contracts;
-    using Common;
+    using Utilities.Validators;
 
     public class Teacher : Person, IComment
     {
@@ -19,30 +18,23 @@
         {
             get
             {
-                return this.disciplines;
+                return this.disciplines.ValidateIsNotNullOrEmpty("Disciplines");
             }
 
             private set
             {
-                if (disciplines == null)
-                {
-                    throw new ArgumentNullException(
-                        nameof(this.Disciplines), 
-                        $"{this.Disciplines}" + Constants.EmptyColection);
-                }
-
-                this.disciplines.AddRange(value);
+                this.disciplines.AddRange(value.ValidateIsNotNullOrEmpty("Disciplines"));
             }
         }
 
         public void AddDiscipline(Discipline discipline)
         {
-            this.disciplines.Add(discipline);
+            this.Disciplines.Add(discipline);
         }
 
         public void RemoveDiscipline(Discipline dicipline)
         {
-            this.disciplines.Remove(dicipline);
+            this.Disciplines.Remove(dicipline);
         }
     }
 }

@@ -1,13 +1,8 @@
-﻿
-namespace SchoolClasses
+﻿namespace SchoolClasses
 {
-    using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using Common;
     using Contracts;
+    using Utilities.Validators;
 
     public class Discipline : IComment
     {
@@ -23,15 +18,11 @@ namespace SchoolClasses
             this.ExersicesNumber = exersicesNumber;
         }
 
-        public IList<String> Comments
+        public IList<string> Comments
         {
             get
             {
-                if (this.comments.Count < 0)
-                {
-                    Console.WriteLine(Constants.NoComents);
-                }
-                return this.comments;
+                return this.comments.ValidateIsNotNullOrEmpty("Comments");
             }
         }
 
@@ -44,14 +35,7 @@ namespace SchoolClasses
 
             private set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentException(Constants.InvalidName);
-                }
-                else
-                {
-                    this.name = value;
-                }
+                this.name = value.ValidateName(2, 100);
             }
         }
 
@@ -64,14 +48,7 @@ namespace SchoolClasses
 
             private set
             {
-                if (value <= 0)
-                {
-                    throw new ArgumentException(Constants.InvaliNumber);
-                }
-                else
-                {
-                    this.lecturesNumber = value;
-                }
+                this.lecturesNumber = value.ValidateNumber(1, int.MaxValue);
             }
         }
 
@@ -84,25 +61,18 @@ namespace SchoolClasses
 
             private set
             {
-                if (value <= 0)
-                {
-                    throw new ArgumentException(Constants.InvaliNumber);
-                }
-                else
-                {
-                    this.exersicesNumber = value;
-                }
+                this.exersicesNumber = value.ValidateNumber(1, int.MaxValue);
             }
         }
 
         public void AddComment(string comment)
         {
-            this.comments.Add(comment);
+            this.Comments.Add(comment);
         }
 
         public override string ToString()
         {
-            return $"{this.name} - {this.lecturesNumber}, {this.exersicesNumber}";
+            return $"{this.Name} - {this.LecturesNumber}, {this.ExersicesNumber}";
         }
     }
 }

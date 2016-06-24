@@ -21,7 +21,7 @@
 
             private set
             {
-                this.grade = value.ValidateIntegerRange(1, 12);
+                this.grade = value.ValidateNumber(1, 12);
             }
         }
 

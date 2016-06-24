@@ -24,7 +24,8 @@
             var orderedStudents = students.OrderBy(st => st.Grade).ToList();
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Ordered tudents by grade");
+            Console.WriteLine("Students And Workers Test");
+            Console.WriteLine("*Students Ordered by Grade");
             Console.ForegroundColor = ConsoleColor.White;
             orderedStudents.PrintCollection();
 
@@ -44,7 +45,7 @@
                 .OrderByDescending(w => w.CalculateMoneyPerHour())
                 .ToList();
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Ordered workers by money per hour");
+            Console.WriteLine("*Workers Ordered by Money per Hour");
             Console.ForegroundColor = ConsoleColor.White;
             sortedWorkers.PrintCollection();
 
@@ -54,7 +55,7 @@
 
             var sortedPeople = people.OrderBy(p => p.FirstName).ToList();
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("All ordered by first name.");
+            Console.WriteLine("*All Ordered by First Name.");
             Console.ForegroundColor = ConsoleColor.White;
             sortedPeople.PrintCollection();
 
@@ -64,6 +65,7 @@
 
             /// uncoment to throw Exception. 
             ///  students.Add(new Student("Maria", "p",3));
+            Console.WriteLine();
         }
     }
 }

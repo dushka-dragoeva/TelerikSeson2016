@@ -1,8 +1,7 @@
 ﻿namespace SchoolClasses.Models
 {
-    using System;
-    using Common;
     using Contracts;
+    using Utilities.Validators;
 
     public class Student : Person, IComment
     {
@@ -20,16 +19,10 @@
             {
                 return this.uniqNumber;
             }
+
             private set
             {
-                if (value <= 0)
-                {
-                    throw new ArgumentException(Constants.InvalidName);
-                }
-                else
-                {
-                    this.uniqNumber = value;
-                }
+                this.uniqNumber = value.ValidateNumber(1, int.MaxValue);
             }
         }
     }
