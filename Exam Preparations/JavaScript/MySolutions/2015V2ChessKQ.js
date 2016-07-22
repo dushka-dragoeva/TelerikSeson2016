@@ -2,17 +2,37 @@
 
 function solve(params) {
 
-    let rows = parseInt(params[0]),
+    const rows = parseInt(params[0]),
         cols = parseInt(params[1]);
 
     function Cell(row, col) {
         this.row = row;
         this.col = col;
     }
-    let board = params.slice(2, rows + 2).reverse();
+    const board = params.slice(2, rows + 2).reverse();
 
     let commandsNumber = params[2 + rows];
     let allCommands = params.slice(2 + rows + 1);
+
+    let moves = params.slice(2 + rows + 1)
+        .map(moveString => {
+            var parts = moveString.split(' ');
+            return {
+                'fromRow': getRowIndex(parts[0][1]),
+                'fromCol': getColIndex(parts[0][0]),
+                'toRow': getRowIndex(parts[1][1]),
+                'toCol': getColIndex(parts[1][0])
+            };
+        });
+
+    function getRowIndex(rowName) {
+                return rows-rowName;//-1 za da stane 0
+    }
+
+    function getColIndex(colName) {
+
+    }
+
 
     for (var i = 0; i < commandsNumber; i += 1) {
         let currCom = allCommands[i].split(' ');
@@ -80,7 +100,7 @@ function solve(params) {
 
         console.log(res);
 
-    //    console.log('==============================================');
+        //    console.log('==============================================');
     }
 
     function parsePosition(coord) {
