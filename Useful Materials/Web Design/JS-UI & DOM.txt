@@ -1,9 +1,96 @@
-We are given a school. In the school there are 
-classes of students. Each class has a set of teachers.
-Each teacher teaches, a set of disciplines. Students have a name and unique class number. 
-Classes have unique text identifier. Teachers have a name. 
-Disciplines have a name, number of lectures and number of exercises.
+Live reload for VS Code => live-server v terminala
 
-Both teachers and students are people. 
- 
-Students, classes, teachers and disciplines could have optional comments (free text block).
+getElementByName - for input fields, as they have atribute name
+
+querySelector('li>a') => uses CSS selectors it is slower than above
+
+Collections:
+
+document.forms
+document.links
+document.boby
+document.head
+
+let htmlElemnt = document.getElementById('sss')
+htmlElemnt. All methods for document are avalable
+
+var elements = document.getElementsByTagName  => retun colection of nodes, not array
+var elemetsArray= [].slice.call(elemnts); => convert nodes collection to array
+
+elemnets.forEach => doesn't work
+
+[].forEach.call(elements, el=>console.log(el));
+
+Vanila JavaScript ==== Native JAva Script
+
+Static LiveNode => Query Selector 
+
+Всеки един елемент от Дом дървото представлява JavaScript-ски обект
+
+Traversing DOM
+
+.parentNode
+.parentElement
+.childNodes => returns children + white spaces
+.childElemeNodes
+
+.nodeName => return the name of the tag
+
+**Including white spaces**
+.firstChild
+.lastChild
+.nextSibling
+.previousSibling 
+
+**No white spaces**
+.firstElementChild
+.lastElementChild
+.nextElementSibling
+.previousElementSibling
+
+Best Performence for adding same elements to dom
+
+var content = '';
+for (var i = 0; i < 57; i += 1) {
+    content += '<li>' + i + '</li>';
+}
+
+list[0].innerHTML+=content;
+console.log(list[0]);
+
+триене на елемент croos browser
+ul.parentNode.removeChild(ul);
+
+ul.innerHTML=''; faster way
+ul.outerHTML='';
+
+ul.classList.add('newClass')
+
+DocumentFragment => fast way to add elements to DOM
+
+var fragment = document.createDocumentFragment();
+fragment.append...........
+boby.appendChild(fragment);
+.cloneNode(true) => за създаване на еднакви елементи, но с различно съдържание
+
+**Validations**
+
+
+    if (typeof (element) !== 'string' && !(element instanceof HTMLElement)) {
+      throw 'invalid element';
+    }
+
+    if (typeof (element) === 'string') {
+      parentElement = document.getElementById(element);
+    } else {
+      parentElement = element;
+      if (parentElement === null) {
+        throw 'Dom element doesn\'t exist';
+      }
+    }
+
+    if (!Array.isArray(contents) || contents.some(function (item) {
+      return typeof (item) !== 'string' && typeof (item) !== 'number';
+    })) {
+      throw 'Invalid content!';
+    }

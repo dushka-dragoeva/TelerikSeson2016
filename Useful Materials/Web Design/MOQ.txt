@@ -1,0 +1,37 @@
+Moq - methids
+mockedObject
+	.Setup() => set up methods or properties
+	.Verifable()
+	.Callback()
+	.Returns() => setup what to return every time
+	.Throw()=> Всеки път хвърля exseption
+	It.Is(x=>condition)
+	It.Is(x=>x.prop(It.IsAny<string>()))
+	It.Is(()=>)
+
+	returns(i).Callback(++1) ако се извика втори път увеличава с 1
+	
+var mock = new Mock<ICarsRepository>();
+mock.Setup(r => r.Add(It.IsAny<Car>())).Verifiable();
+mock.Setup(r => r.All()).Returns(this.FakeCarCollection);
+FakeCarCollection е обект които сме си създали по горе
+mock.Object =>так го подаваме в конструктура
+
+ mockedLogger.Verify(x => x.Log(It.IsAny<string>()), 
+ Times.Exactly(5));
+ 
+ For exam
+ 
+ For each class => folder
+ For each Method under test => class
+ 
+ Set up променя поведението на методите на мокнатия обект
+ 
+ Verify => проверяваме само  дали метода на мокнатия обект е извикан
+ assert => когато сравнаваме 2 стойности
+ 
+ Naming=> Victor morning QA session
+ methodNAme_ShouldDoSomething_WhenSomeDataIsPassed
+ 
+ Kogato imame dva ednakvi exceptions StringAssert za da sme sigurni
+ che e hvarlen tochno exceptiona koito iskame
