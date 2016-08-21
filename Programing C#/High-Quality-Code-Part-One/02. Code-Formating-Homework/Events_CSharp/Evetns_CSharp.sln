@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsFullRefactoring", "EventsFullRefactoring\EventsFullRefactoring.csproj", "{22EA757F-34CE-4A53-830B-89B9B801D590}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsFormatingCodeOnly", "EventsFormatingCodeOnly\EventsFormatingCodeOnly.csproj", "{B8059CE5-6B98-4B3E-88D9-710D6AE89544}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22EA757F-34CE-4A53-830B-89B9B801D590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22EA757F-34CE-4A53-830B-89B9B801D590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22EA757F-34CE-4A53-830B-89B9B801D590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22EA757F-34CE-4A53-830B-89B9B801D590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8059CE5-6B98-4B3E-88D9-710D6AE89544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8059CE5-6B98-4B3E-88D9-710D6AE89544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8059CE5-6B98-4B3E-88D9-710D6AE89544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8059CE5-6B98-4B3E-88D9-710D6AE89544}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
