@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BunniesRefactoring", "BunniesRefactoring\BunniesRefactoring.csproj", "{F6C0EC10-C2E8-4E5D-B0A8-60A66F9FF227}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BunniesCodeFormating", "BunniesCodeFormating\BunniesCodeFormating.csproj", "{63E2E3CB-9557-44EA-BB0F-D6C28C24DF87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6C0EC10-C2E8-4E5D-B0A8-60A66F9FF227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C0EC10-C2E8-4E5D-B0A8-60A66F9FF227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C0EC10-C2E8-4E5D-B0A8-60A66F9FF227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C0EC10-C2E8-4E5D-B0A8-60A66F9FF227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63E2E3CB-9557-44EA-BB0F-D6C28C24DF87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E2E3CB-9557-44EA-BB0F-D6C28C24DF87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E2E3CB-9557-44EA-BB0F-D6C28C24DF87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E2E3CB-9557-44EA-BB0F-D6C28C24DF87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
