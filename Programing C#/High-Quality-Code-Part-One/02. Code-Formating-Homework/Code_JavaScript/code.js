@@ -44,6 +44,7 @@ function PopTip() {
         theLayer.visibility = 'show';
     } else {
         theLayer = eval('document.all[\'ToolTip\']');
+
         if (theLayer) {
             pX = event.x - 5;
             pY = event.y;
@@ -51,9 +52,11 @@ function PopTip() {
                 pX = pX + document.body.scrollLeft;
                 pY = pY + document.body.scrollTop;
             }
+
             if ((pX + 120) > document.body.clientWidth) {
                 pX = pX - 150;
             }
+
             theLayer.style.pixelLeft = pX + 10;
             theLayer.style.pixelTop = pY + 15;
             theLayer.style.visibility = 'visible';
@@ -69,6 +72,7 @@ function HideTip() {
         document.all['ToolTip'].style.visibility = 'hidden';
     }
 }
+
 function HideMenu1() {
     if (browser == "Netscape") {
         document.layers['menu1'].visibility = 'hide';
@@ -76,6 +80,7 @@ function HideMenu1() {
         document.all['menu1'].style.visibility = 'hidden';
     }
 }
+
 function ShowFirstMenu() {
     if (browser == "Netscape") {
         theLayer = eval('document.layers[\'menu1\']');
