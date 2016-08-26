@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="CapitalizeFirstLetter method" Url="html/f1b6b6cb-bf66-79dd-d265-fedbe6dc19fd.htm" />
+  <HelpKINode Title="ConvertCyrillicToLatinLetters method" Url="html/81306784-7715-471f-e35c-53862a2f2919.htm" />
+  <HelpKINode Title="ConvertLatinToCyrillicKeyboard method" Url="html/23a07d03-8656-21f2-ddb2-e939a23f6dc5.htm" />
+  <HelpKINode Title="GetFileExtension method" Url="html/127b8350-eb55-4908-35b2-7450b8aaee26.htm" />
+  <HelpKINode Title="GetFirstCharacters method" Url="html/39ec969b-90a3-19b7-5f73-58336b937cf4.htm" />
+  <HelpKINode Title="GetStringBetween method" Url="html/643dca24-5658-9823-13c9-8359579f1bf8.htm" />
+  <HelpKINode Title="StringExtensions class">
+    <HelpKINode Title="StringExtensions Class" Url="html/7ff9e3d0-3e15-7734-f0ad-1f9eea7bf392.htm" />
+    <HelpKINode Title="about StringExtensions class" Url="html/7ff9e3d0-3e15-7734-f0ad-1f9eea7bf392.htm" />
+    <HelpKINode Title="methods" Url="html/33375b05-5382-9b52-561a-5ea5698e4095.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StringExtensions.CapitalizeFirstLetter method" Url="html/f1b6b6cb-bf66-79dd-d265-fedbe6dc19fd.htm" />
+  <HelpKINode Title="StringExtensions.ConvertCyrillicToLatinLetters method" Url="html/81306784-7715-471f-e35c-53862a2f2919.htm" />
+  <HelpKINode Title="StringExtensions.ConvertLatinToCyrillicKeyboard method" Url="html/23a07d03-8656-21f2-ddb2-e939a23f6dc5.htm" />
+  <HelpKINode Title="StringExtensions.GetFileExtension method" Url="html/127b8350-eb55-4908-35b2-7450b8aaee26.htm" />
+  <HelpKINode Title="StringExtensions.GetFirstCharacters method" Url="html/39ec969b-90a3-19b7-5f73-58336b937cf4.htm" />
+  <HelpKINode Title="StringExtensions.GetStringBetween method" Url="html/643dca24-5658-9823-13c9-8359579f1bf8.htm" />
+  <HelpKINode Title="StringExtensions.ToBoolean method" Url="html/58da45a8-22b1-7f86-f072-5520d2457f16.htm" />
+  <HelpKINode Title="StringExtensions.ToByteArray method" Url="html/b8da26c8-c624-d080-1313-11936ce51130.htm" />
+  <HelpKINode Title="StringExtensions.ToContentType method" Url="html/c77e6b23-3a97-9b65-cd2e-d06c0f4794c6.htm" />
+  <HelpKINode Title="StringExtensions.ToDateTime method" Url="html/87709dae-8391-81d7-bb89-2c9d342d4b8f.htm" />
+  <HelpKINode Title="StringExtensions.ToInteger method" Url="html/2aaf0c77-a671-60a1-4979-9107eba57dfc.htm" />
+  <HelpKINode Title="StringExtensions.ToLong method" Url="html/f6de1a05-c4e1-10f2-be15-5eb0db0c3b21.htm" />
+  <HelpKINode Title="StringExtensions.ToMd5Hash method" Url="html/96fc78f6-9461-7dc1-c98b-7951a7e457a3.htm" />
+  <HelpKINode Title="StringExtensions.ToShort method" Url="html/e3071ae6-56e4-405a-a002-37ba510cee95.htm" />
+  <HelpKINode Title="StringExtensions.ToValidLatinFileName method" Url="html/85b6c39f-5cb1-d25f-a6e9-dfd846dd3806.htm" />
+  <HelpKINode Title="StringExtensions.ToValidUsername method" Url="html/f97bebfd-9434-d2a1-adf9-ef420e2f582b.htm" />
+  <HelpKINode Title="Telerik.ILS.Common namespace" Url="html/8de58998-b109-a973-8160-c522a4d4fd7d.htm" />
+  <HelpKINode Title="Telerik.ILS.Common.StringExtensions class" Url="html/7ff9e3d0-3e15-7734-f0ad-1f9eea7bf392.htm" />
+  <HelpKINode Title="ToBoolean method" Url="html/58da45a8-22b1-7f86-f072-5520d2457f16.htm" />
+  <HelpKINode Title="ToByteArray method" Url="html/b8da26c8-c624-d080-1313-11936ce51130.htm" />
+  <HelpKINode Title="ToContentType method" Url="html/c77e6b23-3a97-9b65-cd2e-d06c0f4794c6.htm" />
+  <HelpKINode Title="ToDateTime method" Url="html/87709dae-8391-81d7-bb89-2c9d342d4b8f.htm" />
+  <HelpKINode Title="ToInteger method" Url="html/2aaf0c77-a671-60a1-4979-9107eba57dfc.htm" />
+  <HelpKINode Title="ToLong method" Url="html/f6de1a05-c4e1-10f2-be15-5eb0db0c3b21.htm" />
+  <HelpKINode Title="ToMd5Hash method" Url="html/96fc78f6-9461-7dc1-c98b-7951a7e457a3.htm" />
+  <HelpKINode Title="ToShort method" Url="html/e3071ae6-56e4-405a-a002-37ba510cee95.htm" />
+  <HelpKINode Title="ToValidLatinFileName method" Url="html/85b6c39f-5cb1-d25f-a6e9-dfd846dd3806.htm" />
+  <HelpKINode Title="ToValidUsername method" Url="html/f97bebfd-9434-d2a1-adf9-ef420e2f582b.htm" />
+</HelpKI>
