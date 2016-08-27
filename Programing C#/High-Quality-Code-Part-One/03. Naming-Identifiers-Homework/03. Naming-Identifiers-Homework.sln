@@ -7,10 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Printer", "01. Printer\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. PersonCreator", "02. PersonCreator\02. PersonCreator.csproj", "{0FAC3E0F-530C-4063-B8D4-1933BBA5D79F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. alertIfMozilla", "03. alertIfMozilla", "{55E830B2-B6FE-4F70-B7C7-03F722292ADC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. ckeckIfMozilla", "03. ckeckIfMozilla", "{55E830B2-B6FE-4F70-B7C7-03F722292ADC}"
 	ProjectSection(SolutionItems) = preProject
-		index.html = index.html
-		mozilla-check-function.js = mozilla-check-function.js
+		03. taskThree\index.html = 03. taskThree\index.html
+		03. taskThree\mozilla-check-function.js = 03. taskThree\mozilla-check-function.js
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper", "04. MinesweeperConsoleGame\Minesweeper.csproj", "{B20E8DFD-5F12-4358-849D-1F25806E9052}"
