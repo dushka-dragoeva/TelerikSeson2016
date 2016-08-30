@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariablesDataExpressionsConstants.Size", "VariablesDataExpressionsConstants.Size\VariablesDataExpressionsConstants.Size.csproj", "{23639291-445D-4A4E-A85D-1B8A50EEEECE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariablesDataExpressionsConstants.Statistics", "VariablesDataExpressionsConstants.Statistics\VariablesDataExpressionsConstants.Statistics.csproj", "{AB096EF7-2868-4976-98A5-127F3628B3E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23639291-445D-4A4E-A85D-1B8A50EEEECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23639291-445D-4A4E-A85D-1B8A50EEEECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23639291-445D-4A4E-A85D-1B8A50EEEECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23639291-445D-4A4E-A85D-1B8A50EEEECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB096EF7-2868-4976-98A5-127F3628B3E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB096EF7-2868-4976-98A5-127F3628B3E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB096EF7-2868-4976-98A5-127F3628B3E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB096EF7-2868-4976-98A5-127F3628B3E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
