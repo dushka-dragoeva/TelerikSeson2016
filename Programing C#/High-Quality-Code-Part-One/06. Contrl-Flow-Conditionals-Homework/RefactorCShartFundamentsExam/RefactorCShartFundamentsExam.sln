@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactorCShartFundamentsExam.Feathers", "RefactorCShartFundamentsExam.Feathers\RefactorCShartFundamentsExam.Feathers.csproj", "{C0C16AFE-2D32-426F-8D0A-9194910BF62B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactorCShartFundamentsExam.Busses", "RefactorCShartFundamentsExam.Busses\RefactorCShartFundamentsExam.Busses.csproj", "{928577DD-6662-4923-82A6-818BC6E9861A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactorCShartFundamentsExam.NumberOfDigits", "RefactorCShartFundamentsExam.NumberOfDigits\RefactorCShartFundamentsExam.NumberOfDigits.csproj", "{F92ABD65-2E5F-423E-9F78-BB80725C59BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactorCShartFundamentsExam.Bathman", "RefactorCShartFundamentsExam.Bathman\RefactorCShartFundamentsExam.Bathman.csproj", "{AE707EFF-9322-4274-A2BB-1E140C3DDFCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactorCShartFundamentsExam.BobbyAvocadoto", "RefactorCShartFundamentsExam.BobbyAvocadoto\RefactorCShartFundamentsExam.BobbyAvocadoto.csproj", "{1936EA16-67E2-4B30-99A9-2EBAC7805D54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0C16AFE-2D32-426F-8D0A-9194910BF62B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C16AFE-2D32-426F-8D0A-9194910BF62B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C16AFE-2D32-426F-8D0A-9194910BF62B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C16AFE-2D32-426F-8D0A-9194910BF62B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{928577DD-6662-4923-82A6-818BC6E9861A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{928577DD-6662-4923-82A6-818BC6E9861A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{928577DD-6662-4923-82A6-818BC6E9861A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{928577DD-6662-4923-82A6-818BC6E9861A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F92ABD65-2E5F-423E-9F78-BB80725C59BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F92ABD65-2E5F-423E-9F78-BB80725C59BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F92ABD65-2E5F-423E-9F78-BB80725C59BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F92ABD65-2E5F-423E-9F78-BB80725C59BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE707EFF-9322-4274-A2BB-1E140C3DDFCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE707EFF-9322-4274-A2BB-1E140C3DDFCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE707EFF-9322-4274-A2BB-1E140C3DDFCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE707EFF-9322-4274-A2BB-1E140C3DDFCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1936EA16-67E2-4B30-99A9-2EBAC7805D54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1936EA16-67E2-4B30-99A9-2EBAC7805D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1936EA16-67E2-4B30-99A9-2EBAC7805D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1936EA16-67E2-4B30-99A9-2EBAC7805D54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
