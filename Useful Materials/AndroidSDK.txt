@@ -1,0 +1,12 @@
+1. Download sdk -stand-alon zip
+2. Enviormant variable D:\QA\MobileTestingDelatek\android-sdk-windows
+3. tools--> android.bat--> start Android SDK Menager
+4.Instal:
+SDK Platform tools
+Intelx86 Emulator Acceletator(HAXM installer) => only exe
+manually from folder extras:
+
+API Level 19
+Android intel x86 Atom System images
+
+adb = android debug bridge

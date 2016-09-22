@@ -1,0 +1,75 @@
+JavaScript Transpiler 
+
+Babel => oficial
+write JS Ecma script6 but the browser receives the older version ECMAScript5
+
+Ttaceur => by Google
+
+cli => command line interface
+
+1. Open new folder
+2. npm init  => create package.js
+3. $npm install babel-cli --save-dev
+4. Create .babeltc file  ??? where
+5. In 4 => pul all plugins and presets or preset2015
+6. babel [source] -d [destination]
+7. For browser support npm install babel-polyfill --save
+
+
+JavaScript ordering Code:
+1. All functions;
+2. All vars;
+
+
+
+
+eval (variable of type fuction or string)=> execute JS code
+
+function 
+Paremethers
+. length => number of parameters
+. name => function name or ''
+
+Methods
+.call (obj, args)
+We can execute given function over given odject with given parameters
+
+. apply
+
+
+
+
+Creating functions:
+
+1. Function destination
+
+fuction printMessage(message){console.log(message);}
+
+avalable everywere, no matter where is declared for first time
+
+Good Practice => Declare all functions on the top 
+
+
+2. Function expression
+
+var printMessage = fuction(){console.log(message);}
+
+Те се зареждат където са дефинирани. По нагоре те не са достъпни
+
+3. Function fuction constructor
+
+var printMessage = new Function ("message", 'console.log(message)')
+
+Usage => for html tamplates like handlebar
+
+Usage very rear and evil 
+
+IIFE = Imidiate Invoked function expression
+Абсолютно всичо се пише в IIFE
+Изпълнява се веднага и точно един път
+
+(fuction(a){
+
+}(33));
+
+Callback => Функция, която се извиква и изпълнява след изпълнението на текущата ф-ция

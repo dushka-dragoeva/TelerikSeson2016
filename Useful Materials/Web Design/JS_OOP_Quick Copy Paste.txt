@@ -1,0 +1,98 @@
+
+    function* idGenerator() {
+        let lastId = 0,
+            forever = true;
+
+        while (forever) {
+            yeld(lastId += 1);
+        }
+    }
+
+    let itemsIdGenerator = idGenerator();
+
+    const validator = {
+        isStringValid(str, min = 1, max = Number.MAX_VALUE){
+            return (typeof str === "string") &&
+                str.length >= min && str.length <= max
+        },
+
+        isNumberValid(n, min = 0, max = Number.MAX_VALUE){
+            return (typeof n === "number") &&
+                min <= n && n <= max;
+        },
+
+        isNonemptyArrayWithValidObjects(array, validFunc){
+            validFunc = validFunc || function () {
+                    return true
+                };
+            return Array.isArray(array) && array.length > 0 &&
+                array.every(validFunc);
+        }
+    };
+	
+	
+	
+	get name() {
+            return this._name;
+        }
+
+        set name(name) {
+            if (!validator.isStringValid(name, 2, 40)) {
+                throw new Error("Invalid Name");
+            }
+            this._name = name;
+        }
+	
+	Unique Set
+	 getGerne() {
+            let genres = this.map(x=>x.genre.toLowerCase()),
+                uniqueGenres = new Set(genres);
+
+            return Array.from(uniqueGenres);
+
+        }
+********************FIND FUNCTION*****************		
+		 find(...options) {
+
+            if (typeof(options) === " undefined") {
+                throw  new Error("Invalid find option");
+            }
+
+            let isSingleResult = false;
+            if (typeof (options) === "number") {
+                options = {
+                    id: options
+                };
+
+                isSingleResult = true;
+            }
+
+            if (typeof (options !== "object")) {
+
+                throw  new Error("Invalid Options");
+            }
+
+            let result = this.itemes.filter(item=> {
+                return Object.keys(options)
+                    .every(key=>item[key] === options[key]);
+            });
+
+            return (!isSingleResult) ? result : (result.length) ? result[0]
+
+			: null;
+			
+********************Index of*************************************			
+			Object.defineProperty(playlist, 'removePlayable', {
+                value: function (id) {
+                    id = validator.validateId(id);
+
+                    var foundIndex = indexOfElementWithIdInCollection(this._playables, id);
+                    if (foundIndex < 0) {
+                        throw new Error('Playable with id ' + id + ' was not found in playlist');
+                    }
+
+                    this._playables.splice(foundIndex, 1);
+
+                    return this;
+                }
+            });

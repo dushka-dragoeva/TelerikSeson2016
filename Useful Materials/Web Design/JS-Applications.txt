@@ -1,0 +1,84 @@
+var promise = new Promise(function(resolve, reject) {
+    // do a thing, possibly async, then...    
+    if (/* everything turned out fine */) {
+        resolve('Stuff worked!'); // or pass some data
+    } else {
+        reject(Error('It broke'));
+    }
+
+    return promise; // give this to someone
+});
+
+*****************************************************
+
+var promise = new Promise(function(resolve, reject) {
+    // do something    
+    if (somethingWorked()) {
+        resolve('Stuff worked!');
+    } else {
+        reject(Error('It broke'));
+    }
+});
+
+promise.then((result) => {
+    console.log(result); // "Stuff worked!"
+}, (err) => {
+    console.log(err); // "It broke"
+	
+*******************************************************
+
+function get(url) {
+    return new Promise((resolve, reject) => {
+        // jQuery http get request
+        $.get(url, (data) => { 
+            resolve(data);
+        })
+        .fail(() => {
+            reject();
+        });
+    });
+}
+// in code
+get('users.all').then((users) => {
+    myController.users = users;
+}, function() { // OR .catch(function() {
+    delete myController.users;
+})
+
+********************************************************
+json parcer
+
+MODULE LOADER
+
+**AMD - Asynchronous module definition => require.js
+define(id, dependences, factoryFunction)
+dependences is an array of modules
+factoryfunction - tels how to use modules
+
+Dependences are loaded when needed
+Dependencies are loaded asynchronously when needed(lazy loading)
+
+System.js and EcmaScript6
+
+F12 => disable cashe for chrom always for exam
+
+npm install systemjs systemjs-plugin-babel --save
+
+Cookies**********************************
+
+=================================================================
+Router
+var router = new Navigo(null, false); // (root, useHash)
+router.on('book/:id/note/:noteId', params => loadBook(params))
+    .resolve();
+-----------------------------------------------
+	
+	function getQueryParams(query) {
+    let hash, vars = {},
+      hashes = query.substr(1)
+        .split('&').forEach(val => {
+          hash = val.split('=');
+          vars[hash[0]] = hash[1];
+        });
+    return vars;
+  }

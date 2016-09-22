@@ -1,0 +1,3 @@
+npm install systemjs systemjs-plugin-babel --save
+npm install navigo --save
+npm install habdlebars --save
