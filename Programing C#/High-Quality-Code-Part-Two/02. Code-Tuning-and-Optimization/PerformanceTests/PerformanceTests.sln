@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareSimpleMaths", "CompareSimpleMaths\CompareSimpleMaths.csproj", "{DC9BE64F-00A7-4627-B818-60B698E2639C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareAdvancedMaths", "CompareAdvancedMaths\CompareAdvancedMaths.csproj", "{7AE33EFC-89E3-4D1B-9A09-1898536F03B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarSystem", "..\SolarSystem\SolarSystem.csproj", "{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareSortAlorithms", "CompareSortAlorithms\CompareSortAlorithms.csproj", "{199F8CC7-C3AB-4945-BC6D-73D3E850DA26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC9BE64F-00A7-4627-B818-60B698E2639C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9BE64F-00A7-4627-B818-60B698E2639C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9BE64F-00A7-4627-B818-60B698E2639C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9BE64F-00A7-4627-B818-60B698E2639C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AE33EFC-89E3-4D1B-9A09-1898536F03B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AE33EFC-89E3-4D1B-9A09-1898536F03B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AE33EFC-89E3-4D1B-9A09-1898536F03B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AE33EFC-89E3-4D1B-9A09-1898536F03B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{199F8CC7-C3AB-4945-BC6D-73D3E850DA26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{199F8CC7-C3AB-4945-BC6D-73D3E850DA26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{199F8CC7-C3AB-4945-BC6D-73D3E850DA26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{199F8CC7-C3AB-4945-BC6D-73D3E850DA26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
