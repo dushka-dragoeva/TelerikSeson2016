@@ -138,6 +138,7 @@ function threadsAddMessage(id, msg) {
       }
 
       msg.postDate = new Date();
+
       thread.messages.push(msg);
       return thread;
     });

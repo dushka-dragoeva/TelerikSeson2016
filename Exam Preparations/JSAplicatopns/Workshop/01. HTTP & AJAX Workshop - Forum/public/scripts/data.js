@@ -17,7 +17,6 @@ var data = (function () {
     }
 
 
-
     // end users
 
     // start threads
@@ -31,73 +30,75 @@ var data = (function () {
 
     function threadsAdd(title) {
 
-            var promise = new Promise((resolve, reject) => {
-                let username = userGetCurrent()
-                    .then((username) => {
-                        let body = {title, username};
-                        $.ajax({
-                            method: 'POST',
-                            url: 'api/threads',
-                            data: JSON.stringify(body),
-                            contentType: 'application/json',
-                        }).done((data)=>resolve(data))
-                            .fail((err)=>reject(err));
-                    })
-            });
-
-            return promise;
-    }
-
-    // function threadGetCurrent(id) {
-    //     return Promise.resolve(threadsGet().find(thread.id===id));
-    //
-    // }
-
-
-    function threadById(id) {
-
-        // return new Promise((resolve, reject) => {
-        //     $.getJSON('api/threads/#{id}')
-        //         .done(resolve(id))
-        //         .fail(reject);
-        // }).then(console.log(data))
-
-
         var promise = new Promise((resolve, reject) => {
             let username = userGetCurrent()
-                .then((username,id) => {
-
-                    $.ajax({
-                        method: 'GET',
-                        url: 'api/threads/#/{id}',
+                .then(function (username) {
+                    let body = {title, username};
+                    $.ajax('api/threads', {
+                        type: 'POST',
                         contentType: 'application/json',
-                    }).done((data)=>resolve(data))
-                        .fail((err)=>reject(err));
-                })
-       });
+                        data: JSON.stringify(body),
+                        success: function (data) {
+                            resolve(data);
+                        },
+                        error: function (err) {
+                            reject(err);
+                        }
+                    });
+                });
+        });
 
-        return promise.then(console.log(data));
+        return promise
+            .then($('#btn-threads').trigger('click'));
+    }
 
+    function threadById(id) {
+        return new Promise(function (resolve, reject) {
+            var url = `api/threads/${id}`;
+            $.ajax(url, {
+                type: 'GET',
+                contentType: 'application/json',
+                success: function (data) {
+                    resolve(data);
+                },
+                error: function (err) {
+                    reject(err);
+                }
+            });
+        });
     }
 
     function threadsAddMessage(threadId, content) {
+        var url = `api/threads/${threadId}/messages`;
 
         var promise = new Promise((resolve, reject) => {
+
             let username = userGetCurrent()
-                .then((username) => {
-                    let body = {content, username};
-                    $.ajax({
-                        method: 'POST',
-                        url: 'api/threads/#{threadId}/messages',
-                        data: JSON.stringify(body),
+                .then(function (username) {
+                    // console.log(username);
+
+                    $.ajax(url, {
+                        type: 'POST',
                         contentType: 'application/json',
-                    }).done((data)=>resolve(data))
-                        .fail((err)=>reject(err));
-                })
+                        data: JSON.stringify({
+                            username: username,
+                            message: content,
+                            author: username
+                        }),
+                        success: function (data) {
+                            resolve(data);
+                        },
+                        error: function (err) {
+                            reject(err);
+                        }
+                    });
+                });
         });
 
-        return promise;
 
+        return promise
+            .then($('.btn-close-msg').trigger('click'))
+            .then($(`div[data-id ="${threadId}"] > div > h3 > a`).trigger('click'));
     }
 
 // end threads
@@ -106,6 +107,19 @@ var data = (function () {
     function galleryGet() {
         const REDDIT_URL = `https://www.reddit.com/r/aww.json?jsonp=?`;
 
+        return new Promise(function (resolve, reject) {
+            $.ajax({
+                url: REDDIT_URL,
+                jsonp: "callback",
+                dataType: "jsonp",
+                success: function (response) {
+                    resolve(response)
+                },
+                error: function (err) {
+                    reject(err);
+                }
+            })
+        });
     }
 
 // end gallery
