@@ -6,9 +6,9 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4D520899-7061-4EAA-B67E-D14EE8B30462}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>GameFifteen</RootNamespace>
-    <AssemblyName>GameFifteen</AssemblyName>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WalkInMatrix</RootNamespace>
+    <AssemblyName>WalkInMatrix</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -32,14 +32,29 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Matrica.cs" />
+    <Compile Include="Utils\Direction.cs" />
+    <Compile Include="Models\Cell.cs" />
+    <Compile Include="Models\SquareMatrix.cs" />
+    <Compile Include="Utils\MatrixUtils.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Settings.aiis" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Name="WalkInMatrix" />
+    </VisualStudio>
+  </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
