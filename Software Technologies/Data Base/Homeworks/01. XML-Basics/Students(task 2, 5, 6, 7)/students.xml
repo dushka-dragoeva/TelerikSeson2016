@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xslt" ?>
+<students xmlns:students="urn:students">
+  <student>
+    <name>Margarita Ivanova</name>
+    <sex>Female</sex>
+    <birthdate>1983-03-14</birthdate>
+    <phone>+35988745654</phone>
+    <email>m.ivanova@abv.bg</email>
+    <course>CSharp</course>
+    <specialty>Computer Science</specialty>
+    <facultynumber>99999999</facultynumber>
+    <exams>
+      <exam>
+        <name>CSharp1</name>
+        <tutor>Ivan Ivanov</tutor>
+        <score>45</score>
+      </exam>
+    </exams>
+  </student>
+    <student>
+    <name>Doncho Petkov</name>
+    <sex>Male</sex>
+    <birthdate>1983-01-22</birthdate>
+    <phone>+359888745632</phone>
+    <email>d.petkov@abv.bg</email>
+    <course>CSharp</course>
+      <specialty>Computer Science</specialty>
+    <facultynumber>23456789</facultynumber>
+    <exams>
+      <exam>
+        <name>CSharp1</name>
+        <tutor>Ivan Ivanov</tutor>
+        <score>82</score>
+      </exam>
+      <exam>
+        <name>CSharp2</name>
+        <tutor>Ivan Ivanov</tutor>
+        <score>75</score>
+      </exam>
+      <exam>
+        <name>CSharpOOP</name>
+        <tutor>Peter Petrov</tutor>
+        <score>99</score>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Reneta Petkova</name>
+    <sex>Female</sex>
+    <birthdate>1983-07-10</birthdate>
+    <phone>+359885365978</phone>
+    <email>r.petkova@abv.bg</email>
+    <course>CSharp</course>
+    <specialty>Computer Science</specialty>
+    <facultynumber>98765412</facultynumber>
+    <exams>
+      <exam>
+        <name>CSharp2</name>
+        <tutor>Ivan Ivanov</tutor>
+        <score>65</score>
+      </exam>
+    </exams>
+  </student>
+</students>
