@@ -1,0 +1,25 @@
+Invalid range
+Invalid range
+Phone entry created
+Phone entry created
+Phone entry created
+Phone entry merged
+Phone entry merged
+Phone entry merged
+Phone entry merged
+[Alpha: +359111222333]
+[Beta: +1123456789, +359123, +35929812233, +359444555666, +359777777777, +359888888888]
+[Gamma: +359777888999]
+Invalid range
+Invalid range
+[Beta: +1123456789, +359123, +35929812233, +359444555666, +359777777777, +359888888888]
+[Gamma: +359777888999]
+Invalid range
+[Gamma: +359777888999]
+Invalid range
+Phone entry merged
+Phone entry merged
+Phone entry merged
+[Alpha: +359111222333, +359777777777, +359888888888]
+Phone entry created
+[Zhoro.MTel: +359888888888888888888888888888888888888888888888]

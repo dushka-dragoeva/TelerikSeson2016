@@ -1,0 +1,5 @@
+AddPhone(Alpha, +359111222333)
+AddPhone(Beta, +359444555666)
+AddPhone(Gamma, +359777888999)
+List(0, 3)
+End

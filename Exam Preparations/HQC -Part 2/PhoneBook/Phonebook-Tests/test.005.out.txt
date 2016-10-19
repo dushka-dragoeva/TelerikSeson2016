@@ -1,0 +1,152 @@
+Invalid range
+Invalid range
+Phone entry created
+Phone entry created
+Phone entry created
+Phone entry merged
+Phone entry merged
+Phone entry merged
+Phone entry merged
+[Alpha: +359111222333]
+[Beta: +1123456789, +359123, +35929812233, +359444555666, +359777777777, +359888888888]
+[Gamma: +359777888999]
+Invalid range
+Invalid range
+[Beta: +1123456789, +359123, +35929812233, +359444555666, +359777777777, +359888888888]
+[Gamma: +359777888999]
+Invalid range
+[Gamma: +359777888999]
+Invalid range
+Phone entry merged
+Phone entry merged
+Phone entry merged
+[Alpha: +359111222333, +359777777777, +359888888888]
+Phone entry created
+[Zhoro.MTel: +359888888888888888888888888888888888888888888888]
+2 numbers changed
+[Alpha: +359111111111, +359111222333, +359777777777]
+[Beta: +1123456789, +359111111111, +359123, +35929812233, +359444555666, +359777777777]
+[Gamma: +359777888999]
+[Zhoro.MTel: +359888888888888888888888888888888888888888888888]
+2 numbers changed
+[Alpha: +359111222333, +359123, +359777777777]
+[Beta: +1123456789, +359123, +35929812233, +359444555666, +359777777777]
+[Gamma: +359777888999]
+[Zhoro.MTel: +359888888888888888888888888888888888888888888888]
+2 numbers changed
+0 numbers changed
+[Alpha: +359111222333, +359123]
+[Beta: +1123456789, +359123, +35929812233, +359444555666]
+[Gamma: +359777888999]
+[Zhoro.MTel: +359888888888888888888888888888888888888888888888]
+1 numbers changed
+[Alpha: +359123]
+[Beta: +1123456789, +359123, +35929812233, +359444555666]
+[Gamma: +359777888999]
+[Zhoro.MTel: +359888888888888888888888888888888888888888888888]
+1 numbers changed
+1 numbers changed
+1 numbers changed
+[Alpha: +359123]
+[Beta: +359123, +359888888888888888888888888888888888888888888888]
+[Gamma: +359777888999]
+[Zhoro.MTel: +359888888888888888888888888888888888888888888888]
+1 numbers changed
+2 numbers changed
+[Alpha: +359888888888888888888888888888888888888888888888]
+[Beta: +359888888888888888888888888888888888888888888888]
+[Gamma: +359888888888888888888888888888888888888888888888]
+[Zhoro.MTel: +359888888888888888888888888888888888888888888888]
+4 numbers changed
+[Alpha: +359999]
+[Beta: +359999]
+[Gamma: +359999]
+[Zhoro.MTel: +359999]
+Phone entry merged
+Phone entry merged
+Phone entry merged
+Phone entry created
+[Alpha: +359999]
+[Bay Ivan (Alabala Portokala Kashkavala). Welcome to our exam!: +359999]
+[Beta: +359999]
+[Gamma: +359999]
+[Zhoro.MTel: +359999]
+[Alpha: +359999]
+Invalid range
+Phone entry merged
+Phone entry merged
+Phone entry merged
+Phone entry merged
+Phone entry merged
+Phone entry merged
+Phone entry merged
+[Alpha: +359111222333, +359999]
+[Bay Ivan (Alabala Portokala Kashkavala). Welcome to our exam!: +359999]
+[Beta: +1123456789, +359123, +35929812233, +359444555666, +359777777777, +359888888888, +359999]
+[Alpha: +359111222333, +359999]
+[Bay Ivan (Alabala Portokala Kashkavala). Welcome to our exam!: +359999]
+[Beta: +1123456789, +359123, +35929812233, +359444555666, +359777777777, +359888888888, +359999]
+[Gamma: +359777888999, +359999]
+[Bay Ivan (Alabala Portokala Kashkavala). Welcome to our exam!: +359999]
+[Beta: +1123456789, +359123, +35929812233, +359444555666, +359777777777, +359888888888, +359999]
+[Gamma: +359777888999, +359999]
+[Bay Ivan (Alabala Portokala Kashkavala). Welcome to our exam!: +359999]
+[Beta: +1123456789, +359123, +35929812233, +359444555666, +359777777777, +359888888888, +359999]
+[Beta: +1123456789, +359123, +35929812233, +359444555666, +359777777777, +359888888888, +359999]
+[Gamma: +359777888999, +359999]
+[Beta: +1123456789, +359123, +35929812233, +359444555666, +359777777777, +359888888888, +359999]
+[Gamma: +359777888999, +359999]
+Phone entry merged
+Phone entry merged
+Phone entry merged
+[Alpha: +359111222333, +359777777777, +359888888888, +359999]
+Phone entry merged
+[Gamma: +359777888999, +359999]
+2 numbers changed
+[Alpha: +359111111111, +359111222333, +359777777777, +359999]
+[Bay Ivan (Alabala Portokala Kashkavala). Welcome to our exam!: +359999]
+[Beta: +1123456789, +359111111111, +359123, +35929812233, +359444555666, +359777777777, +359999]
+[Gamma: +359777888999, +359999]
+2 numbers changed
+[Alpha: +359111222333, +359123, +359777777777, +359999]
+[Bay Ivan (Alabala Portokala Kashkavala). Welcome to our exam!: +359999]
+[Beta: +1123456789, +359123, +35929812233, +359444555666, +359777777777, +359999]
+[Gamma: +359777888999, +359999]
+2 numbers changed
+0 numbers changed
+[Alpha: +359111222333, +359123, +359999]
+[Bay Ivan (Alabala Portokala Kashkavala). Welcome to our exam!: +359999]
+[Beta: +1123456789, +359123, +35929812233, +359444555666, +359999]
+[Gamma: +359777888999, +359999]
+1 numbers changed
+[Alpha: +359123, +359999]
+[Bay Ivan (Alabala Portokala Kashkavala). Welcome to our exam!: +359999]
+[Beta: +1123456789, +359123, +35929812233, +359444555666, +359999]
+[Gamma: +359777888999, +359999]
+1 numbers changed
+1 numbers changed
+1 numbers changed
+[Alpha: +359123, +359999]
+[Bay Ivan (Alabala Portokala Kashkavala). Welcome to our exam!: +359999]
+[Beta: +359123, +359888888888888888888888888888888888888888888888, +359999]
+[Gamma: +359777888999, +359999]
+1 numbers changed
+2 numbers changed
+[Alpha: +359888888888888888888888888888888888888888888888, +359999]
+[Bay Ivan (Alabala Portokala Kashkavala). Welcome to our exam!: +359999]
+[Beta: +359888888888888888888888888888888888888888888888, +359999]
+[Gamma: +359888888888888888888888888888888888888888888888, +359999]
+4 numbers changed
+[Alpha: +359999]
+[Bay Ivan (Alabala Portokala Kashkavala). Welcome to our exam!: +359999]
+[Beta: +359999]
+[Gamma: +359999]
+Phone entry merged
+Phone entry merged
+Phone entry merged
+Phone entry merged
+[Alpha: +359999]
+[Bay Ivan (Alabala Portokala Kashkavala). Welcome to our exam!: +359999]
+[Beta: +359999]
+[Gamma: +359999]
+[Zhoro.MTel: +359999]

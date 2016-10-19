@@ -1,0 +1,8 @@
+Phone entry created
+Phone entry created
+Phone entry created
+Phone entry merged
+[Alpha: +359111222333]
+[Beta: +359444555666, +359888888888]
+[Gamma: +359777888999]
+Invalid range
