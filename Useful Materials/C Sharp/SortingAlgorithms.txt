@@ -1,4 +1,0 @@
-Merge Sort 
-complexity (бързина)  worst n^2, normal log(n)
-memory + log(n)
-pivot главен елемент
