@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+  <album>
+    <name>Queen</name>
+    <arti>Queen</arti>
+    <year>1973</year>
+    <poducer>Hollywood</poducer>
+    <price>49.99</price>
+    <songs>
+      <song>
+        <title>Keep Yourself Alive</title>
+        <duration>3.46</duration>
+      </song>
+      <song>
+        <title>Doing All Right</title>
+        <duration>4.09</duration>
+      </song>
+      <song>
+        <title>Great King Rat</title>
+        <duration>5.43</duration>
+      </song>
+      <song>
+        <title>My Fairy King</title>
+        <duration>4.12</duration>
+      </song>
+    </songs>
+  </album>
+
+  <album>
+    <name>Flash Gordon</name>
+    <arti>Queen</arti>
+    <year>1981</year>
+    <poducer>EMI</poducer>
+    <price>59.99</price>
+    <songs>
+      <song>
+        <title>Ming's Theme (In the Court of Ming the Merciless)</title>
+        <duration>2.40</duration>
+      </song>
+      <song>
+        <title>The Kiss (Aura Resurrects Flash)</title>
+        <duration>1.44</duration>
+      </song>
+      <song>
+        <title>Arboria (Planet of the Tree Men)</title>
+        <duration>1.41</duration>
+      </song>
+      <song>
+        <title>Battle Theme</title>
+        <duration>2.18</duration>
+      </song>
+      <song>
+        <title>The Hero</title>
+        <duration>3.31</duration>
+      </song>
+    </songs>
+  </album>
+
+  <album>
+    <name>The Wall</name>
+    <arti>Pink Floyd</arti>
+    <year>2015</year>
+    <poducer>EMI</poducer>
+    <price>39.99</price>
+    <songs>
+      <song>
+        <title>In the Flesh</title>
+        <duration>3:16</duration>
+      </song>
+      <song>
+        <title>The Thin Ice</title>
+        <duration>2:27</duration>
+      </song>
+      <song>
+        <title>Another Brick in the Wall (Part I)</title>
+        <duration>3:21</duration>
+      </song>
+      <song>
+        <title>The Happiest Days of Our Lives</title>
+        <duration>1.46</duration>
+      </song>
+      <song>
+        <title>Another Brick in the Wall (Part II)</title>
+        <duration>3.59</duration>
+      </song>
+      <song>
+        <title>Mother</title>
+        <duration>5.32</duration>
+      </song>
+      <song>
+        <title>Goodbye Blue Sky</title>
+        <duration>2:45</duration>
+      </song>
+      <song>
+        <title>One of My Turns</title>
+        <duration>3.41</duration>
+      </song>
+      <song>
+        <title>Another Brick in the Wall (Part III)</title>
+        <duration>1.48</duration>
+      </song>
+    </songs>
+  </album>
+
+</catalog>
+

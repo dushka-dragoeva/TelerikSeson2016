@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<people>
+	<person>
+		<name>﻿Rene Petrov</name>
+		<address>Sofia, park Zaimov</address>
+		<phoneNumber>0888123456</phoneNumber>
+	</person>
+	<person>
+		<name>Lili Petrov</name>
+		<address>Sofia, park Zaimov</address>
+		<phoneNumber>0888123356</phoneNumber>
+	</person>
+	<person>
+		<name>Peter Ivanov</name>
+		<address>Sofia, park Botisova</address>
+		<phoneNumber>088812348</phoneNumber>
+	</person>
+</people>

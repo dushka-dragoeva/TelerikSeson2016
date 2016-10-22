@@ -1,0 +1,22 @@
+{
+  "count": 2,
+  "phones": [
+    {
+      "id": 1,
+      "vendor": {
+        "id": 3,
+        "name": "Samsung"
+      },
+      "model": "Gamaxy S7"
+    },
+
+    {
+      "id": 2,
+      "vendor": {
+        "id": 4,
+        "name": "LG"
+      },
+      "model": "Nexus5"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+  <album>
+    <name>Queen</name>
+    <artist>Queen</artist>
+    <year>1973</year>
+    <poducer>Hollywood</poducer>
+    <price>19.99</price>
+    <songs>
+      <song>
+        <title>Keep Yourself Alive</title>
+        <duration>3.46</duration>
+      </song>
+      <song>
+        <title>Doing All Right</title>
+        <duration>4.09</duration>
+      </song>
+      <song>
+        <title>Great King Rat</title>
+        <duration>5.43</duration>
+      </song>
+      <song>
+        <title>My Fairy King</title>
+        <duration>4.12</duration>
+      </song>
+    </songs>
+  </album>
+</catalog>

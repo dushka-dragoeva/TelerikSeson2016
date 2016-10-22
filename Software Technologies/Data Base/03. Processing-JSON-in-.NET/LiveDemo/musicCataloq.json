@@ -1,0 +1,116 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "utf-8"
+  },
+  "?xml-stylesheet": "type=\"text/xsl\" href=\"13.style.xslt\"",
+  "catalog": {
+    "album": [
+      {
+        "name": "Queen",
+        "artist": "Queen",
+        "year": "1973",
+        "poducer": "Hollywood",
+        "price": "49.99",
+        "songs": {
+          "song": [
+            {
+              "title": "Keep Yourself Alive",
+              "duration": "3.46"
+            },
+            {
+              "title": "Doing All Right",
+              "duration": "4.09"
+            },
+            {
+              "title": "Great King Rat",
+              "duration": "5.43"
+            },
+            {
+              "title": "My Fairy King",
+              "duration": "4.12"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Flash Gordon",
+        "artist": "Queen",
+        "year": "1981",
+        "poducer": "EMI",
+        "price": "59.99",
+        "songs": {
+          "song": [
+            {
+              "title": "Ming's Theme (In the Court of Ming the Merciless)",
+              "duration": "2.40"
+            },
+            {
+              "title": "The Kiss (Aura Resurrects Flash)",
+              "duration": "1.44"
+            },
+            {
+              "title": "Arboria (Planet of the Tree Men)",
+              "duration": "1.41"
+            },
+            {
+              "title": "Battle Theme",
+              "duration": "2.18"
+            },
+            {
+              "title": "The Hero",
+              "duration": "3.31"
+            }
+          ]
+        }
+      },
+      {
+        "name": "The Wall",
+        "artist": "Pink Floyd",
+        "year": "2015",
+        "poducer": "EMI",
+        "price": "39.99",
+        "songs": {
+          "song": [
+            {
+              "title": "In the Flesh",
+              "duration": "3:16"
+            },
+            {
+              "title": "The Thin Ice",
+              "duration": "2:27"
+            },
+            {
+              "title": "Another Brick in the Wall (Part I)",
+              "duration": "3:21"
+            },
+            {
+              "title": "The Happiest Days of Our Lives",
+              "duration": "1.46"
+            },
+            {
+              "title": "Another Brick in the Wall (Part II)",
+              "duration": "3.59"
+            },
+            {
+              "title": "Mother",
+              "duration": "5.32"
+            },
+            {
+              "title": "Goodbye Blue Sky",
+              "duration": "2:45"
+            },
+            {
+              "title": "One of My Turns",
+              "duration": "3.41"
+            },
+            {
+              "title": "Another Brick in the Wall (Part III)",
+              "duration": "1.48"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
