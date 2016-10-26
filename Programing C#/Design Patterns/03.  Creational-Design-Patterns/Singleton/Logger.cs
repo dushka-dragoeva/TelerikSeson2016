@@ -20,15 +20,9 @@ namespace Singleton
         {
             get
             {
-                if (Instance == null)
+                if (instance == null)
                 {
-                    lock (lockedObject)
-                    {
-                        if (instance == null)
-                        {
-                            instance = new Logger(); 
-                        }
-                    }
+                    instance = new Logger();
                 }
 
                 return instance;
@@ -36,7 +30,7 @@ namespace Singleton
         }
         public void Log(string log, IPrinter printer)
         {
-            printer.Print ($"{DateTime.Now}  {log}");
+            printer.Print($"{DateTime.Now}  {log}");
         }
     }
 }
