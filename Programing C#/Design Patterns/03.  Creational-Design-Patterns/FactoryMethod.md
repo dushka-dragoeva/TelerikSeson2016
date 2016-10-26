@@ -73,4 +73,4 @@ Factory Method шаблона се **имплементира** по два ос
 
 **Структура**
 
-![](FactoryMethod.png)
+[UML Diagram](http://www.apwebco.com/images/FactoryMethod.jpg)
