@@ -19,11 +19,11 @@ Factory Method шаблона се **имплементира** по два ос
 	    public void DoSomething();
 	}
 
-	public class ConcreteProduct1 : IProduct
+	public class ConcreteProduct : IProduct
 	{
 	    public void DoSomething()
 	    {
-	        // doing something in ConcreteProduct1 way;
+	        // doing something in ConcreteProduct way;
 	    }
 	}
 
@@ -31,14 +31,14 @@ Factory Method шаблона се **имплементира** по два ос
 	{
 	    public void DoSomething()
 	    {
-	        // doing something in ConcreteProduct2 way;
+	        // doing something in OtherConcretProduct way;
 	    }
 	}
 
 	public enum ProductType
 	{
-	    ProductType1,
-	    ProductType2
+	    ConcretProduct,
+	    OtherConcretProduct
 	}
 
 	public class Factory
@@ -49,10 +49,10 @@ Factory Method шаблона се **имплементира** по два ос
 	        switch (type)
 	        {
 	            case ProductType.ProductType1:
-	                product = new ConcreteProduct1();
+	                product = new ConcreteProduct();
 	                break;
 	            case ProductType.ProductType2:
-	                product = new ConcreteProduct2();
+	                product = new OtherConcretProduct();
 	                break;
 	            default:
 	                break;
@@ -73,4 +73,4 @@ Factory Method шаблона се **имплементира** по два ос
 
 **Структура**
 
-![](FactoryMethod.png)
+[UML Diagram](http://www.apwebco.com/images/FactoryMethod.jpg)
