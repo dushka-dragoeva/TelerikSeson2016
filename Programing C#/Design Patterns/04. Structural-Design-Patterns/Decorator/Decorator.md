@@ -126,9 +126,9 @@ public class Client
 
 
 ## Проблеми
- * Различните обекти нямат собствена индентичност, ковто води до лоша тестваемост
+ * Различните обекти нямат собствена индентичност, коeто води до лоша тестваемост
  * Наличието на множество сходни малки обекти води до трудна поддръжка
   
 ## UML  диаграма
 
-![alt Decorator]()
+![alt Decorator](https://github.com/dushka-dragoeva/TelerikSeson2016/blob/master/Programing%20C%23/Design%20Patterns/04.%20Structural-Design-Patterns/Images/Decorator-Diagram.png)
