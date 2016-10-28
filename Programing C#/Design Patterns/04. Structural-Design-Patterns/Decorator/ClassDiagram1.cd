@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Decorator.Abstractions.VehicleComponent">
-    <Position X="3" Y="0.5" Width="1.5" />
+    <Position X="4" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAEAAAAAAAAAAAAAAAAAAAAAABAAABAAA=</HashCode>
       <FileName>Abstractions\VehicleComponent.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Decorator.Abstractions.VehicleDecorator">
-    <Position X="1.75" Y="3.25" Width="1.5" />
+    <Position X="3" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAEAAAAAAAAAAABAAAAAAAAAABAAAAAAA=</HashCode>
       <FileName>Abstractions\VehicleDecorator.cs</FileName>
@@ -29,17 +29,24 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Decorator.Models.BaseCar">
-    <Position X="5.25" Y="3.25" Width="1.5" />
+    <Position X="7.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
       <FileName>Models\BaseCar.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Decorator.Client" Collapsed="true">
-    <Position X="7.25" Y="1" Width="1.5" />
+    <Position X="6.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Decorator.Decorators.V8EngineDecorator">
+    <Position X="5.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Decorators\V8EngineDecorator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
