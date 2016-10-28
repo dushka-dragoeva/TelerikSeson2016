@@ -1,7 +1,6 @@
-# Composite
-### Structural Design Pattern
+# Composite Pattern
 
-#### Обобщение
+## Описание
 Composite Pattern-ът е шаблон, който се използва в обектно-ориентираното програмиране. Той ни позволява да създаваме йерархия от класове, като ги комбинираме в дървовидна структура.Също така, ни позволява да третираме простите обкети (листата) и композитните обекти по един и същи начин.
 
 #### Структура
@@ -15,9 +14,17 @@ Composite Pattern-ът е шаблон, който се използва в об
 * представлява композитната имплементация на Component-a (композитните обекти могат да имат деца)
 * имплементира методи за работа с децата си
 
-![Alt Diagram](https://github.com/dushka-dragoeva/TelerikSeson2016/blob/master/Programing%20C%23/Design%20Patterns/04.%20Structural-Design-Patterns/Images/Composite-Diagram.png)
+## Цел
+ * Създаване на обекти в дървовидна структура за представяне на частични йерархии. Composite позволява на клиентите да се отнасят към отделните обекти и композициите на обекти еднакво
 
-#### Demo
+## Известни употреби
+ *  .NET Framework
+	* Windows.Forms.Control и неговите наследници
+	* System.Web.UI.Control и  неговите наследници
+	* System.Xml.XmlNode and its derived classes и  неговите наследници
+ * View class of Smalltalk Model/View/Controller [KP88]
+
+## Implemntation
 ###### FileSystemEntity
 ~~~c#
 public abstract class FileSystemEntity
@@ -122,6 +129,9 @@ static void Main()
     programFilesFolder.Print(0);
 }
 ~~~
+
+## UML  диаграма
+![Alt Diagram](https://github.com/dushka-dragoeva/TelerikSeson2016/blob/master/Programing%20C%23/Design%20Patterns/04.%20Structural-Design-Patterns/Images/Composite-Diagram.png)
 
 ###### Output
 ![Alt Output](https://github.com/dushka-dragoeva/TelerikSeson2016/blob/master/Programing%20C%23/Design%20Patterns/04.%20Structural-Design-Patterns/Images/Composite-Output.png)
