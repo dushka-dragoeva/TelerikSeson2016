@@ -2,7 +2,7 @@
 
 namespace Decorator.Utilities
 {
-    class StringUtilities
+    public class StringUtilities
     {
         public static string[] SplitCamelCase(string source)
         {
