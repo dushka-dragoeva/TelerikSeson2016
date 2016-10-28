@@ -124,4 +124,4 @@ static void Main()
 ~~~
 
 ###### Output
-[Output](Images/Composite-Output.png)
+![Alt Output](https://github.com/dushka-dragoeva/TelerikSeson2016/blob/master/Programing%20C%23/Design%20Patterns/04.%20Structural-Design-Patterns/Images/Composite-Output.png)
