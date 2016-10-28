@@ -7,7 +7,7 @@
 
 ## Клас диаграма:
 
-![Factory method](http://www.dofactory.com/images/diagrams/net/adapter.gif)
+![Adaptor Diagram](https://github.com/dushka-dragoeva/TelerikSeson2016/blob/master/Programing%20C%23/Design%20Patterns/04.%20Structural-Design-Patterns/Images/Adaptor.png)
 
 Компоненти:
 
