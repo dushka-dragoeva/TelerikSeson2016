@@ -15,7 +15,7 @@ Composite Pattern-ът е шаблон, който се използва в об
 * представлява композитната имплементация на Component-a (композитните обекти могат да имат деца)
 * имплементира методи за работа с децата си
 
-![Alt Diagram](https://github.com/dushka-dragoeva/TelerikSeson2016/tree/master/Programing%20C%23/Design%20Patterns/04.%20Structural-Design-Patterns/ImagesComposite-Diagram.png)
+![Alt Diagram](https://github.com/dushka-dragoeva/TelerikSeson2016/blob/master/Programing%20C%23/Design%20Patterns/04.%20Structural-Design-Patterns/Images/Composite-Diagram.png)
 
 #### Demo
 ###### FileSystemEntity
