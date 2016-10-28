@@ -15,7 +15,7 @@ Composite Pattern-ът е шаблон, който се използва в об
 * представлява композитната имплементация на Component-a (композитните обекти могат да имат деца)
 * имплементира методи за работа с децата си
 
-![Composite diagram](Images/Composite-Diagram.png)
+[Composite diagram](Images/Composite-Diagram.png)
 
 #### Demo
 ###### FileSystemEntity
@@ -124,4 +124,4 @@ static void Main()
 ~~~
 
 ###### Output
-![Output](Images/Composite-Output.png)
+[Output](Images/Composite-Output.png)
