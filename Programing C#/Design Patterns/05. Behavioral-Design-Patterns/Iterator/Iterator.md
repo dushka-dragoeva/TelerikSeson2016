@@ -130,6 +130,6 @@ Iterator предоставя начин за достъп до елементи
     }
 
 ### UML Диаграма
-[Iterator](Pictures/Iterator.png)
+![alt Iterator](https://github.com/dushka-dragoeva/TelerikSeson2016/blob/master/Programing%20C%23/Design%20Patterns/05.%20Behavioral-Design-Patterns/Pictures/Iterator.png)
 
 
