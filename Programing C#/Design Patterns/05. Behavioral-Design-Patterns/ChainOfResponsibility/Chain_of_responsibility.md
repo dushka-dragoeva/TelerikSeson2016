@@ -92,6 +92,6 @@ Chain of Responsibility избягва закачането на подател�
 
 
 ### UML Диаграма
-[Chain_of_responsibility](Pictures/Chain_of_responsibility.png)
+[Chain_of_responsibility]https://github.com/dushka-dragoeva/TelerikSeson2016/blob/master/Programing%20C%23/Design%20Patterns/05.%20Behavioral-Design-Patterns/Pictures/Chain_of_responsibility.png)
 
 
