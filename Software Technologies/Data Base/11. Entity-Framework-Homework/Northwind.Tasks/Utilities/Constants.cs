@@ -1,7 +1,7 @@
 ﻿namespace Northwind.Tasks.Utilities
 {
-    internal class Constants
+    public class Constants
     {
-        internal const int IdLenght = 5;
+        public const int IdLenght = 5;
     }
 }

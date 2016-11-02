@@ -4,37 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//using Northwind.Tasks.ViewModels;
+using Northwind.Tasks.ViewModels;
 
 namespace Northwind.Data
 {
     public partial class Customer
-    { 
-        //public CustomerView ToViewCustomer()
-        //{
-        //    var customer = new CustomerView();
+    {
+        public CustomerView ToViewCustomer()
+        {
+            var customer = new CustomerView();
 
-        //    customer.CustomerID = this.CustomerID;
-        //    customer.CompanyName = this.CompanyName;
-        //    customer.ContactName = this.ContactName;
-        //    customer.ContactTitle = this.ContactTitle;
-        //    customer.Address = this.Address;
-        //    customer.City = this.City;
-        //    customer.Region = this.Region;
-        //    customer.PostalCode = this.PostalCode;
-        //    customer.Country = this.Country;
-        //    customer.Phone = this.Phone;
-        //    customer.Fax = this.Fax;
+            customer.CustomerID = this.CustomerID;
+            customer.CompanyName = this.CompanyName;
+            customer.ContactName = this.ContactName;
+            customer.ContactTitle = this.ContactTitle;
+            customer.Address = this.Address;
+            customer.City = this.City;
+            customer.Region = this.Region;
+            customer.PostalCode = this.PostalCode;
+            customer.Country = this.Country;
+            customer.Phone = this.Phone;
+            customer.Fax = this.Fax;
 
-        //    return customer;
-        //}
-
-        //public Domain.Product ToDomainProduct()
-        //{
-        //    Domain.Product p = new Domain.Product();
-        //    p.Name = this.Name;
-        //    p.UnitPrice = this.UnitPrice;
-        //    return p;
-        //}
+            return customer;
+        }
     }
 }

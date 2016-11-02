@@ -1,50 +1,52 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using System.Reflection;
+using Ninject;
+using Northwind.Data;
 using Northwind.Tasks.Daos;
-using Northwind.Tasks.ViewModels;
 
 namespace Northwind.ConsoleApp
 {
     public class Program
     {
-        private const string Id = "BBDFG";
+        private static readonly string separator = new string('=', 80);
 
-       public static void Main()
+        public static void Main()
         {
-            var customer = new CustomerView()
+            var kernel = new StandardKernel();
+            kernel.Load(Assembly.GetExecutingAssembly());
+            var customersDao = kernel.Get<CustomersDao>();
+
+            CustomersDaoTestClass.Run();
+            Console.WriteLine(separator);
+
+            /// ===============================================================================
+
+            var dbContext = new NorthwindEntities();
+
+            using (dbContext)
             {
-                CustomerID = "BBDFG",
-                CompanyName = "Rene5874",
-                ContactName = "Peter Prtrov"
-            };
+                /// Task 03. Write a method that finds all customers who have orders made in 1997 and shipped to Canada.
 
-            CustomersDao.InsirtCustomer(customer);
+                TaskResolver.FindAllWithOrdersByShippedYearAndShipCountry(1997, "Canada", dbContext);
+                Console.WriteLine(separator);
 
-            customer = CustomersDao.GetCustomerById(Id);
-            Console.WriteLine($"Customer with ID {Id} was created");
+                /// Task 04. mplement previous by using native SQL query and executing it through the DbContext
 
-            customer.ContactName = "Doly Popova";
-            customer.City = "Sofia";
-            customer.Phone = "12345890";
+                TaskResolver.CustomersWithOrdersFromYearToCountryWithSQL(1997, "Canada", dbContext);
+                Console.WriteLine(separator);
 
-            CustomersDao.ModifyCustomer(customer);
-            customer = CustomersDao.GetCustomerById(Id);
-            Console.WriteLine($"Customer with ID {Id} was modified. New contact name is {customer.ContactName}");
+                ///  Task 05. Write a method that finds all the sales by specified region and period (start / end dates).  
+                TaskResolver.FindAllSalesByRegionForGivenPeriod("SP", new DateTime(1997, 01, 01), new DateTime(1998, 01, 01), dbContext);
 
-            CustomersDao.DeleteCustomer(Id);
-
-            try
-            {
-                customer = CustomersDao.GetCustomerById(Id);
+                // Task 07 By inheriting the Employee entity class create a class which allows employees to access their 
+                //corresponding territories as property of type EntitySet<T>.
+                TaskResolver.PrintTeritory(dbContext);
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+
+            /// Task 06. Try to open two different data contexts and perform concurrent changes on the same records.
+            ///    What will happen at SaveChanges() ? => Second change overite the first
+            /// How to deal with it ?
+            TaskResolver.ConcurencyRequests();
         }
     }
 }

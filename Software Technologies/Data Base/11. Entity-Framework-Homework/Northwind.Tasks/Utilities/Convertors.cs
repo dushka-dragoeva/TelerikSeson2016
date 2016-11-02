@@ -2,9 +2,9 @@
 
 namespace Northwind.Tasks.Utilities
 {
-    internal class Convertor
+    public class Convertors
     {
-        internal static string FirstLetterToUpper(string str)
+        public static string FirstLetterToUpper(string str)
         {
             return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str.ToLower());
         }
