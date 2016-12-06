@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindNumber", "FindNumber\FindNumber.csproj", "{9DC56F96-7613-43C0-836F-9E8E4F417345}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeRates", "ExchangeRates\ExchangeRates.csproj", "{1E86B4EE-8609-45D5-AA45-5A673E03A610}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doge", "Doge\Doge.csproj", "{BAE8968F-18B3-4861-94AC-2589383046FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DC56F96-7613-43C0-836F-9E8E4F417345}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DC56F96-7613-43C0-836F-9E8E4F417345}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DC56F96-7613-43C0-836F-9E8E4F417345}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DC56F96-7613-43C0-836F-9E8E4F417345}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E86B4EE-8609-45D5-AA45-5A673E03A610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E86B4EE-8609-45D5-AA45-5A673E03A610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E86B4EE-8609-45D5-AA45-5A673E03A610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E86B4EE-8609-45D5-AA45-5A673E03A610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAE8968F-18B3-4861-94AC-2589383046FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE8968F-18B3-4861-94AC-2589383046FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE8968F-18B3-4861-94AC-2589383046FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE8968F-18B3-4861-94AC-2589383046FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
