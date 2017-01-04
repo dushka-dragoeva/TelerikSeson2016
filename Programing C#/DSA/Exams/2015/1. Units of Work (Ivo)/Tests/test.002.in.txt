@@ -1,0 +1,24 @@
+add TheMightyThor God 100
+add Artanis Protoss 250
+add Fenix Protoss 200
+add Spiderman MutatedHuman 180
+add XelNaga God 500
+add Wolverine MutatedHuman 200
+add Zeratul Protoss 300
+add Spiderman MutatedHuman 180
+add JimRaynor Human 100
+power 3
+find Protoss
+find God
+remove Kerrigan
+remove XelNaga
+power 3
+find Kerrigan
+find God
+find Human
+remove JimRaynor
+remove Artanis
+find Protoss
+power 5
+find Human
+end

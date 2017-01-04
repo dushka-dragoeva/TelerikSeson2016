@@ -1,0 +1,14 @@
+Ok: Product Milk added successfully
+Ok: Product Yogurt added successfully
+Ok: Product Notebook added successfully
+Ok: Product Orbit added successfully
+Ok: Product Rakia added successfully
+Ok: Product Dress added successfully
+Ok: Product Jacket added successfully
+Error: Product Milk already exists
+Ok: Product Socks added successfully
+Ok: Milk(1.9), Yogurt(1.9)
+Ok: Milk(1.9), Yogurt(1.9)
+Ok: Milk(1.9), Yogurt(1.9), Socks(2.9), Rakia(11.9), Jacket(49.9), Dress(121.9), Notebook(1111.9)
+Ok: Orbit(0.9), Milk(1.9), Yogurt(1.9)
+Ok: Socks(2.9), Jacket(49.9), Dress(121.9)

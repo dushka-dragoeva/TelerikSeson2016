@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern", "Pattern\Pattern.csproj", "{70996383-1097-4562-A213-FE39C73ADDE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolishNotation", "PolishNotation\PolishNotation.csproj", "{D3A14F5F-F03F-4040-A06D-A28E49228EAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70996383-1097-4562-A213-FE39C73ADDE4}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{70996383-1097-4562-A213-FE39C73ADDE4}.Debug|x86.ActiveCfg = Debug|x86
+		{70996383-1097-4562-A213-FE39C73ADDE4}.Debug|x86.Build.0 = Debug|x86
+		{70996383-1097-4562-A213-FE39C73ADDE4}.Release|Any CPU.ActiveCfg = Release|x86
+		{70996383-1097-4562-A213-FE39C73ADDE4}.Release|x86.ActiveCfg = Release|x86
+		{70996383-1097-4562-A213-FE39C73ADDE4}.Release|x86.Build.0 = Release|x86
+		{D3A14F5F-F03F-4040-A06D-A28E49228EAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A14F5F-F03F-4040-A06D-A28E49228EAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A14F5F-F03F-4040-A06D-A28E49228EAB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D3A14F5F-F03F-4040-A06D-A28E49228EAB}.Debug|x86.Build.0 = Debug|Any CPU
+		{D3A14F5F-F03F-4040-A06D-A28E49228EAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A14F5F-F03F-4040-A06D-A28E49228EAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3A14F5F-F03F-4040-A06D-A28E49228EAB}.Release|x86.ActiveCfg = Release|Any CPU
+		{D3A14F5F-F03F-4040-A06D-A28E49228EAB}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
