@@ -10,7 +10,7 @@
 4. Полетата валидираме в конструктура когато нямаме сетер
 5. Enum - направо я добавяме в стрингбилдъра - не е нужно да я кастваме или  toString()
 6. Ако ни се подава колекция, а интерфейса иска стринг => в get правим колекцията  toString()
-7. Винаги валидация дали продукта != null при add, remove!!!!!!!!!!!!
+7. Винаги валидация дали продукта != null и id при add, remove!!!!!!!!!!!!
 8. Винаги да пробвам с ICollection();
 9. Switch case => defalt -> return base
 10. ExtendedClass through inheritance and overide  virtual metods + encapculation
@@ -34,3 +34,10 @@ public class Rectangle
             }
     }
 }
+
+
+
+Anonymous Methods
+Anonymous methods are methods without name
+Can take parameters and return values
+Declared through the delegate keyword
