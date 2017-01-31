@@ -1,0 +1,22 @@
+Ok: Product Milk added successfully
+Ok: Product Yogurt added successfully
+Ok: Product Notebook added successfully
+Ok: Product Orbit added successfully
+Ok: Product Rakia added successfully
+Ok: Product Dress added successfully
+Ok: Product Jacket added successfully
+Error: Product Milk already exists
+Ok: Product Eggs added successfully
+Ok: Product Cheese added successfully
+Ok: Jacket(49.9), Dress(121.9)
+Ok: Milk(1.9), Yogurt(1.9)
+Ok: Product CappyOrange added successfully
+Ok: Product Nestey added successfully
+Ok: 
+Ok: Product Socks added successfully
+Error: Type fruits does not exists
+Ok: Product MacBookPro added successfully
+Ok: MacBookPro(1700.1234)
+Ok: Milk(1.9), Yogurt(1.9), CappyOrange(1.99), Eggs(2.34), Nestey(2.7), Socks(2.9), Cheese(5.55), Rakia(11.9), Jacket(49.9), Dress(121.9)
+Ok: Orbit(0.9), Milk(1.9), Yogurt(1.9), CappyOrange(1.99)
+Ok: Socks(2.9), Jacket(49.9), Dress(121.9)

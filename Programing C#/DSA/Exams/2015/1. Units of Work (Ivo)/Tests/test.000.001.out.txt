@@ -1,0 +1,16 @@
+SUCCESS: TheMightyThor added!
+SUCCESS: Artanis added!
+SUCCESS: Fenix added!
+SUCCESS: Spiderman added!
+SUCCESS: XelNaga added!
+SUCCESS: Wolverine added!
+SUCCESS: Zeratul added!
+FAIL: Spiderman already exists!
+RESULT: XelNaga[God](500), Zeratul[Protoss](300), Artanis[Protoss](250)
+RESULT: Zeratul[Protoss](300), Artanis[Protoss](250), Fenix[Protoss](200)
+RESULT: XelNaga[God](500), TheMightyThor[God](100)
+FAIL: Kerrigan could not be found!
+SUCCESS: XelNaga removed!
+RESULT: Zeratul[Protoss](300), Artanis[Protoss](250), Fenix[Protoss](200)
+RESULT:
+RESULT: TheMightyThor[God](100)

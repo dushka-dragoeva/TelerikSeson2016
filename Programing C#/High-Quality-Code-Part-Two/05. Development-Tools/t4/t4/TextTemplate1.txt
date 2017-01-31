@@ -1,0 +1,31 @@
+﻿
+
+Number 7 is devided in 7
+Number 14 is devided in 7
+Number 21 is devided in 7
+Number 28 is devided in 7
+Number 35 is devided in 7
+Number 42 is devided in 7
+Number 49 is devided in 7
+Number 56 is devided in 7
+Number 63 is devided in 7
+Number 70 is devided in 7
+Number 77 is devided in 7
+Number 84 is devided in 7
+Number 91 is devided in 7
+Number 98 is devided in 7
+Number 105 is devided in 7
+Number 112 is devided in 7
+Number 119 is devided in 7
+Number 126 is devided in 7
+Number 133 is devided in 7
+Number 140 is devided in 7
+Number 147 is devided in 7
+Number 154 is devided in 7
+Number 161 is devided in 7
+Number 168 is devided in 7
+Number 175 is devided in 7
+Number 182 is devided in 7
+Number 189 is devided in 7
+Number 196 is devided in 7
+

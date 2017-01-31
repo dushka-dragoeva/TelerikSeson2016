@@ -1,0 +1,15 @@
+add Milk 1.90 dairy
+add Yogurt 1.90 dairy
+add Notebook 1111.90 technology
+add Orbit 0.90 food
+add Rakia 11.90 drinks
+add Dress 121.90 clothes
+add Jacket 49.90 clothes
+add Milk 1.90 dairy
+add Socks 2.90 clothes
+filter by type dairy
+filter by price from 1.00 to 2.00
+filter by price from 1.50
+filter by price to 2.00
+filter by type clothes
+end

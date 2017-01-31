@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="99dc3752b37e483fac2135050695c1be" Name="Diagram1">
+        <EntityTypeShape EntityType="PetStoreModel.Category" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetStoreModel.Color" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetStoreModel.Country" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetStoreModel.Pet" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetStoreModel.Produt" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetStoreModel.Spice" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetStoreModel.sysdiagram" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="PetStoreModel.FK_Produts_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="PetStoreModel.FK_Pets_Colors" ManuallyRouted="false" />
+        <AssociationConnector Association="PetStoreModel.FK_Spices_Countries" ManuallyRouted="false" />
+        <AssociationConnector Association="PetStoreModel.FK_Pets_Spices" ManuallyRouted="false" />
+        <AssociationConnector Association="PetStoreModel.FK_Products_Spieses" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,16 @@
+Product added
+Product added
+Product added
+Product added
+{CLS 63 AMG;Mercedes;200000.00}
+No products found
+No products found
+Product added
+{320i;BMW;10000.00}
+Product added
+{G560;Lenovo;999.00}
+{IdeaPad Z560;Lenovo;1536.50}
+{ThinkPad T410;Lenovo;3000.00}
+3 products deleted
+No products found
+{CLS 63 AMG;Mercedes;200000.00}

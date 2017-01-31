@@ -22,3 +22,8 @@ value="Ploeh.Samples.HelloDI.CommandLine.ConsoleMessageWriter,
 HelloDI" />
 </appSettings>
 
+
+
+List<DEPARTMENTs> list =   db.DEPARTMENTs.Join(db.DEPT_PROFILE, dept => dept.DEPT_CODE, prof => prof.DEPT_CODE, (dept,prof) => new {dept, prof})
+            .Join(Wdb.WEB_ACCESS, depts => depts.prof.USER_ID,web => web.USER_ID,(depts,web) => new { depts, web})
+            .Where(result => result.web.EMP_ID== id).Select(s => s.depts.dept).ToList<DEPARTMENTs>();
