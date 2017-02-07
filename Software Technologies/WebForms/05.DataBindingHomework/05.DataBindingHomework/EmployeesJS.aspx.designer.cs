@@ -10,33 +10,24 @@
 namespace _05.DataBindingHomework {
     
     
-    public partial class EmployeeDetails {
+    public partial class EmployeesJS {
         
         /// <summary>
-        /// DetailsTitle control.
+        /// ListViewEmpJS control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsTitle;
+        protected global::System.Web.UI.WebControls.ListView ListViewEmpJS;
         
         /// <summary>
-        /// EmployeeDetils control.
+        /// DataPager1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DetailsView EmployeeDetils;
-        
-        /// <summary>
-        /// ButtonBack control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor ButtonBack;
+        protected global::System.Web.UI.WebControls.DataPager DataPager1;
     }
 }

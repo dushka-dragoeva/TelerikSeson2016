@@ -19,6 +19,31 @@ a:hover {
     color: mediumpurple;
 }
 
+
+#TableViewJS> tbody > tr > td {
+    border:1px solid black;
+    padding:5px;
+}
+
+#TableViewJS> thead> tr> th {
+    border:1px solid black;
+    padding:5px;
+}
+
+.TableView> thead> tr> th{
+    background-color:#c0b9e4;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    text-align: center;
+     padding:5px;
+}
+
+.TableView> tbody > tr > td{
+     padding:7px;
+     border-left: 1px solid black;
+      border-right: 1px solid black;
+}
+
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {

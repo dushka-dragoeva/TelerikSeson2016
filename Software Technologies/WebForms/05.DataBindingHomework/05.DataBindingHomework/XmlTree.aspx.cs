@@ -11,7 +11,8 @@ namespace _05.DataBindingHomework
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           // this.BookstoreTree.DataSourceID = "Bookstore";
+            this.BookstoreTree.DataBind();
         }
     }
 }

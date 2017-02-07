@@ -64,7 +64,7 @@
         <div class="col-xs-6">
             <asp:Panel ID="Panel8" runat="server" class="panel panel-default">
                 <h4 class="panel-heading">
-                    <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/WebCalculator.aspx">Task 4. Northwind Details</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/EmployeesJS.aspx">Task 4. Northwind Details</asp:HyperLink>
                 </h4>
 
                 <asp:Literal ID="Literal8" runat="server">

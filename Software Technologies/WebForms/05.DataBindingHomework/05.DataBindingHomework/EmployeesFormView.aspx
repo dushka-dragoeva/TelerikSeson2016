@@ -6,7 +6,7 @@
         ID="EmployeeForm"
         runat="server"
         AllowPaging="true"
-        DataKeyNames="EmployeeID" OnPageIndexChanging="EmployeeForm_PageIndexChanging" >
+        DataKeyNames="EmployeeID" OnPageIndexChanging="EmployeeForm_PageIndexChanging">
 
         <ItemTemplate>
             <div id="Photo" runat="server">
@@ -72,10 +72,6 @@
             </table>
         </ItemTemplate>
     </asp:FormView>
-
-
-
-
     <br />
     <a runat="server" class="btn btn-default" href="/Employees">Back To Employees</a>
 </asp:Content>

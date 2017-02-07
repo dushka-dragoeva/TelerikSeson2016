@@ -8,17 +8,17 @@
         </a>
     </div>
     <div class="row">
-        <a runat="server" class="btn" href="~/employeesFormView">
+        <a runat="server" class="btn" href="~/EmployeesFormView">
             <h4>Form View</h4>
         </a>
     </div>
     <div class="row">
-        <a runat="server" class="btn" href="~/employeesFormView">
+        <a runat="server" class="btn" href="~/EmployeesRepeater">
             <h4>Repeater</h4>
         </a>
     </div>
     <div class="row">
-        <a runat="server" class="btn" href="~/employeesFormView">
+        <a runat="server" class="btn" href="~/EmployeesListView">
             <h4>ListView</h4>
         </a>
     </div>

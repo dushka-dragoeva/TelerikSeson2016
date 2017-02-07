@@ -15,14 +15,20 @@ namespace _05.DataBindingHomework
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (this.Request.UrlReferrer != null)
+            {
+                var previousLocation = this.Request.UrlReferrer.AbsoluteUri;
+                this.ButtonBack.HRef = previousLocation;
+            }
+
             var id = this.Request.Params["id"];
 
             if (id != null)
             {
                 int requestedId = int.Parse(id);
                 this.DetailsTitle.Visible = true;
-                var requestedEmployee= this.data.GetEmployeeById(requestedId);
-                this.DetailsTitle.InnerText = requestedEmployee.First().Fullname+ this.DetailsTitle.InnerText;
+                var requestedEmployee = this.data.GetEmployeeById(requestedId);
+                this.DetailsTitle.InnerText = requestedEmployee.First().Fullname + this.DetailsTitle.InnerText;
                 this.EmployeeDetils.DataSource = requestedEmployee;
                 this.EmployeeDetils.DataBind();
             }
