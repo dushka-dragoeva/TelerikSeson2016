@@ -7,7 +7,13 @@
         runat="server"
         ConnectionString="<%$ ConnectionStrings:NorthwindConnectionString %>"
         SelectCommand="SELECT EmployeeID , FirstName + ' ' + LastName as FullName FROM [Employees]"></asp:SqlDataSource>--%>
-    <asp:GridView ID="EmpNamesGrid" runat="server" AutoGenerateColumns="False" CellPadding="5" >
+    <asp:GridView
+        ID="EmpNamesGrid"
+        runat="server"
+        AutoGenerateColumns="False"
+        CellPadding="5"
+        AllowPaging="true"
+        AllowSorting="true">
         <Columns>
             <asp:BoundField DataField="EmployeeID" HeaderText="ID" />
             <asp:HyperLinkField
@@ -18,5 +24,5 @@
         </Columns>
     </asp:GridView>
     <br />
-      <a runat ="server" class="btn btn-default " href="/Employees" >Back</a>
+    <a runat="server" class="btn btn-default " href="/Employees">Back</a>
 </asp:Content>
