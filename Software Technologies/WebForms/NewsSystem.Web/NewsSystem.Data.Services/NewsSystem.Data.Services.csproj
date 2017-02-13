@@ -61,10 +61,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArticleServices.cs" />
-    <Compile Include="CategoryServices.cs" />
-    <Compile Include="Contracts\IArticleServices.cs" />
-    <Compile Include="Contracts\ICategoryServices.cs" />
+    <Compile Include="ArticleDataProvider.cs" />
+    <Compile Include="CategoryDataProvider.cs" />
+    <Compile Include="Contracts\IArticleDataProvider.cs" />
+    <Compile Include="Contracts\ICategory.DataProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
