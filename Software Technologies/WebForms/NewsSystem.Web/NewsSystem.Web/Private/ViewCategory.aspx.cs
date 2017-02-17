@@ -14,7 +14,7 @@ namespace NewsSystem.Web.Private
     {
 
         [Inject]
-        public ICategoryServices CategoryServeces { get; set; }
+        public ICategoryDataProvider CategoryServeces { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {

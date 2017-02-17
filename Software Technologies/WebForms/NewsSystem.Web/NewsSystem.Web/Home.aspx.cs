@@ -17,10 +17,10 @@ namespace NewsSystem.Web
         private const int TopArticlesCount = 3;
 
         [Inject]
-        public IArticleServices ArticleServeces { get; set; }
+        public IArticleDataProvider ArticleServeces { get; set; }
 
         [Inject]
-        public ICategoryServices CategoryServeces { get; set; }
+        public ICategoryDataProvider CategoryServeces { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {

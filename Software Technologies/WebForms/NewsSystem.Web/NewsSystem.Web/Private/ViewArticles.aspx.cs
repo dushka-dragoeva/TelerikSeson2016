@@ -16,10 +16,10 @@ namespace NewsSystem.Web.Private
     public partial class ViewArticles : System.Web.UI.Page
     {
         [Inject]
-        public IArticleServices ArticleServeces { get; set; }
+        public IArticleDataProvider ArticleServeces { get; set; }
 
         [Inject]
-        public ICategoryServices CategoryServeces { get; set; }
+        public ICategoryDataProvider CategoryServeces { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -19,3 +19,8 @@
     *   Create a MySQL database to store `Books` (title, author, publish date and ISBN).
     *   Write methods for listing all books, finding a book by name and adding a book.
 1.  Re-implement the previous task with SQLite embedded DB (see http://sqlite.phxsoftware.com).
+
+
+"Introducing FOREIGN KEY constraint 'FK_dbo.Likes_dbo.AspNetUsers_AuthorId' on 
+table 'Likes' may cause cycles or multiple cascade paths. 
+Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.\r\nCould not create constraint or index. See previous errors."}

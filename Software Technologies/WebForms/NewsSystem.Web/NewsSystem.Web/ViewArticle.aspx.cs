@@ -14,7 +14,7 @@ namespace NewsSystem.Web
     public partial class ViewArticle : System.Web.UI.Page
     {
         [Inject]
-        public IArticleServices ArticleServeces { get; set; }
+        public IArticleDataProvider ArticleServeces { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
